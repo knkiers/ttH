@@ -54,10 +54,10 @@
   {et~al.}}]{atlasH}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {G.}~\bibnamefont
-  {Aad}} \emph {et~al.},\ }\href {\doibase
-  http://dx.doi.org/10.1016/j.physletb.2012.08.020} {\bibfield  {journal}
-  {\bibinfo  {journal} {Physics Letters B}\ }\textbf {\bibinfo {volume}
-  {716}},\ \bibinfo {pages} {1 } (\bibinfo {year} {2012})}\BibitemShut
+  {Aad}} \emph {et~al.} (\bibinfo {collaboration} {ATLAS Collaboration}),\
+  }\href {\doibase http://dx.doi.org/10.1016/j.physletb.2012.08.020} {\bibfield
+   {journal} {\bibinfo  {journal} {Physics Letters B}\ }\textbf {\bibinfo
+  {volume} {716}},\ \bibinfo {pages} {1 } (\bibinfo {year} {2012})}\BibitemShut
   {NoStop}%
 \bibitem [{\citenamefont {Chatrchyan}\ \emph {et~al.}(2012)\citenamefont
   {Chatrchyan} \emph {et~al.}}]{cmsH}%
@@ -404,8 +404,8 @@
 \bibitem [{atl(2013)}]{atlasconf}%
   \BibitemOpen
   \href {http://cds.cern.ch/record/1600803} {\emph {\bibinfo {title}
-  {{Measurements of spin correlation in top-antitop quark events from
-  proton-proton collisions at √s = 7 TeV using the ATLAS detector}}}},\
+  {Measurements of spin correlation in top-antitop quark events from
+  proton-proton collisions at √s = 7 TeV using the ATLAS detector}}},\
   \bibinfo {type} {Tech. Rep.}\ \bibinfo {number} {ATLAS-CONF-2013-101}\
   (\bibinfo  {institution} {CERN},\ \bibinfo {address} {Geneva},\ \bibinfo
   {year} {2013})\BibitemShut {NoStop}%
