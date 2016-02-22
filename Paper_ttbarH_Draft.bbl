@@ -6,7 +6,7 @@
 %Control: page (0) single
 %Control: year (1) truncated
 %Control: production of eprint (0) enabled
-\begin{thebibliography}{42}%
+\begin{thebibliography}{46}%
 \makeatletter
 \providecommand \@ifxundefined [1]{%
  \@ifx{#1\undefined}
@@ -63,11 +63,11 @@
   {Chatrchyan} \emph {et~al.}}]{cmsH}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
-  {Chatrchyan}} \emph {et~al.},\ }\href {\doibase
-  http://dx.doi.org/10.1016/j.physletb.2012.08.021} {\bibfield  {journal}
-  {\bibinfo  {journal} {Physics Letters B}\ }\textbf {\bibinfo {volume}
-  {716}},\ \bibinfo {pages} {30 } (\bibinfo {year} {2012})}\BibitemShut
-  {NoStop}%
+  {Chatrchyan}} \emph {et~al.} (\bibinfo {collaboration} {CMS Collaboration}),\
+  }\href {\doibase http://dx.doi.org/10.1016/j.physletb.2012.08.021} {\bibfield
+   {journal} {\bibinfo  {journal} {Physics Letters B}\ }\textbf {\bibinfo
+  {volume} {716}},\ \bibinfo {pages} {30 } (\bibinfo {year}
+  {2012})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Brod}\ \emph {et~al.}(2013)\citenamefont {Brod},
   \citenamefont {Haisch},\ and\ \citenamefont {Zupan}}]{constraints1}%
   \BibitemOpen
@@ -150,6 +150,48 @@
   {Mohan}},\ }\href {\doibase 10.1103/PhysRevD.92.015019} {\bibfield  {journal}
   {\bibinfo  {journal} {Phys. Rev. D}\ }\textbf {\bibinfo {volume} {92}},\
   \bibinfo {pages} {015019} (\bibinfo {year} {2015})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Buckley}\ and\ \citenamefont
+  {Goncalves}(2015)}]{Boosted}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.~R.}\ \bibnamefont
+  {Buckley}}\ and\ \bibinfo {author} {\bibfnamefont {D.}~\bibnamefont
+  {Goncalves}},\ }\href@noop {} {\  (\bibinfo {year} {2015})},\ \Eprint
+  {http://arxiv.org/abs/1507.07926} {arXiv:1507.07926 [hep-ph]} \BibitemShut
+  {NoStop}%
+%%CITATION = ARXIV:1507.07926;%%
+\bibitem [{\citenamefont {Li}\ \emph {et~al.}(2015{\natexlab{a}})\citenamefont
+  {Li}, \citenamefont {Wang},\ and\ \citenamefont {Zhu}}]{Li}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {G.}~\bibnamefont
+  {Li}}, \bibinfo {author} {\bibfnamefont {H.-R.}\ \bibnamefont {Wang}}, \ and\
+  \bibinfo {author} {\bibfnamefont {S.-h.}\ \bibnamefont {Zhu}},\ }\href@noop
+  {} {\  (\bibinfo {year} {2015}{\natexlab{a}})},\ \Eprint
+  {http://arxiv.org/abs/1506.06453} {arXiv:1506.06453 [hep-ph]} \BibitemShut
+  {NoStop}%
+%%CITATION = ARXIV:1506.06453;%%
+\bibitem [{\citenamefont {Chen}\ \emph {et~al.}(2015)\citenamefont {Chen},
+  \citenamefont {Stolarski},\ and\ \citenamefont {Vega-Morales}}]{Golden}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont
+  {Chen}}, \bibinfo {author} {\bibfnamefont {D.}~\bibnamefont {Stolarski}}, \
+  and\ \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {Vega-Morales}},\
+  }\href {\doibase 10.1103/PhysRevD.92.053003} {\bibfield  {journal} {\bibinfo
+  {journal} {Phys. Rev.}\ }\textbf {\bibinfo {volume} {D92}},\ \bibinfo {pages}
+  {053003} (\bibinfo {year} {2015})},\ \Eprint
+  {http://arxiv.org/abs/1505.01168} {arXiv:1505.01168 [hep-ph]} \BibitemShut
+  {NoStop}%
+%%CITATION = ARXIV:1505.01168;%%
+\bibitem [{\citenamefont {Khatibi}\ and\ \citenamefont
+  {Najafabadi}(2014)}]{Khatibi}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
+  {Khatibi}}\ and\ \bibinfo {author} {\bibfnamefont {M.~M.}\ \bibnamefont
+  {Najafabadi}},\ }\href {\doibase 10.1103/PhysRevD.90.074014} {\bibfield
+  {journal} {\bibinfo  {journal} {Phys. Rev.}\ }\textbf {\bibinfo {volume}
+  {D90}},\ \bibinfo {pages} {074014} (\bibinfo {year} {2014})},\ \Eprint
+  {http://arxiv.org/abs/1409.6553} {arXiv:1409.6553 [hep-ph]} \BibitemShut
+  {NoStop}%
+%%CITATION = ARXIV:1409.6553;%%
 \bibitem [{\citenamefont {Gunion}\ and\ \citenamefont {He}(1996)}]{Gunion1}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~F.}\ \bibnamefont
@@ -413,10 +455,11 @@
   {Aad} \emph {et~al.}}]{atlascharge}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {G.}~\bibnamefont
-  {Aad}} \emph {et~al.},\ }\href {\doibase 10.1007/JHEP05(2015)061} {\bibfield
-  {journal} {\bibinfo  {journal} {Journal of High Energy Physics}\ }\textbf
-  {\bibinfo {volume} {2015}},\ \bibinfo {eid} {61} (\bibinfo {year}
-  {2015}{\natexlab{a}}),\ 10.1007/JHEP05(2015)061}\BibitemShut {NoStop}%
+  {Aad}} \emph {et~al.} (\bibinfo {collaboration} {ATLAS Collaboration}),\
+  }\href {\doibase 10.1007/JHEP05(2015)061} {\bibfield  {journal} {\bibinfo
+  {journal} {Journal of High Energy Physics}\ }\textbf {\bibinfo {volume}
+  {2015}},\ \bibinfo {eid} {61} (\bibinfo {year} {2015}{\natexlab{a}}),\
+  10.1007/JHEP05(2015)061}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Dawson}\ \emph {et~al.}(2003)\citenamefont {Dawson},
   \citenamefont {Orr}, \citenamefont {Reina},\ and\ \citenamefont
   {Wackeroth}}]{Dawson}%
@@ -475,22 +518,24 @@
   10.1103/PhysRevD.92.034021} {\bibfield  {journal} {\bibinfo  {journal} {Phys.
   Rev. D}\ }\textbf {\bibinfo {volume} {92}},\ \bibinfo {pages} {034021}
   (\bibinfo {year} {2015})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Li}\ \emph {et~al.}(2015)\citenamefont {Li},
-  \citenamefont {Lu}, \citenamefont {Si},\ and\ \citenamefont {Wang}}]{chinos}%
+\bibitem [{\citenamefont {Li}\ \emph {et~al.}(2015{\natexlab{b}})\citenamefont
+  {Li}, \citenamefont {Lu}, \citenamefont {Si},\ and\ \citenamefont
+  {Wang}}]{chinos}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {H.-L.}\ \bibnamefont
   {Li}}, \bibinfo {author} {\bibfnamefont {P.-C.}\ \bibnamefont {Lu}}, \bibinfo
   {author} {\bibfnamefont {Z.-G.}\ \bibnamefont {Si}}, \ and\ \bibinfo {author}
   {\bibfnamefont {Y.}~\bibnamefont {Wang}},\ }\href@noop {} {\  (\bibinfo
-  {year} {2015})},\ \Eprint {http://arxiv.org/abs/1508.06416} {arXiv:1508.06416
-  [hep-ph]} \BibitemShut {NoStop}%
+  {year} {2015}{\natexlab{b}})},\ \Eprint {http://arxiv.org/abs/1508.06416}
+  {arXiv:1508.06416 [hep-ph]} \BibitemShut {NoStop}%
 %%CITATION = ARXIV:1508.06416;%%
 \bibitem [{\citenamefont {Aad}\ \emph {et~al.}(2015{\natexlab{b}})\citenamefont
   {Aad} \emph {et~al.}}]{atlasger}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {G.}~\bibnamefont
-  {Aad}} \emph {et~al.},\ }\href {\doibase 10.1140/epjc/s10052-015-3543-1}
-  {\bibfield  {journal} {\bibinfo  {journal} {The European Physical Journal C}\
-  }\textbf {\bibinfo {volume} {75}},\ \bibinfo {eid} {349} (\bibinfo {year}
+  {Aad}} \emph {et~al.} (\bibinfo {collaboration} {ATLAS Collaboration}),\
+  }\href {\doibase 10.1140/epjc/s10052-015-3543-1} {\bibfield  {journal}
+  {\bibinfo  {journal} {The European Physical Journal C}\ }\textbf {\bibinfo
+  {volume} {75}},\ \bibinfo {eid} {349} (\bibinfo {year}
   {2015}{\natexlab{b}}),\ 10.1140/epjc/s10052-015-3543-1}\BibitemShut {NoStop}%
 \end{thebibliography}%
