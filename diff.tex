@@ -1,7 +1,7 @@
 \documentclass[aps,preprint,tightenlines,floatfix,superscriptaddress,nofootinbib,showpacs]{revtex4-1}
 %DIF LATEXDIFF DIFFERENCE FILE
 %DIF DEL ../manuscript_older/Paper_ttbarH_Draft_12_20_15.tex   Wed Jan 20 14:03:07 2016
-%DIF ADD Paper_ttbarH_Draft.tex                                Sat Feb 13 16:29:43 2016
+%DIF ADD Paper_ttbarH_Draft.tex                                Tue Feb 23 09:24:14 2016
 \pdfoutput=1
 \usepackage{graphicx}
 %\usepackage{dcolumn}
@@ -394,10 +394,10 @@ Sec.~\ref{sec7}.
 At the LHC \DIFdelbegin \DIFdel{the }\DIFdelend $t\bar{t}H$ production proceeds via $q\bar{q}$
 annihilation and $gg$ fusion processes. The relevant \DIFdelbegin \DIFdel{Feynman diagrams
 at leading order }\DIFdelend \DIFaddbegin \DIFadd{leading-order Feynman
-diagrams }\DIFaddend are displayed in Fig.~\ref{fig1}, \DIFdelbegin \DIFdel{where the two first rows correspond respectively to }\DIFdelend \DIFaddbegin \DIFadd{with the first two
-rows containing the }\DIFaddend $q\bar{q}$ and $gg$ \DIFdelbegin \DIFdel{s-channels whereas
+diagrams }\DIFaddend are displayed in Fig.~\ref{fig1}, where the \DIFdelbegin \DIFdel{two first rows correspond respectively to }\DIFdelend \DIFaddbegin \DIFadd{first two
+rows show the }\DIFaddend $q\bar{q}$ and $gg$ \DIFdelbegin \DIFdel{s-channels whereas
 }\DIFdelend \DIFaddbegin \DIFadd{$s$-channel diagrams, and
-}\DIFaddend the last one \DIFdelbegin \DIFdel{depicts }\DIFdelend \DIFaddbegin \DIFadd{depicting }\DIFaddend the $gg$ \DIFdelbegin \DIFdel{t-channels}\DIFdelend \DIFaddbegin \DIFadd{$t$-channel diagrams}\DIFaddend . By exchanging the gluon
+}\DIFaddend the last one depicts the $gg$ \DIFdelbegin \DIFdel{t-channels}\DIFdelend \DIFaddbegin \DIFadd{$t$-channel diagrams}\DIFaddend . By exchanging the gluon
 lines in \DIFdelbegin \DIFdel{this }\DIFdelend \DIFaddbegin \DIFadd{the third }\DIFaddend row, three more $gg$-initiated diagrams can be
 obtained. We describe the $tH$ \DIFdelbegin \DIFdel{cupling }\DIFdelend \DIFaddbegin \DIFadd{coupling }\DIFaddend with the effective \DIFdelbegin \DIFdel{lagrangian
 }\DIFdelend \DIFaddbegin \DIFadd{Lagrangian
@@ -463,16 +463,22 @@ following form (we sketch the proof below)
 \beq
 \label{eq2}
 %dd\sigma(gg\to (bl^+\nu_l)(\bbar l^- \nubar) H)=\sum_{\substack{bl^+\nu_l \\ \tiny{\mathrm{spins}}}}\,\sum_{\substack{\bbar l^-\nubar \\ \mathrm{\tiny{spins}}}}\left(\frac{2}{\Gamma_t}\right)^2\,d\sigma(gg\to t(n_t)\tbar (n_{\tbar})H)\,d\Gamma(t(n_t)\to bl^+\nu_l)\,d\Gamma(\tbar (n_{\tbar})\to \bbar l^-\nubar)
-d\sigma =\sum_{\substack{b{\ell}^+\nu_l \\ \tiny{\mathrm{spins}}}}\,\sum_{\substack{\bbar {\ell}^-\nubar \\ \mathrm{\tiny{spins}}}}\left(\frac{2}{\Gamma_t}\right)^2\,d\sigma(gg\to t(n_t)\tbar (n_{\tbar})H)\,d\Gamma(t(n_t)\to b{\ell}^+\nu_{\ell})\,d\Gamma(\tbar (n_{\tbar})\to \bbar {\ell}^-\nubar),
+d\sigma =\sum_{\substack{b{\ell}^+\nu_l \\ \tiny{\mathrm{spins}}}}\,
+   \sum_{\substack{\bbar {\ell}^-\nubar \\ \mathrm{\tiny{spins}}}}\left(\frac{2}{\Gamma_t}\right)^2\,
+   d\sigma(gg\to t(n_t)\tbar (n_{\tbar})H)\,
+   d\Gamma(t\DIFdelbegin \DIFdel{(n_t)}\DIFdelend \to b{\ell}^+\nu_{\ell})\,
+   d\Gamma(\tbar \DIFdelbegin \DIFdel{(n_{\tbar})}\DIFdelend \to \bbar {\ell}^-\nubar),
 \eeq  
 %
 where $d\sigma(gg\to t(n_t)\tbar (n_{\tbar})H)$ is the differential
 cross section \DIFdelbegin \DIFdel{of }\DIFdelend \DIFaddbegin \DIFadd{for }\DIFaddend the production of a top quark with spin vector $n_t$
 plus an anti-top quark with spin vector $n_{\bar{t}}$ and a Higgs
-boson, \DIFdelbegin \DIFdel{whereas }\DIFdelend \DIFaddbegin \DIFadd{and }\DIFaddend $d\Gamma(t(n_t)\to b{\ell}^+\nu_{\ell})$ and
-$d\Gamma(\tbar (n_{\tbar})\to \bbar {\ell}^-\nubar)$ are the
-differential decay widths of a top with spin vector $n_t$ and an
-anti-top with spin vector $n_{\tbar}$, respectively. Also, the vectors
+boson, \DIFdelbegin \DIFdel{whereas $d\Gamma(t(n_t)\to b{\ell}^+\nu_{\ell})$ and $d\Gamma(\tbar (n_{\tbar})\to \bbar {\ell}^-\nubar)$ }\DIFdelend \DIFaddbegin \DIFadd{and $d\Gamma(t\to b{\ell}^+\nu_{\ell})$ and
+$d\Gamma(\tbar \to \bbar {\ell}^-\nubar)$ }\DIFaddend are the
+differential decay widths \DIFdelbegin \DIFdel{of a top with spin vector $n_t$ and
+an
+}\DIFdelend \DIFaddbegin \DIFadd{for an unpolarized top and
+}\DIFaddend anti-top\DIFdelbegin \DIFdel{with spin vector $n_{\tbar}$}\DIFdelend , respectively. Also, the vectors
 $n_t$ and $n_{\tbar}$ are given by particular combinations of the
 momenta $t,\ell^+$ and $\tbar,\ell^-$ respectively \cite{Arens},
 %
@@ -485,9 +491,12 @@ n_{\tbar}&=&\,\frac{p_{\tbar}}{m_t}-\frac{m_t}{(p_{\tbar}\cdot p_{{\ell}^-})}p_{
 %
 Expressions similar to Eq.~(\ref{eq2}) have been derived for the
 production of short-lived particles in $e^-e^+$ colliders
-\cite{kawasaki} and in particular for $t\tbar$ production both in
+\cite{kawasaki} and \DIFdelbegin \DIFdel{in particular }\DIFdelend for $t\tbar$ production both in
 $e^-e^+$ colliders \cite{Arens} and $pp$ colliders
-\cite{ale1,*ale2,*ale3,*ale4}. \par We will outline now how to derive
+\cite{ale1,*ale2,*ale3,*ale4}. \par
+\DIFaddbegin 
+
+\DIFaddend We will outline now how to derive
 Eq.~(\ref{eq2}) and to obtain the above definitions for the spin
 vectors. The process $g_ag_b\to t(\to
 b_i{\ell}^+\nu_{\ell})\,\tbar(\to \bbar_j {\ell}^- \nubar)\,H$ can be
