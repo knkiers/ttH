@@ -314,17 +314,27 @@ Sec.~\ref{sec7}.
 \setlength{\belowdisplayskip}{10.6pt}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\section{Process \MakeLowercase{{\boldmath $pp\to t \bar{t}$}}$H\to$\MakeLowercase{{\boldmath $\left(b l^+ \nu_l \right) \left(\bar{b} l^-\bar{\nu}_l\right)$}}$H$. Theoretical framework}
-\section{Process \MakeLowercase{{\boldmath $pp\to t(\to b {\ell}^+ \nu_{\ell})\,\bar{t}(\to\bar{b} {\ell}^-\bar{\nu}_{\ell})$}}$\,H$. Theoretical framework}
+\section{Theoretical framework for \MakeLowercase{{\boldmath $pp\to t(\to b {\ell}^+ \nu_{\ell})\,\bar{t}(\to\bar{b} {\ell}^-\bar{\nu}_{\ell})$}}$\,H$}
 \label{sec2}
 
 %
+Before turning to a discussion of $\mathrm{CP}$-odd observables,
+it is useful to consider a few theoretical aspects of
+the process $\ppprocess$.  In this section we derive a ``factorized''
+expression for the gluon fusion contribution to this process.
+We then use this expression to isolate various mathematical quantities
+that will be useful as we construct $\mathrm{CP}$-odd observables.
+
+\subsection{Factorized expression for the scattering cross section}
+
 At the LHC $t\bar{t}H$ production proceeds via $q\bar{q}$
 annihilation and $gg$ fusion processes. The relevant leading-order Feynman
 diagrams are displayed in Fig.~\ref{fig1}, where the first two
 rows show the $q\bar{q}$ and $gg$ $s$-channel diagrams, and
-the last one depicts the $gg$ $t$-channel diagrams. By exchanging the gluon
-lines in the third row, three more $gg$-initiated diagrams can be
-obtained. We describe the $tH$ coupling with the effective Lagrangian
+the last one depicts the $gg$ $t$-channel diagrams.  Three more
+$gg$-initiated diagrams are obtained by exchanging the gluon
+lines in the third row.
+We describe the $tH$ coupling with the effective Lagrangian
 %
 \beq
 \label{eq1}
@@ -336,7 +346,8 @@ where $v=246~\mathrm{GeV}$ is the SM Higgs vacuum
 expectation value, and the coefficients $\kp$ and $\kpt$ parameterize 
 the scalar and pseudoscalar interaction, respectively. The
 SM case is obtained for $\kp=1$ and $\kpt=0$, while the values $\kp=0$
-and $\kpt\neq 0$ parameterize a $\mathrm{CP}$-odd Higgs. \par
+and $\kpt\neq 0$ parameterize a $\mathrm{CP}$-odd Higgs
+{\bf KK: ``boson''? I don't think PRD allows us to just say ``Higgs''}. \par
 %%%%%%%%%%%%%%%%%%%% Figura 1%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %/home/nico/jaxodraw-2.1-0/
 \begin{center}
@@ -375,11 +386,13 @@ In this section we focus on the gluon fusion contributions
 to $t\tbar H$ production, since these dominate over the
 the quark-antiquark annihilation contributions.  Furthermore,
 we consider the case in which the top and antitop both decay
-semileptonically.  By using the narrow-width
-approximation for the top quark, it can be shown that the unpolarized
-differential cross section for the full process $gg\to t(\to
-b{\ell}^+\nu_{\ell})\,\tbar(\to \bbar {\ell}^- \nubar)\,H$ takes the
-following form (we sketch the proof below)
+semileptonically.  As we shall show below, assuming the
+narrow width approximation for the top and antitop quarks, the unpolarized
+differential cross section for $gg\to t(\to
+b{\ell}^+\nu_{\ell})\,\tbar(\to \bbar {\ell}^- \nubar)\,H$ may be
+written in the following ``factorized'' form,\footnote{The reader
+  is referred to the discussion following Eq.~(\ref{eq17}) for some qualifying
+  remarks regarding the ``factorization'' of this expression.}
 %
 \beq
 \label{eq2}
@@ -392,14 +405,15 @@ d\sigma =\sum_{\substack{b{\ell}^+\nu_l \\ \tiny{\mathrm{spins}}}}\,
 \eeq  
 %
 where $d\sigma(gg\to t(n_t)\tbar (n_{\tbar})H)$ is the differential
-cross section for the production of a top quark with spin vector $n_t$
-plus an anti-top quark with spin vector $n_{\bar{t}}$ and a Higgs
-boson, and $d\Gamma(t\to b{\ell}^+\nu_{\ell})$ and
+cross section for the production of a top and antitop quark,
+with spin vectors $n_t$ and $n_{\bar{t}}$, respectively, along with a Higgs
+boson.  Also, $d\Gamma(t\to b{\ell}^+\nu_{\ell})$ and
 $d\Gamma(\tbar \to \bbar {\ell}^-\nubar)$ are the
-differential decay widths for an unpolarized top and
-anti-top, respectively. Also, the vectors
-$n_t$ and $n_{\tbar}$ are given by particular combinations of the
-momenta $t,\ell^+$ and $\tbar,\ell^-$ respectively \cite{Arens},
+partial differential decay widths for an unpolarized top and
+anti-top quark.  The four-vectors
+$n_t$ and $n_{\tbar}$ are not arbitrary, but are
+given by particular combinations of the
+momenta of the $t,\tbar, \ell^+$ and $\ell^-$~\cite{Arens},
 %
 \bea
 \label{eq3}
@@ -408,21 +422,15 @@ n_t&=&-\frac{p_t}{m_t}+\frac{m_t}{(p_t\cdot p_{{\ell}^+})}p_{{\ell}^+}\\
 n_{\tbar}&=&\,\frac{p_{\tbar}}{m_t}-\frac{m_t}{(p_{\tbar}\cdot p_{{\ell}^-})}p_{{\ell}^-}.
 \eea
 %
-Expressions similar to Eq.~(\ref{eq2}) have been derived for the
+Expressions similar to Eq.~(\ref{eq2}) have been derived previously for the
 production of short-lived particles in $e^-e^+$ colliders
 \cite{kawasaki} and for $t\tbar$ production both in
 $e^-e^+$ colliders \cite{Arens} and $pp$ colliders
 \cite{ale1,*ale2,*ale3,*ale4}. \par
 
-We will outline now how to derive
-Eq.~(\ref{eq2}) and to obtain the above definitions for the spin
-vectors. The process $g_ag_b\to t(\to
-b_i{\ell}^+\nu_{\ell})\,\tbar(\to \bbar_j {\ell}^- \nubar)\,H$ can be
-drawn as in Fig.~\ref{fig2}, where $a$ and $b$ denote the gluons and
-$i$ and $j$ are the top and anti-top colours.
 %%%%%%%%%%%%%%%%% FIGURA 2 %%%%%%%%%%%%%%%%%%%%%%
 \begin{center}
-\begin{figure}[H]
+\begin{figure}[th]
 \centering
 \includegraphics[scale=0.6]{esquematico_II.pdf}
 \vspace*{0.02\textwidth}
@@ -434,70 +442,83 @@ $i$ and $j$ are the top and anti-top colours.
 \end{figure}
 \end{center}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\par
+
+To derive the above expressions, we begin by considering the
+schematic representation for the process $g_ag_b\to t(\to
+b_i{\ell}^+\nu_{\ell})\,\tbar(\to \bbar_j {\ell}^- \nubar)\,H$
+that is sketched in Fig.~\ref{fig2}.
+Here $a$ and $b$ denote the initial-state gluons and
+$i$ and $j$ refer to the colours of the top and antitop quarks.
+%\par
 %
-The diagrams displayed in Fig.~\ref{fig1} (second and third rows)
-contribute to the quantity $A^{ab,ij}$, so that
-%
-\beq
-\label{eq5}
-\mathcal{A}^{ab,ij}\equiv A^{ab,ij}_{\mu\nu}(\epsilon_{\lambda_a})^{\mu}(\epsilon_{\lambda_b})^{\nu}=\sum_{k=1}^8 \mathcal{A}^{ab,ij}_k =\kp \sum_{k=1}^8 \mathcal{S}^{ab,ij}_k + i\kpt \sum_{k=1}^8 \mathcal{P}^{ab,ij}_k, 
-\eeq 
-%
-where $\epsilon_{\lambda_a}$ and $\epsilon_{\lambda_b}$ are the
-polarization vectors of $g_a$ and $g_b$ respectively and in the last
-equality the scalar piece of each diagram has been separated from the
-pseudoscalar one. The quantity $\mathcal{A}^{ab,ij}$ can be linked to
-the final states particles by using two spinors, $\psi_{t}$ and
-$\psi_{\tbar}$, that will contain the information on the decay of the
-virtual top and anti-top, respectively. Hence, the amplitude for the
-complete process depicted in Fig.~\ref{fig2} can be witten as
+The amplitude for this process may be written in the following
+compact form
 %
 \beq
 \label{eq6}
-\mathcal{M}^{ab,ij}=\bar{\psi}_t\,\mathcal{A}^{ab,ij}\,\psi_{\tbar}\,.
+\mathcal{M}^{ab,ij}=\bar{\psi}_t\,\mathcal{A}^{ab,ij}\,\psi_{\tbar}\,,
 \eeq
 %
-If we assume $b,l$ and $\nu_l$ to be massless, we can make use of the
-spinor techniques\footnote{These spinors techniques can also be used
-  for massive particles. However, the derivation of Eq.~(\ref{eq2}) is
-  much simpler by assuming the final state particles to be massless
-  which is a sensible approximation in view of the energy involved in
-  the process.} developed in \cite{Kleiss} to write $\bar{\psi}_t$ and
-$\psi_{\tbar}$ as follows
+where the spinors $\bar{\psi}_t$ and $\psi_{\tbar}$
+contain all of the information regarding the decay of the
+virtual top and anti-top, respectively,
+and where the quantity $A^{ab,ij}$ is given by
+%
+\beq
+\label{eq5}
+\mathcal{A}^{ab,ij}\equiv A^{ab,ij}_{\mu\nu}(\epsilon_{\lambda_a})^{\mu}(\epsilon_{\lambda_b})^{\nu}=\sum_{k=1}^8 \mathcal{A}^{ab,ij}_k =\kp \sum_{k=1}^8 \mathcal{S}^{ab,ij}_k + i\kpt \sum_{k=1}^8 \mathcal{P}^{ab,ij}_k.
+\eeq 
+%
+The sum over $k$ in the above expression
+corresponds to the eight gluon-initiated
+diagrams indicated in Fig.~\ref{fig1} {\bf (KK: correct?)}; also,
+$\epsilon_{\lambda_a}$ and $\epsilon_{\lambda_b}$ are the
+polarization vectors corresponding to $g_a$ and $g_b$, respectively.
+In the last equality in Eq.~(\ref{eq5})
+we have explicitly separated the amplitude into
+two sums, with one sum corresponding to the scalar contributions
+and the other to the pseudoscalar ones.
+Taking all of the final-state particles to be massless, we can use the
+spinor techniques
+developed in \cite{Kleiss} to write $\bar{\psi}_t$ and
+$\psi_{\tbar}$ as follows\footnote{These spinor techniques can also be used
+  for massive final-state particles. Given the
+  energy scale involved in the process in question, however, the assumption
+  of massless final-state particles is sensible and greatly
+  simplifies the derivation of Eq.~(\ref{eq2}).}
 %
 \bea
 \label{eq7}
-\bar{\psi}_t &=& -g^2\,\frac{1}{(t^2-m^2_t+im_t\Gamma_t)}\,\frac{1}{((t-b)^2-M^2_W+im_W\Gamma_W)}\,\langle b-|\nu_{\ell}+\rangle \langle {\ell}^+\!+|(\tslash+m_t)\\
+\bar{\psi}_t &=& -g^2\, \mathbb{P}_t(t)\,\mathbb{P}_W(t-b)\,
+   \langle b-|\nu_{\ell}+\rangle \langle {\ell}^+\!+|(\tslash+m_t)\\
 \label{eq8}
-\psi_{\tbar} &=& -g^2\,\frac{1}{(\tbar^2-m^2_t+im_t\Gamma_t)}\frac{1}{((\tbar-\bbar)^2-M^2_W+im_W\Gamma_W)}\,\langle\nubar+|\bbar-\rangle (\tbslash-m_t)|{\ell}^-+\rangle,
+\psi_{\tbar} &=& -g^2\, \mathbb{P}_t(\tbar)\,\mathbb{P}_W(\tbar-\bbar)\,
+   \langle\nubar+|\bbar-\rangle (\tbslash-m_t)|{\ell}^-+\rangle,
 \eea
 %
-where $|i+(-)\rangle \equiv P_{R(L)}\,\psi_i$ ($P_{R,L}=(1\pm
-\gamma^5)/2$) represents a right-handed(left-handed) chiral spinor for
-particle $i$, $\langle i+(-)|$ is the corresponding adjoint spinor and
-we have denoted the momenta through the symbols that represents the
-name of the particles \cite{Mangano}. The relevant quantity is
-$|\mathcal{M}^{ab,ij}|^2$, which from Eqs.~(\ref{eq6})-(\ref{eq8}) is
-proportional to $((t^2-m^2_t)^2+m^2_t\Gamma^2_t)^{-1}$ and
-$((\tbar^2-m^2_t)^2+m^2_t\Gamma^2_t)^{-1}$. Under the narrow-width
-approximation we can replace these factors by
-$(\pi/m_t\Gamma_t)\delta(t^2-m^2_t)$ and
-$(\pi/m_t\Gamma_t)\delta(\tbar^2-m^2_t)$ respectively. Hence, we can
-take directly $t^2=\tbar^2=m^2_t$ in the amplitude and write
+where $|i+(-)\rangle \equiv (1/2)(1\pm \gamma^5)\,\psi_i$
+represents a right-handed (left-handed) chiral spinor for final-state
+particle $i$ and $\langle i+(-)|$ represents the corresponding adjoint spinor.
+{\bf (KK: Do we mean the adjoint spinor, related by $C \psi^T$,
+  or whatever?)}
+Also, $\mathbb{P}_t(q)=(q^2-m^2_t+im_t\Gamma_t)^{-1}$ and
+$\mathbb{P}_W(q)=(q^2-M^2_W+im_W\Gamma_W)^{-1}$, and
+we have denoted the momenta of the various particles by the symbols
+that refer to the names of those particles~\cite{Mangano}.
+
+Using the expressions defined above for $\bar{\psi}_t$ and
+$\psi_{\tbar}$, we can write the amplitude $\mathcal{M}^{ab,ij}$
+in a form that is (in a sense) factorized.
+As a first step, we insert
+Eqs.~(\ref{eq7}) and (\ref{eq8}) into Eq.~(\ref{eq6}), yielding
 %
 \beq
 \label{eq9}
-\mathcal{M}^{ab,ij}=\!-g^4\,\mathbb{P}_t(t)\,\mathbb{P}_{\tbar}(\tbar)\,\mathbb{P}_W(t-b)\,\mathbb{P}_W(\tbar-\bbar)\,\langle b-|\nu_{\ell}+\rangle \langle\nubar+|\bbar-\rangle \sqrt{\strut2(t\cdot {\ell}^+)}\sqrt{\strut2(\tbar\cdot {\ell}^-)}\,[\bar{\phi}_t \mathcal{A}^{ab,ij}\phi_{\tbar}],
+\mathcal{M}^{ab,ij}=\!-g^4\,\mathbb{P}_t(t)\,\mathbb{P}_t(\tbar)\,\mathbb{P}_W(t-b)\,\mathbb{P}_W(\tbar-\bbar)\,\langle b-|\nu_{\ell}+\rangle \langle\nubar+|\bbar-\rangle \sqrt{\strut2(t\cdot {\ell}^+)}\sqrt{\strut2(\tbar\cdot {\ell}^-)}\,[\bar{\phi}_t \mathcal{A}^{ab,ij}\phi_{\tbar}],
 %\frac{1}{(t^2-m^2_t+im_t\Gamma_t)}\,\frac{1}{(\tbar^2-m^2_t+im_t\Gamma_t)}\,\frac{1}{((t-b)^2-M^2_W)}\frac{1}{((\tbar-\bbar)^2-M^2_W)}\,\langle b-|\nu+\rangle\,\langle\nubar+|\bbar-\rangle
 \eeq
 %
-where we have used the notation
-$\mathbb{P}_t(t)=(t^2-m^2_t+im_t\Gamma_t)^{-1}$,
-$\mathbb{P}_{\tbar}(\tbar)=(\tbar^2-m^2_t+im_t\Gamma_t)^{-1}$,
-$\mathbb{P}_W(t-b)=((t-b)^2-M^2_W+im_W\Gamma_W)^{-1}$ and
-$\mathbb{P}_W(\tbar-\bbar)=((\tbar-\bbar)^2-M^2_W+im_W\Gamma_W)^{-1}$. The
-spinors $\phi_{t}$ and $\phi_{\tbar}$ are defined as follows
+where the spinors $\phi_{t}$ and $\phi_{\tbar}$ are defined as
 %
 \beq
 \label{eq10}
@@ -506,63 +527,103 @@ spinors $\phi_{t}$ and $\phi_{\tbar}$ are defined as follows
 %
 \beq
 \label{eq11}
-\phi_{\tbar}=\frac{(\tbslash -m_t)}{\sqrt{\strut2(\tbar\cdot {\ell}^-)}}|{\ell}^-+\rangle
+\phi_{\tbar}=\frac{(\tbslash -m_t)}{\sqrt{\strut2(\tbar\cdot {\ell}^-)}}|{\ell}^-+\rangle \,.
 \eeq
 %
-and describe a top quark with spin vector $n_t$ and an anti-top quark
-with spin vector $n_{\tbar}$, since the corresponding projection
-operators are given by
+Note that in writing down the above expressions we have adopted the narrow-width
+approximation for the top and antitop quarks and for the $W^\pm$ gauge
+bosons.\footnote{Since Eq.~(\ref{eq9}) contains the top quark propagator
+  term
+  $\mathbb{P}_t(t)$, for example, $|\mathcal{M}^{ab,ij}|^2$ contains
+  the factor $((t^2-m^2_t)^2+m^2_t\Gamma^2_t)^{-1}$,
+  which is replaced by $(\pi/m_t\Gamma_t)\delta(t^2-m^2_t)$
+  in the narrow-width approximation.  Thus we take the four-vector
+  $t$ appearing in the definition of $\phi_t$ to be
+  on shell, satisfying $t^2 = m_t^2$.} {\bf (KK: Do I understand correctly
+  that $t$ is an on-shell four-vector in $t\cdot \ell^+$, but not
+  in $\mathbb{P}_t(t)$?  This is similar to saying $f(x)\delta(x-x_0) =
+  f(x_0)\delta(x-x_0)$\ldots?)}
+Working out the projection operators $\phi_t\,\bar{\phi}_t$
+and $\phi_{\tbar}\,\bar{\phi}_{\tbar}$, we have
 %
 \beq
 \label{eq12}
 \phi_t\,\bar{\phi}_t=\frac{1}{2}(1+\nslash_{\!t}\gamma^5)(\tslash +m_t)
 \eeq
 %
+and
+%
 \beq
 \label{eq13}
 \phi_{\tbar}\,\bar{\phi}_{\tbar}=\frac{1}{2}(1+\nslash_{\!\tbar}\gamma^5)(\tbslash -m_t),
 \eeq
 %
-with $n_t$ and $n_{\tbar}$ being the vectors defined in
-Eq.~(\ref{eq3})-(\ref{eq4}). Moreover, if we use these spinors to
-compute the amplitude for a top(anti-) with spin vector
-$n_t$($n_{\tbar}$) to decay into
-$b{\ell}^+\nu_{\ell}$($\bar{b}{\ell}^-\bar{\nu}_{\ell}$) we obtain
+with $n_t$ and $n_{\tbar}$ being the four-vectors defined in
+Eqs.~(\ref{eq3}) and (\ref{eq4}).  Thus, $\phi_t$ and $\phi_{\tbar}$
+may be regarded as
+describing a top quark with spin vector $n_t$ and an antitop quark
+with spin vector $n_{\tbar}$, respectively.
+
+As a final step toward factorizing the amplitude $\mathcal{M}^{ab,ij}$,
+we note that the amplitude for a top quark with spin vector
+$n_t$ to decay into $b{\ell}^+\nu_{\ell}$ is given by
 %
 \beq
 \label{eq14}
-\mathcal{M}(t(n_t)\to b{\ell}^+\nu_{\ell})=ig^2\mathbb{P}_W(t-b)\langle b-|\nu_{\ell}+\rangle\sqrt{\strut2(t\cdot {\ell}^+)}
+\mathcal{M}(t(n_t)\to b{\ell}^+\nu_{\ell})=ig^2\mathbb{P}_W(t-b)\langle b-|\nu_{\ell}+\rangle\sqrt{\strut2(t\cdot {\ell}^+)} \,,
 \eeq
+%
+and likewise,
 %
 \beq
 \label{eq15}
 \mathcal{M}(\tbar(n_{\tbar})\to \bar{b}{\ell}^-\bar{\nu}_{\ell})=ig^2\mathbb{P}_W(\tbar-\bar{b})\langle \bar{\nu}_{\ell}+|\bar{b}-\rangle\sqrt{\strut2(\tbar\cdot {\ell}^-)}.
 \eeq
 %
-On the other hand, the term inside the square brackets in
-Eq.~(\ref{eq9}) is nothing but the amplitude for producing a top quark
+Furthermore, the term inside the square brackets in
+Eq.~(\ref{eq9}) is the amplitude for producing a top quark
 with spin vector $n_t$, along with an anti-top with spin vector
-$n_{\tbar}$ and a Higgs boson, i.e.
+$n_{\tbar}$ and a Higgs boson,
 %
 \beq
 \label{eq16}
 \mathcal{M}(g_ag_b \to t^i(n_t)\tbar^j(n_{\tbar})H)=\bar{\phi}_t \mathcal{A}^{ab,ij}\phi_{\tbar}.
 \eeq
 %
-By combining Eqs.~(\ref{eq14})-(\ref{eq16}), we can write Eq.~(\ref{eq9}) as follows
+Combining Eqs.~(\ref{eq14})-(\ref{eq16}), we can write Eq.~(\ref{eq9})
+in a form that appears to be factorized,
 %
 \beq
 \label{eq17}
-\mathcal{M}^{ab,ij}=\mathbb{P}_t(t)\mathbb{P}_{\tbar}(\tbar)\,\mathcal{M}(t(n_t)\to b{\ell}^+\nu_{\ell})\,\mathcal{M}(\tbar(n_{\tbar})\to \bar{b}{\ell}^-\bar{\nu}_{\ell})\,\mathcal{M}(g_ag_b \to t^i(n_t)\tbar^j(n_{\tbar})H).
+\mathcal{M}^{ab,ij}=\mathbb{P}_t(t)\mathbb{P}_t(\tbar)\,\mathcal{M}(t(n_t)\to b{\ell}^+\nu_{\ell})\,\mathcal{M}(\tbar(n_{\tbar})\to \bar{b}{\ell}^-\bar{\nu}_{\ell})\,\mathcal{M}(g_ag_b \to t^i(n_t)\tbar^j(n_{\tbar})H) \,.
 \eeq
 %
-From Eq.~(\ref{eq17}), Eq.~(\ref{eq2}) can be derived. It's important
-to note that, even though Eqs.~(\ref{eq2}) and (\ref{eq9}) appear to
-be factorized into production and decay parts, these are not
-independent, since both parts share kinematical variables due to the
-presence of the spin vectors $n_t$ and $n_{\tbar}$ (see
-Eqs.~(\ref{eq14})-(\ref{eq16}) along with the definitions given in
-Eqs.~(\ref{eq3}) and (\ref{eq4})).\par
+It is important
+to note that, even though the above expression has the appearance of being
+factorized into production and decay parts, this apparent
+factorization is a bit misleading.  In particular, the amplitude for
+$t\tbar H$ production contains the top and antitop quark
+spin four-vectors $n_t$ and $n_{\tbar}$, which
+depend on final-state kinematical quantities [see
+Eqs.~(\ref{eq3}) and (\ref{eq4})].
+With this qualification in mind, we may now use the
+amplitude in Eq.~(\ref{eq17})
+to determine the corresponding scattering cross section.
+After some manipulation of the phase space variables
+to take advantage of the presence of the
+propagator terms, $\mathbb{P}_t(t)$ and $\mathbb{P}_t(\tbar)$,
+we arrive at the expression in Eq.~(\ref{eq2}).  This expression
+also has the appearance of being factorized, but
+qualifying remarks, similar to those above, apply.
+{\bf (KK: I'm still a bit confused as to why $n_t$ appears
+  in the amplitude expression for the decay, but not
+  in the expression for the cross section.  That is, the top
+  spins are summed over in the width that appears in the
+  factorized expression for the cross section.  That part makes
+  sense to me, but I'm not so clear on how to get there from
+  Eq.~(17).  Probably need to look more closely at the notes!)}
+ 
+
 %%%%%%%%%%%%%%%%%%% Quitarlo %%%%%%%%%%%%%%%%%%%%
 \setlength{\abovedisplayskip}{10.2pt}
 \setlength{\belowdisplayskip}{10.2pt}
