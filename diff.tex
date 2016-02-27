@@ -1,7 +1,7 @@
 \documentclass[aps,preprint,tightenlines,floatfix,superscriptaddress,nofootinbib,showpacs]{revtex4-1}
 %DIF LATEXDIFF DIFFERENCE FILE
 %DIF DEL ../manuscript_older/Paper_ttbarH_Draft_2_25_16.tex   Thu Feb 25 11:59:53 2016
-%DIF ADD Paper_ttbarH_Draft.tex                               Sat Feb 27 14:01:20 2016
+%DIF ADD Paper_ttbarH_Draft.tex                               Sat Feb 27 15:49:11 2016
 \pdfoutput=1
 \usepackage{graphicx}
 %\usepackage{dcolumn}
@@ -822,40 +822,80 @@ in both cases.
 \bigskip
 \section{$\mathrm{\mathbf{CP}}$-odd observables}
 \label{sec3}
-We present below three types of observables based on the TPs discussed
-in Sec.~\ref{sec2}, mean values, asymmetries and angular
-distributions. These observables are sensitive not only to the
-magnitude of the pseudoscalar coupling $\kpt$ but also to its
-sign. With the aim of testing them, we have used in all the cases a
-set of $10^5$ events $\ppprocess$ simulated at parton level with
-$\mathtt{MadGraph5\_aMC@NLO}$ \cite{Madgraph} at a center-of-mass
-energy of $14\,\mathrm{TeV}$ for different values of the couplings
-$\kp$ and $\kpt$\footnote{Although we use the same number of events in
+\DIFdelbegin \DIFdel{We present below }\DIFdelend \DIFaddbegin \DIFadd{In this section we present }\DIFaddend three types of observables based on the TPs discussed
+in Sec.~\ref{sec2}, \DIFdelbegin \DIFdel{mean values, asymmetriesand angular
+distributions }\DIFdelend \DIFaddbegin \DIFadd{namely, asymmetries, angular
+distributions and mean values}\DIFaddend . These observables are sensitive not only to the
+magnitude of the pseudoscalar coupling $\kpt$\DIFaddbegin \DIFadd{, }\DIFaddend but also to its
+sign.  \DIFdelbegin \DIFdel{With the aim of testing them}\DIFdelend \DIFaddbegin \DIFadd{In order to test the various observables}\DIFaddend , we have
+used \DIFdelbegin \DIFdel{in all the cases a
+set of $10^5$ events }\DIFdelend \DIFaddbegin \DIFadd{$\mathtt{MadGraph5\_aMC@NLO}$ \mbox{%DIFAUXCMD
+\cite{Madgraph} }%DIFAUXCMD
+to simulate the process
+}\DIFaddend $\ppprocess$ \DIFdelbegin \DIFdel{simulated }\DIFdelend at parton level \DIFdelbegin \DIFdel{with
+$\mathtt{MadGraph5\_aMC@NLO}$ \mbox{%DIFAUXCMD
+\cite{Madgraph} }%DIFAUXCMD
+at a center-of-mass
+energy of $14\,\mathrm{TeV}$ }\DIFdelend for different values of the couplings
+$\kp$ and $\kpt$\DIFdelbegin \footnote{\DIFdel{Although we use the same number of events in
   all the cases, the required luminosities are different since the
-  cross section depends on the value of $\kpt$.}. We have used this
-somewhat large number of events with the aim of determining clearly
+  cross section depends on the value of $\kpt$.}}%DIFAUXCMD
+\addtocounter{footnote}{-1}%DIFAUXCMD
+\DIFdel{.  We have used this
+somewhat large number of events
+with the aim of
+determining clearly
 the extent to which the proposed observables are sensitive to the NP
-coupling. However, we will discuss the corresponding experimental
-viability in Sec.~\ref{sec6}. Finally, we have also imposed the
+coupling.However, we will discuss the corresponding experimental
+viability in Sec.~\ref{sec6}. Finally, we }\DIFdelend \DIFaddbegin \DIFadd{.  In all cases we have generated $10^5$ events
+and have assumed a center-of-mass energy of
+$14\,\mathrm{TeV}$.}\footnote{\DIFadd{Note that, since we generate
+  the same number of events in
+  each case, the corresponding integrated luminosities are different, since the
+  cross section depends on the value of $\kpt$.}}
+\DIFadd{We }\DIFaddend have also imposed the
 following set of cuts: $p_T$ of leptons $> 10\,\mathrm{GeV}$, $|\eta|$
 of leptons $< 2.5$, $|\eta|$ of b jets $< 2.5$ and $\Delta
-R_{\ell\ell}>0.4$.\par Under the assumption of no other new physics
-sources but the inclusion of the pseudoscalar coupling $\kpt$,
-indirect contraints based on the Higgs production from gluon fusion
-followed by its decay to two photons disfavour $\kp < 0$ without
-resolving the degeneracy in the sign of $\kpt$ \cite{Guadagnoli}. On
-the other hand, by assuming the tensor structure of the Lagrangian to
-be the same as in the SM and considering a parameterization with one
-universal Higgs coupling to vector bosons, $\kappa_V$, and one
-universal Higgs coupling to fermions, $\kappa_f$, the measured signal
-strengths provided by ATLAS and CMS collaborations are compatible with
-the values predicted by the SM, ($\kappa_f=1,\kappa_V=1$). Based on
-these facts, we will set the value of the scalar coupling to its SM
-value, $\kp=1$, and concentrate in modifications of the value as well
-as the sign of the pseudoscalar coupling. In particular, we have
-analized the cases $\kpt=0,\pm 0.25, \pm 0.5, \pm 0.75,\pm
-1$. However, we will give some results and comments regarding the pure
-$\mathrm{CP}$-odd hypothesis ($\kp=0,\kpt=1$).
+R_{\ell\ell}>0.4$.  \DIFdelbegin %DIFDELCMD < \par %%%
+\DIFdel{Under the assumption of no other new physics
+sources but the inclusion of the }\DIFdelend \DIFaddbegin \DIFadd{Note that we have used this
+somewhat large number of events ($10^5$) in order to determine clearly
+the extent to which the proposed observables are sensitive to the NP
+coupling.  Section~\ref{sec6} contains an
+analysis of the experimental feasibility of the more promising observables.
+}{\bf \DIFadd{(KK: I may not have worded this quite correctly.)}}
+
+\DIFadd{Before continuing on to our analysis, let us make a few comments
+regarding the values that we choose for $\kp$ and $\kpt$.
+First of all, we note that if the }\DIFaddend pseudoscalar
+coupling $\kpt$ \DIFdelbegin \DIFdel{,
+indirect contraints based on the Higgs production from gluon fusionfollowed by its }\DIFdelend \DIFaddbegin \DIFadd{is the only source of physics beyond the SM,
+then indirect contraints (based on Higgs production via gluon fusion,
+followed by Higgs }\DIFaddend decay to two photons \DIFaddbegin {\bf \DIFadd{(KK: can we just say
+  something like $gg\to H \to \gamma\gamma$?  Or is that not
+  correct?)}}\DIFadd{) }\DIFaddend disfavour $\kp < 0$ \DIFdelbegin \DIFdel{without
+resolving the degeneracy }\DIFdelend \DIFaddbegin \DIFadd{but do not
+resolve the degeneracy }{\bf \DIFadd{(KK: did I reword this correctly?)}}
+\DIFaddend in the sign of $\kpt$ \cite{Guadagnoli}. On
+the other hand, \DIFdelbegin \DIFdel{by assuming }\DIFdelend \DIFaddbegin \DIFadd{if one assumes that }\DIFaddend the tensor structure of the
+\DIFdelbegin \DIFdel{Lagrangian to
+be }\DIFdelend \DIFaddbegin \DIFadd{Higgs interactions are }\DIFaddend the
+same as \DIFdelbegin \DIFdel{in }\DIFdelend \DIFaddbegin \DIFadd{those of }\DIFaddend the SM and \DIFdelbegin \DIFdel{considering a parameterization with one }\DIFdelend \DIFaddbegin \DIFadd{if one parameterizes these interactions via
+one }\DIFaddend universal Higgs coupling to vector bosons, $\kappa_V$, and one
+universal Higgs coupling to fermions, $\kappa_f$, \DIFaddbegin \DIFadd{then }\DIFaddend the measured signal
+strengths provided by \DIFaddbegin \DIFadd{the }\DIFaddend ATLAS and CMS collaborations are compatible with
+the values predicted by the SM, (\DIFdelbegin \DIFdel{$\kappa_f=1,\kappa_V=1$).
+Based on
+these facts }\DIFdelend \DIFaddbegin \DIFadd{namely, $\kappa_f=1$ and $\kappa_V=1$).
+With these facts in mind}\DIFaddend , we will\DIFaddbegin \DIFadd{, for the most part,
+}\DIFaddend set the value of the scalar coupling to its SM
+value \DIFdelbegin \DIFdel{, }\DIFdelend \DIFaddbegin \DIFadd{(}\DIFaddend $\kp=1$\DIFdelbegin \DIFdel{, and concentrate in modifications of the value as well
+as the sign of the pseudoscalar coupling }\DIFdelend \DIFaddbegin \DIFadd{) and will allow the pseudoscalar coupling to take on
+various values (including both possible signs)}\DIFaddend . In particular, we
+\DIFdelbegin \DIFdel{have
+analized }\DIFdelend \DIFaddbegin \DIFadd{analyze }\DIFaddend the cases $\kpt=0,\pm 0.25, \pm 0.5, \pm 0.75,\pm 1$.
+\DIFdelbegin \DIFdel{However, we will give some results and comments }\DIFdelend \DIFaddbegin \DIFadd{In addition, we also provide some analysis }\DIFaddend regarding the pure
+$\mathrm{CP}$-odd \DIFdelbegin \DIFdel{hypothesis }\DIFdelend \DIFaddbegin \DIFadd{case }\DIFaddend ($\kp=0,\kpt=1$).
 %\newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Asymmetry}
