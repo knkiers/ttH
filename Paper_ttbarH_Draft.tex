@@ -628,9 +628,22 @@ qualifying remarks, similar to those above, apply.
 \setlength{\abovedisplayskip}{10.2pt}
 \setlength{\belowdisplayskip}{10.2pt}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-Let us focus now in the production amplitude in Eq.~(\ref{eq17})
-needed for computing the production part of the unpolarized
-differential cross-section. By summing over colour and gluon indices
+
+\subsection{Triple products}
+{\bf (KK: maybe we should change this title for the subsection\ldots.)}
+
+The expression derived above for the scattering cross
+section [see Eq.~(\ref{eq2}), as well as Eq.~(\ref{eq17})]
+provides significant insight into
+how one might analyze $\ppprocess$ in order to determine
+the nature of the top-Higgs coupling.  In particular,
+let us focus on the production amplitude,
+$\mathcal{M}(g_ag_b \to t^i(n_t)\tbar^j(n_{\tbar})H))$, which forms
+part of the overall amplitude in Eq.~(\ref{eq17}).
+The absolute value squared of the production amplitude
+is used to determine $d\sigma(gg\to t(n_t)\tbar (n_{\tbar})H)$,
+which in turn forms part of the expression for the ``factorized'' cross section
+in Eq.~(\ref{eq2}).  Summing over colour and gluon indices
 we have
 %
 \beq
@@ -638,11 +651,13 @@ we have
 \sum_{\substack{a,b \\ i,j}}|\mathcal{M}(g_ag_b \to t^i(n_t)\tbar^j(n_{\tbar})H)|^2=\sum_{\substack{a,b \\ i,j}}\left|\sum^{8}_{k=1}C^{ab,ij}_k\,\bar{\phi}_t (\kp\mathcal{S}_k+i\kpt\mathcal{P}_k)\phi_{\tbar}\right|^2,
 \eeq
 %
-where we have separated the colour structure of each diagram by using
-the definitions $\mathcal{S}^{ab,ij}= C^{ab,ij}_k \mathcal{S}$ and
-$\mathcal{P}^{ab,ij}= C^{ab,ij}_k \mathcal{P}$. Also, the factors
-$g^2_s m_t/v$ and $-ig^2_s m_t/v$ arising from the vertices of the t-
-and s-channel diagrams respectively have been included in the
+where we have separated the colour structure of each diagram by defining
+{\bf (KK: do these need $k$ subscripts?)}
+$\mathcal{S}^{ab,ij}= C^{ab,ij}_k \mathcal{S}$ and
+$\mathcal{P}^{ab,ij}= C^{ab,ij}_k \mathcal{P}$
+[see Eqs.~(\ref{eq5}) and (\ref{eq16})]. Also, the factors
+$g^2_s m_t/v$ and $-ig^2_s m_t/v$ arising from the vertices of the $t$-
+and $s$-channel diagrams respectively have been included in the
 definition of $C^{ab,ij}_k$ for convenience. The terms linear in $\kp$
 and $\kpt$ can be written as
 %
@@ -654,27 +669,36 @@ and $\kpt$ can be written as
 \eeq
 %
 where the factor $\mathbb{C}_{kr}=\sum_{ab,ij}C^{ab,ij}_k
-C^{ab,ij*}_r$ is real and $\tilde{\mathcal{P}}_r = \gamma^0
-\mathcal{P}_r \gamma^0$. The only contributing terms are those with an
-odd number of $\gamma^5$ matrices and will lead to triple-products
-(TP) structures, i.e. contractions between the levi-civita tensor
-$\epsilon_{\alpha\beta\gamma\delta}$ with four momenta. In contrast,
+C^{ab,ij*}_r$ is real and where $\tilde{\mathcal{P}}_r = \gamma^0
+\mathcal{P}_r \gamma^0$ {\bf (KK: wouldn't this be
+  $\mathcal{P}_r^\dagger$? I didn't look for this in the notes
+  yet, so maybe I'm just missing something)}.
+The only terms that yield non-zero contributions
+in the above sum are those with an
+odd number of $\gamma^5$ matrices; these lead to triple-product
+(TP) structures
+of the form $\epsilon_{\alpha\beta\gamma\delta}\,p^{\alpha}_ap^{\beta}_bp^{\gamma}_cp^{\delta}_d$,
+where $p_a$-$p_d$ represent various four momenta associated with the process.
+In contrast,
 it can be seen from Eq.~(\ref{eq18}) that the terms proportional to
-$\kp^2$ and $\tilde{\kappa}^2_t$ contain an even number of $\gamma^5$
+$\kp^2$ and $\tilde{\kappa}^2_t$ descend from traces containing
+an even number of $\gamma^5$
 matrices and can be written in terms of scalar products of the
 available momenta.\par
 %\vspace*{-2mm}
 
-In order to state this more clearly, we will consider the form of the
-differential cross-section in terms of the momenta $q=(q_1-q_2)/2$,
+With the above considerations in mind, it is useful to
+write a general expression for the differential cross
+section $d\sigma(gg\to t(n_t)\tbar (n_{\tbar})H)$
+in terms of the momenta $q=(q_1-q_2)/2$,
 $Q=(q_1+q_2)/2$, $t$, $\bar{t}$, $n_t$ and $n_{\tbar}$, where
-$q_{1,2}$ denote the momenta of the gluons. Note that with this
+$q_{1,2}$ denote the momenta of the initial-state gluons. Note that with this
 choice, $q\cdot Q=0$ and $Q^2=-q^2=M^2_{t\tbar H}/4$, where $M_{t\tbar
-  H}$ is the invariant mass of the system $t\tbar H$. From these six
-vectors, fifteen TPs can be built\footnote{ We note that these fifteen
+  H}$ is the invariant mass of the $t\tbar H$ system.
+Fifteen TPs can be constructed from these six
+four-vectors,\footnote{We note that these fifteen
   TPs are not linearly independent (see the epsilon relations
-  discussed in \cite{identities}).}, and the general form of the
-production differential cross-section will be given by
+  discussed in Ref.~\cite{identities}).} so that
 %
 \beq
 \label{eq20}
@@ -683,31 +707,37 @@ d\sigma(gg\to t(n_t)\tbar (n_{\tbar})H)= \kp^2\,f_1(p_i\cdot p_j)+\tilde{\kappa}
 %
 where
 $\epsilon_l=\epsilon_{\alpha\beta\gamma\delta}\,p^{\alpha}_ap^{\beta}_bp^{\gamma}_cp^{\delta}_d$
-denotes the $l$th TP, the Roman indices refer to any of the involved
-momenta and we adopt the convention $\epsilon_{0123}=+1$. The
+denotes the $l$th TP (we adopt the convention $\epsilon_{0123}=+1$) and where $p_i$ and $p_j$ refer to any of the
+six momenta.  The
 functions $f_{1,2}$ and $g_k$ depend only on the possible scalar
 products and are therefore even under a parity transformation
 ($\mathrm{P}$). However, the terms linear in $\kp\kpt$ are
 $\mathrm{P}$-odd due to the presence of the $\mathrm{P}$-odd
 TPs. Hence, only the functions $f_{1,2}$ will contribute to the total
-cross-section, whereas the TPs terms will be sensitive to the sign of
-the anomalous coupling $\kpt$. From the fifteen TPs mentioned above,
-we will focus on those that do not include $q$ and contain both spin
-vectors $n_t$ and $n_{\tbar}$. The former is motivated in the fact
-that $q$ cannot be eliminated in terms of the momenta of final state
-particles (like $Q$ in virtue of momentum-energy conservation). The
-latter takes into account that for $t\tbar$ production at hadron
-colliders the top and antitop are not polarized but their spins are
-strongly correlated and observables combining the decay products of
-$t$ and $\tbar$ will be sensitive to this spin correlation
-\cite{Bernreuther}.  A similar behaviour is expected in $t\tbar H$
-production where it can be shown that the single-spin asymmetries
-vanish \cite{Ellis,Biswas}. Hence, in order to construct observables
-sensitive to the structure of the $tH$ coupling, we will prefer those
-TPs that include information on the decay products of both top and
+cross-section, whereas the TP terms will be sensitive to the sign of
+the anomalous coupling $\kpt$. Of the fifteen TPs mentioned above,
+we will focus on those that contain both of the spin
+vectors $n_t$ and $n_{\tbar}$, but do not include $q$.
+The decision not to consider $q$-dependent TPs is motivated by the fact
+that $q$ cannot be expressed in terms of the momenta of final state
+particles (as $Q$ can, by virtue of energy-momentum conservation). The
+decision to focus on TPs that contain both $n_t$ and $n_{\tbar}$
+is rooted in the fact that the spins of pair-produced top and antitop quarks
+are highly correlated at hadron colliders 
+(even though the quarks themselves are unpolarized). {\bf (KK: did I reword
+  this correctly?)}
+Observables that combine the decay products of the
+$t$ and $\tbar$ will be sensitive to this spin
+correlation~\cite{Bernreuther}.  A similar behaviour is expected in $t\tbar H$
+production, where it can be shown that single-spin asymmetries
+vanish~\cite{Ellis,Biswas}. Hence, in order to construct observables
+sensitive to the structure of the $tH$ coupling, we will restrict our attention
+to those
+TPs that include information on the decay products of both the top and
 anti-top quarks. Only five of the fifteen TPs in Eq.~(\ref{eq20}) do
-not involve the vector $q$ and, among these, we will focus on the
-three that include both $n_t$ and $n_{\tbar}\,$:
+not involve the four vector $q$ and, among these, only three
+include both $n_t$ and $n_{\tbar}\,$.  Thus, we will restrict our attention
+to the following TPs
 %
 \beq
 \label{eqa1}
@@ -729,7 +759,8 @@ three that include both $n_t$ and $n_{\tbar}\,$:
 %
 \par  
 
-Finally, we remark that even though all the above discussion was given
+Before turning to a consideration of various CP-odd observables,
+we remark that even though all of the above discussion took place
 within the context of $gg$-initiated production, similar conclusions
 are obtained for $q\qbar$-initiated production. In particular, the
 definitions of the spin vectors in Eqs.~(\ref{eq3})-(\ref{eq4}) and
