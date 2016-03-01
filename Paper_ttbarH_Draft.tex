@@ -799,8 +799,7 @@ then indirect contraints (based on Higgs production via gluon fusion,
 followed by Higgs decay to two photons {\bf (KK: can we just say
   something like $gg\to H \to \gamma\gamma$?  Or is that not
   correct?)}) disfavour $\kp < 0$ but do not
-resolve the degeneracy {\bf (KK: did I reword this correctly?)}
-in the sign of $\kpt$ \cite{Guadagnoli}. On
+resolve the degeneracy in the sign of $\kpt$ \cite{Guadagnoli}. On
 the other hand, if one assumes that the tensor structure of the
 Higgs interactions are the
 same as those of the SM and if one parameterizes these interactions via
@@ -820,18 +819,20 @@ $\mathrm{CP}$-odd case ($\kp=0,\kpt=1$).
 \subsection{Asymmetry}
 %\bigskip
 \label{sec3.1}
-The first type of $\mathrm{CP}$-odd observable we will consider is the
-asymmetry. For a certain TP, we define an asymmetry which gives the
-balance between the number of events with $\epsilon > 0$ and those for
-which $\epsilon < 0$:
+
+The first type of $\mathrm{CP}$-odd observable that we will consider is an
+asymmetry that compares the number of events
+for which a given TP is positive to that for which it is negative.
+Normalizing to the total number of events, we define
 %
 \beq
 \label{eq21}
 \mathcal{A}(\epsilon)=\frac{N(\epsilon > 0)-N(\epsilon < 0)}{N(\epsilon > 0)+N(\epsilon < 0)}.
 \eeq 
 %
+By construction, $\mathcal{A}\in [-1,+1]$.
 Based on the general expression given in Eq.~(\ref{eq20}), we expect
-the following shape for the asymmetry,
+the following functional form for the asymmetry,
 %
 \beq
 \label{eq22}
@@ -847,25 +848,59 @@ which for $\kp=1$ can be parameterized as
 %
 where the parameter $a\equiv A/B$ determines the sensitivity to the
 pseudoscalar coupling, whereas $b\equiv C/B$ quantifies the deviation
-from the linear behaviour.  The results for $\kp=1$ and $\kpt=0,\pm 1$
-are shown in Table \ref{table1}, where the values in terms of the
-corresponding statistical uncertainty are also included. It can be
-seen that the considered asymmetries are useful to separate the
-$\mathrm{CP}$-mixed cases from the SM case and also to discriminate
-the different sign of $\kpt$, giving deviations of order $10\sigma$ in
-the former case and $20\sigma$ in the latter.\par The sensitivity of
+from linear behaviour.
+
+Table~\ref{table1} shows numerical results for the
+asymmetries associated with three different TPs,
+$\epsilon_1$, $\epsilon_2$ and $\epsilon_3$, taking
+$\kp=1$ and $\kpt=0,\pm 1$.  The asymmetry $\mathcal{A}$
+is shown in each case, along with $\mathcal{A}/\sigma_{\mathcal{A}}$, where
+$\sigma_{\mathcal{A}}$ is the corresponding
+statistical uncertainty.  As is
+evident from the table, the asymmetries in question provide
+a clear separation between the SM and the 
+$\mathrm{CP}$-mixed cases, with typical deviations being of
+order $10\sigma$.  Furthermore, the asymmetries
+for the SM case are each statistically consistent with zero,
+as one would expect.
+The three asymmetries also allow one to
+determine the sign of $\kpt$,
+with deviations between the $\kpt = \pm 1$ cases typically
+being of order $20\sigma$.
+{\bf (KK: I guess what we're calculating here is the
+  difference between $\mathcal{A}/\sigma_{\mathcal{A}}$ for
+  one scenario and the same thing for another scenario.  But that
+  could never actually be measured, right\ldots?  Since the scenario
+  is either one or the other\ldots.)}
+The sensitivity of
 the asymmetry is quite similar for the three TPs, as can be seen by
 including other values of $\kpt$ and using the expression in
-Eq.~(\ref{eq23}) as fitting function (see Fig.~\ref{fig3}). In fact,
-we obtain the fit parameters $(a=-0.057\pm 0.006, b=0.5\pm 0.2),
+Eq.~(\ref{eq23}) as a fitting function (see Fig.~\ref{fig3}).
+Performing such a fit, 
+we obtain $(a=-0.057\pm 0.006, b=0.5\pm 0.2),
 (a=-0.056\pm 0.006, b=0.5 \pm 0.2)$ and $(a=0.058\pm 0.006, b=0.6 \pm
 0.2)$ for $\epsilon_1$, $\epsilon_2$ and $\epsilon_3$,
-respectively. In addition, we include in Fig.~\ref{fig4} the asymmetry
-for $\epsilon_1$ isolating the $gg$-initiated, $q\qbar$-initiated and
-$pp$ production. We see that the asymmetry is enhanced for
+respectively.
+
+The results shown in Table~\ref{table1}
+and Fig.~\ref{fig3} all assume a $pp$ initial state, which is
+actually a combination of events coming from $gg$ and $q\qbar$
+initial states.
+While this combination of initial states is the appropriate scenario
+to consider, it
+is interesting to consider the relative contributions to the asymmetry
+coming from the
+$gg$ and $q\qbar$ initial states.  Figure~\ref{fig4} shows
+three curves for the ``$\epsilon_1$'' case, one for $gg$-initiated
+events, one for $q\qbar$-initiated events, and one for the usual
+combination of these events (the``$pp$'' initial state).
+Interestingly, we see from Fig.~\ref{fig4} that the asymmetry for this TP
+is enhanced for
 $gg$-initiated production, while it is reduced and of opposite sign
-for the $q\qbar$-initiated case. The asymmetry for the $pp$ case is
-then dominated by the $gg$ contribution, albeit smaller due to the
+for the $q\qbar$-initiated events. The asymmetry for the $pp$ case is
+evidently
+dominated by the $gg$ contribution, but is somewhat smaller
+in magnitude due to the
 $q\qbar$ contribution.
 \newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
 \renewcommand{\arraystretch}{1.4}
@@ -931,9 +966,11 @@ $1$ & $1$ & $-0.0379$~~~ & $-12.0$~~~ & $-0.0411$~~~& $-13.0$~~~ & $\,0.0378$~ &
 \end{figure}
 \end{center}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\vspace*{-6mm} \par On the other hand, we have also tested various
-linear combinations of the TPs $\epsilon_{1,2,3}$, with the result
-that the asymmetry is enhanced in the following case:
+\vspace*{-6mm}
+
+We have also tested various
+linear combinations of the TPs $\epsilon_{1,2,3}$ and have found
+that the asymmetry is enhanced for the following combination:
 %
 \beq
 \setlength{\abovedisplayskip}{9.5pt}
@@ -942,13 +979,16 @@ that the asymmetry is enhanced in the following case:
 \epsilon_4=\epsilon_3-\epsilon_2=\epsilon(Q,t-\tbar,n_t,n_{\tbar}).
 \eeq
 %
-Note that in the $Q$ rest frame $\epsilon_4=Q^0
+Note that in the $Q$ rest frame, $\epsilon_4=Q^0
 (\vec{t}-\vec{\tbar}\,)\cdot(\vec{n}_t\times \vec{n}_{\tbar})$ and the
 sign of this TP is determined by the quantity
-$(\vec{t}-\vec{\tbar}\,)\cdot(\vec{n}_t\times \vec{n}_{\tbar})$. The
-values obtained for the asymmetry of this TP are shown in
-\ref{table2}. We see by comparing the results in Tables \ref{table1}
-and \ref{table2} that the capability of the asymmetry to separate the
+$(\vec{t}-\vec{\tbar}\,)\cdot(\vec{n}_t\times \vec{n}_{\tbar})$.
+{\bf (KK: Is the result from the previous sentence used somewhere?)}
+The
+values obtained for the asymmetry associated with this TP are shown in
+Table~\ref{table2}. By comparing the results in Tables \ref{table1}
+and \ref{table2}, we see that the capability of this
+asymmetry to distinguish between the
 two $\mathrm{CP}$-mixed hypotheses is increased by at least $3\sigma$.
 \vspace{4mm}
 \begin{table}[H]
@@ -974,12 +1014,16 @@ $1$ & $1$ & $0.0461$~ & $14\,$ \\[0.6mm]
 \end{tabular}
 \end{center} 
 \end{table}
-\par Finally, it is worth noting that the asymmetry is not useful for
+\par Finally, it is worth noting that the asymmetries
+described in this subsection are not useful for
 discriminating between the SM hypothesis ($\kp=1,\kpt=0$) and the pure
-pseudoscalar hypothesis ($\kp=0,\kpt=1$) because, being linear in both
-$\kp$ and $\kpt$, it is expected to vanish in these cases. However, we
-will show in the next section that there exist angular distributions
-derived from the TPs that are actually suitable to distinguish these
+pseudoscalar hypothesis ($\kp=0,\kpt=1$).  Since
+the numerators of the 
+asymmetries are all linear in both
+$\kp$ and $\kpt$, they {\bf are} expected to vanish in these cases. However, we
+will show in the next subsection
+that there exist angular distributions
+derived from the TPs that are actually suitable for distinguishing between these
 two hyphothesis.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Angular Distributions}

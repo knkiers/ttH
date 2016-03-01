@@ -1,7 +1,7 @@
 \documentclass[aps,preprint,tightenlines,floatfix,superscriptaddress,nofootinbib,showpacs]{revtex4-1}
 %DIF LATEXDIFF DIFFERENCE FILE
-%DIF DEL ../manuscript_older/Paper_ttbarH_Draft_2_25_16.tex   Thu Feb 25 11:59:53 2016
-%DIF ADD Paper_ttbarH_Draft.tex                               Sat Feb 27 15:49:11 2016
+%DIF DEL ../manuscript_older/Paper_ttbarH_Draft_2_27_16.tex   Sat Feb 27 15:49:11 2016
+%DIF ADD Paper_ttbarH_Draft.tex                               Mon Feb 29 22:42:46 2016
 \pdfoutput=1
 \usepackage{graphicx}
 %\usepackage{dcolumn}
@@ -651,24 +651,22 @@ qualifying remarks, similar to those above, apply.
 \setlength{\abovedisplayskip}{10.2pt}
 \setlength{\belowdisplayskip}{10.2pt}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\DIFdelbegin \DIFdel{Let us focus now in }\DIFdelend \DIFaddbegin 
 
-\subsection{\DIFadd{Triple products}}
-{\bf \DIFadd{(KK: maybe we should change this title for the subsection\ldots.)}}
+\subsection{Triple products}
+{\bf (KK: maybe we should change this title for the subsection\ldots.)}
 
-\DIFadd{The expression derived above for the scattering cross
-section }[\DIFadd{see Eq.~(\ref{eq2}), as well as Eq.~(\ref{eq17})}]
-\DIFadd{provides significant insight into
+The expression derived above for the scattering cross
+section [see Eq.~(\ref{eq2}), as well as Eq.~(\ref{eq17})]
+provides significant insight into
 how one might analyze $\ppprocess$ in order to determine
 the nature of the top-Higgs coupling.  In particular,
-let us focus on }\DIFaddend the production amplitude\DIFaddbegin \DIFadd{,
+let us focus on the production amplitude,
 $\mathcal{M}(g_ag_b \to t^i(n_t)\tbar^j(n_{\tbar})H))$, which forms
-part of the overall amplitude }\DIFaddend in Eq.~(\ref{eq17})\DIFdelbegin \DIFdel{needed for computing the production }\DIFdelend \DIFaddbegin \DIFadd{.
+part of the overall amplitude in Eq.~(\ref{eq17}).
 The absolute value squared of the production amplitude
 is used to determine $d\sigma(gg\to t(n_t)\tbar (n_{\tbar})H)$,
-which in turn forms }\DIFaddend part of the \DIFdelbegin \DIFdel{unpolarized
-differential cross-section.By summing }\DIFdelend \DIFaddbegin \DIFadd{expression for the ``factorized'' cross section
-in Eq.~(\ref{eq2}).  Summing }\DIFaddend over colour and gluon indices
+which in turn forms part of the expression for the ``factorized'' cross section
+in Eq.~(\ref{eq2}).  Summing over colour and gluon indices
 we have
 %
 \beq
@@ -676,15 +674,13 @@ we have
 \sum_{\substack{a,b \\ i,j}}|\mathcal{M}(g_ag_b \to t^i(n_t)\tbar^j(n_{\tbar})H)|^2=\sum_{\substack{a,b \\ i,j}}\left|\sum^{8}_{k=1}C^{ab,ij}_k\,\bar{\phi}_t (\kp\mathcal{S}_k+i\kpt\mathcal{P}_k)\phi_{\tbar}\right|^2,
 \eeq
 %
-where we have separated the colour structure of each diagram by \DIFdelbegin \DIFdel{using
-the definitions }\DIFdelend \DIFaddbegin \DIFadd{defining
-}{\bf \DIFadd{(KK: do these need $k$ subscripts?)}}
-\DIFaddend $\mathcal{S}^{ab,ij}= C^{ab,ij}_k \mathcal{S}$ and
+where we have separated the colour structure of each diagram by defining
+{\bf (KK: do these need $k$ subscripts?)}
+$\mathcal{S}^{ab,ij}= C^{ab,ij}_k \mathcal{S}$ and
 $\mathcal{P}^{ab,ij}= C^{ab,ij}_k \mathcal{P}$
-\DIFaddbegin [\DIFadd{see Eqs.~(\ref{eq5}) and (\ref{eq16})}]\DIFaddend . Also, the factors
-$g^2_s m_t/v$ and $-ig^2_s m_t/v$ arising from the vertices of the \DIFdelbegin \DIFdel{t-
-and s-channel }\DIFdelend \DIFaddbegin \DIFadd{$t$-
-and $s$-channel }\DIFaddend diagrams respectively have been included in the
+[see Eqs.~(\ref{eq5}) and (\ref{eq16})]. Also, the factors
+$g^2_s m_t/v$ and $-ig^2_s m_t/v$ arising from the vertices of the $t$-
+and $s$-channel diagrams respectively have been included in the
 definition of $C^{ab,ij}_k$ for convenience. The terms linear in $\kp$
 and $\kpt$ can be written as
 %
@@ -696,51 +692,37 @@ and $\kpt$ can be written as
 \eeq
 %
 where the factor $\mathbb{C}_{kr}=\sum_{ab,ij}C^{ab,ij}_k
-C^{ab,ij*}_r$ is real and \DIFaddbegin \DIFadd{where }\DIFaddend $\tilde{\mathcal{P}}_r = \gamma^0
-\mathcal{P}_r \gamma^0$ \DIFaddbegin {\bf \DIFadd{(KK: wouldn't this be
+C^{ab,ij*}_r$ is real and where $\tilde{\mathcal{P}}_r = \gamma^0
+\mathcal{P}_r \gamma^0$ {\bf (KK: wouldn't this be
   $\mathcal{P}_r^\dagger$? I didn't look for this in the notes
-  yet, so maybe I'm just missing something)}}\DIFaddend .
-The only \DIFdelbegin \DIFdel{contributing terms }\DIFdelend \DIFaddbegin \DIFadd{terms that yield non-zero contributions
-in the above sum }\DIFaddend are those with an
-odd number of $\gamma^5$ matrices\DIFdelbegin \DIFdel{and will lead to triple-products
-}\DIFdelend \DIFaddbegin \DIFadd{; these lead to triple-product
-}\DIFaddend (TP) structures
-\DIFdelbegin \DIFdel{, i.e. contractions between the levi-civita tensor
-$\epsilon_{\alpha\beta\gamma\delta}$ with four momenta }\DIFdelend \DIFaddbegin \DIFadd{of the form $\epsilon_{\alpha\beta\gamma\delta}\,p^{\alpha}_ap^{\beta}_bp^{\gamma}_cp^{\delta}_d$,
-where $p_a$-$p_d$ represent various four momenta associated with the process}\DIFaddend .
+  yet, so maybe I'm just missing something)}.
+The only terms that yield non-zero contributions
+in the above sum are those with an
+odd number of $\gamma^5$ matrices; these lead to triple-product
+(TP) structures
+of the form $\epsilon_{\alpha\beta\gamma\delta}\,p^{\alpha}_ap^{\beta}_bp^{\gamma}_cp^{\delta}_d$,
+where $p_a$-$p_d$ represent various four momenta associated with the process.
 In contrast,
 it can be seen from Eq.~(\ref{eq18}) that the terms proportional to
-$\kp^2$ and $\tilde{\kappa}^2_t$ \DIFdelbegin \DIFdel{contain }\DIFdelend \DIFaddbegin \DIFadd{descend from traces containing
-}\DIFaddend an even number of $\gamma^5$
+$\kp^2$ and $\tilde{\kappa}^2_t$ descend from traces containing
+an even number of $\gamma^5$
 matrices and can be written in terms of scalar products of the
 available momenta.\par
 %\vspace*{-2mm}
 
-\DIFdelbegin \DIFdel{In order to state this more clearly, we will consider the form of the
-differential cross-section }\DIFdelend \DIFaddbegin \DIFadd{With the above considerations in mind, it is useful to
+With the above considerations in mind, it is useful to
 write a general expression for the differential cross
 section $d\sigma(gg\to t(n_t)\tbar (n_{\tbar})H)$
-}\DIFaddend in terms of the momenta $q=(q_1-q_2)/2$,
+in terms of the momenta $q=(q_1-q_2)/2$,
 $Q=(q_1+q_2)/2$, $t$, $\bar{t}$, $n_t$ and $n_{\tbar}$, where
-$q_{1,2}$ denote the momenta of the \DIFaddbegin \DIFadd{initial-state }\DIFaddend gluons. Note that with this
+$q_{1,2}$ denote the momenta of the initial-state gluons. Note that with this
 choice, $q\cdot Q=0$ and $Q^2=-q^2=M^2_{t\tbar H}/4$, where $M_{t\tbar
-  H}$ is the invariant mass of the \DIFdelbegin \DIFdel{system }\DIFdelend $t\tbar H$ \DIFdelbegin \DIFdel{. From these six
-vectors, fifteen }\DIFdelend \DIFaddbegin \DIFadd{system.
-Fifteen }\DIFaddend TPs can be \DIFdelbegin \DIFdel{built}\footnote{\DIFdel{We note that these fifteen
+  H}$ is the invariant mass of the $t\tbar H$ system.
+Fifteen TPs can be constructed from these six
+four-vectors,\footnote{We note that these fifteen
   TPs are not linearly independent (see the epsilon relations
-  discussed in \mbox{%DIFAUXCMD
-\cite{identities}}%DIFAUXCMD
-).}}%DIFAUXCMD
-\addtocounter{footnote}{-1}%DIFAUXCMD
-\DIFdel{,and the general form of the
-production differential cross-section will be given by
-}\DIFdelend \DIFaddbegin \DIFadd{constructed from these six
-four-vectors,}\footnote{\DIFadd{We note that these fifteen
-  TPs are not linearly independent (see the epsilon relations
-  discussed in Ref.~\mbox{%DIFAUXCMD
-\cite{identities}}%DIFAUXCMD
-).}} \DIFadd{so that
-}\DIFaddend %
+  discussed in Ref.~\cite{identities}).} so that
+%
 \beq
 \label{eq20}
 d\sigma(gg\to t(n_t)\tbar (n_{\tbar})H)= \kp^2\,f_1(p_i\cdot p_j)+\tilde{\kappa}^2_t\,f_2(p_i\cdot p_j)+\kp\kpt\,\sum^{15}_{l=1}g_l(p_i\cdot p_j)\,\epsilon_l,
@@ -748,44 +730,38 @@ d\sigma(gg\to t(n_t)\tbar (n_{\tbar})H)= \kp^2\,f_1(p_i\cdot p_j)+\tilde{\kappa}
 %
 where
 $\epsilon_l=\epsilon_{\alpha\beta\gamma\delta}\,p^{\alpha}_ap^{\beta}_bp^{\gamma}_cp^{\delta}_d$
-denotes the $l$th TP \DIFdelbegin \DIFdel{, the Roman indices }\DIFdelend \DIFaddbegin \DIFadd{(we adopt the convention $\epsilon_{0123}=+1$) and where $p_i$ and $p_j$ }\DIFaddend refer to any of the
-\DIFdelbegin \DIFdel{involved
-momentaand we adopt the convention $\epsilon_{0123}=+1$}\DIFdelend \DIFaddbegin \DIFadd{six momenta}\DIFaddend .  The
+denotes the $l$th TP (we adopt the convention $\epsilon_{0123}=+1$) and where $p_i$ and $p_j$ refer to any of the
+six momenta.  The
 functions $f_{1,2}$ and $g_k$ depend only on the possible scalar
 products and are therefore even under a parity transformation
 ($\mathrm{P}$). However, the terms linear in $\kp\kpt$ are
 $\mathrm{P}$-odd due to the presence of the $\mathrm{P}$-odd
 TPs. Hence, only the functions $f_{1,2}$ will contribute to the total
-cross-section, whereas the \DIFdelbegin \DIFdel{TPs }\DIFdelend \DIFaddbegin \DIFadd{TP }\DIFaddend terms will be sensitive to the sign of
-the anomalous coupling $\kpt$. \DIFdelbegin \DIFdel{From }\DIFdelend \DIFaddbegin \DIFadd{Of }\DIFaddend the fifteen TPs mentioned above,
-we will focus on those that \DIFdelbegin \DIFdel{do not include $q$ and contain both }\DIFdelend \DIFaddbegin \DIFadd{contain both of the }\DIFaddend spin
-vectors $n_t$ and $n_{\tbar}$\DIFdelbegin \DIFdel{. The former is motivated in }\DIFdelend \DIFaddbegin \DIFadd{, but do not include $q$.
-The decision not to consider $q$-dependent TPs is motivated by }\DIFaddend the fact
-that $q$ cannot be \DIFdelbegin \DIFdel{eliminated }\DIFdelend \DIFaddbegin \DIFadd{expressed }\DIFaddend in terms of the momenta of final state
-particles (\DIFdelbegin \DIFdel{like }\DIFdelend \DIFaddbegin \DIFadd{as }\DIFaddend $Q$ \DIFdelbegin \DIFdel{in virtue of momentum-energy }\DIFdelend \DIFaddbegin \DIFadd{can, by virtue of energy-momentum }\DIFaddend conservation). The
-\DIFdelbegin \DIFdel{latter takes into account that for $t\tbar$ production at hadron
-colliders the }\DIFdelend \DIFaddbegin \DIFadd{decision to focus on TPs that contain both $n_t$ and $n_{\tbar}$
-is rooted in the fact that the spins of pair-produced }\DIFaddend top and antitop \DIFdelbegin \DIFdel{are not polarized but their spins are
-strongly correlated and observables combining the }\DIFdelend \DIFaddbegin \DIFadd{quarks
+cross-section, whereas the TP terms will be sensitive to the sign of
+the anomalous coupling $\kpt$. Of the fifteen TPs mentioned above,
+we will focus on those that contain both of the spin
+vectors $n_t$ and $n_{\tbar}$, but do not include $q$.
+The decision not to consider $q$-dependent TPs is motivated by the fact
+that $q$ cannot be expressed in terms of the momenta of final state
+particles (as $Q$ can, by virtue of energy-momentum conservation). The
+decision to focus on TPs that contain both $n_t$ and $n_{\tbar}$
+is rooted in the fact that the spins of pair-produced top and antitop quarks
 are highly correlated at hadron colliders 
-(even though the quarks themselves are unpolarized). }{\bf \DIFadd{(KK: did I reword
-  this correctly?)}}
-\DIFadd{Observables that combine the }\DIFaddend decay products of \DIFaddbegin \DIFadd{the
-}\DIFaddend $t$ and $\tbar$ will be sensitive to this spin
-correlation\DIFaddbegin \DIFadd{~}\DIFaddend \cite{Bernreuther}.  A similar behaviour is expected in $t\tbar H$
-production\DIFaddbegin \DIFadd{, }\DIFaddend where it can be shown that \DIFdelbegin \DIFdel{the }\DIFdelend single-spin asymmetries
-vanish\DIFaddbegin \DIFadd{~}\DIFaddend \cite{Ellis,Biswas}. Hence, in order to construct observables
-sensitive to the structure of the $tH$ coupling, we will \DIFdelbegin \DIFdel{prefer }\DIFdelend \DIFaddbegin \DIFadd{restrict our attention
-to }\DIFaddend those
-TPs that include information on the decay products of both \DIFaddbegin \DIFadd{the }\DIFaddend top and
+(even though the quarks themselves are unpolarized). {\bf (KK: did I reword
+  this correctly?)}
+Observables that combine the decay products of the
+$t$ and $\tbar$ will be sensitive to this spin
+correlation~\cite{Bernreuther}.  A similar behaviour is expected in $t\tbar H$
+production, where it can be shown that single-spin asymmetries
+vanish~\cite{Ellis,Biswas}. Hence, in order to construct observables
+sensitive to the structure of the $tH$ coupling, we will restrict our attention
+to those
+TPs that include information on the decay products of both the top and
 anti-top quarks. Only five of the fifteen TPs in Eq.~(\ref{eq20}) do
-not involve the \DIFaddbegin \DIFadd{four }\DIFaddend vector $q$ and, among these, \DIFdelbegin \DIFdel{we will focus on the
-three
-that }\DIFdelend \DIFaddbegin \DIFadd{only three
-}\DIFaddend include both $n_t$ and $n_{\tbar}\,$\DIFdelbegin \DIFdel{:
-}\DIFdelend \DIFaddbegin \DIFadd{.  Thus, we will restrict our attention
+not involve the four vector $q$ and, among these, only three
+include both $n_t$ and $n_{\tbar}\,$.  Thus, we will restrict our attention
 to the following TPs
-}\DIFaddend %
+%
 \beq
 \label{eqa1}
 \epsilon_1\equiv\epsilon(t,\tbar,n_t,n_{\tbar}),\,\,
@@ -806,10 +782,9 @@ to the following TPs
 %
 \par  
 
-\DIFdelbegin \DIFdel{Finally}\DIFdelend \DIFaddbegin \DIFadd{Before turning to a consideration of various CP-odd observables}\DIFaddend ,
-we remark that even though all \DIFaddbegin \DIFadd{of }\DIFaddend the above discussion \DIFdelbegin \DIFdel{was given
-}\DIFdelend \DIFaddbegin \DIFadd{took place
-}\DIFaddend within the context of $gg$-initiated production, similar conclusions
+Before turning to a consideration of various CP-odd observables,
+we remark that even though all of the above discussion took place
+within the context of $gg$-initiated production, similar conclusions
 are obtained for $q\qbar$-initiated production. In particular, the
 definitions of the spin vectors in Eqs.~(\ref{eq3})-(\ref{eq4}) and
 the general form of $d\sigma$ introduced in Eq.~(\ref{eq20}) are valid
@@ -822,97 +797,76 @@ in both cases.
 \bigskip
 \section{$\mathrm{\mathbf{CP}}$-odd observables}
 \label{sec3}
-\DIFdelbegin \DIFdel{We present below }\DIFdelend \DIFaddbegin \DIFadd{In this section we present }\DIFaddend three types of observables based on the TPs discussed
-in Sec.~\ref{sec2}, \DIFdelbegin \DIFdel{mean values, asymmetriesand angular
-distributions }\DIFdelend \DIFaddbegin \DIFadd{namely, asymmetries, angular
-distributions and mean values}\DIFaddend . These observables are sensitive not only to the
-magnitude of the pseudoscalar coupling $\kpt$\DIFaddbegin \DIFadd{, }\DIFaddend but also to its
-sign.  \DIFdelbegin \DIFdel{With the aim of testing them}\DIFdelend \DIFaddbegin \DIFadd{In order to test the various observables}\DIFaddend , we have
-used \DIFdelbegin \DIFdel{in all the cases a
-set of $10^5$ events }\DIFdelend \DIFaddbegin \DIFadd{$\mathtt{MadGraph5\_aMC@NLO}$ \mbox{%DIFAUXCMD
-\cite{Madgraph} }%DIFAUXCMD
-to simulate the process
-}\DIFaddend $\ppprocess$ \DIFdelbegin \DIFdel{simulated }\DIFdelend at parton level \DIFdelbegin \DIFdel{with
-$\mathtt{MadGraph5\_aMC@NLO}$ \mbox{%DIFAUXCMD
-\cite{Madgraph} }%DIFAUXCMD
-at a center-of-mass
-energy of $14\,\mathrm{TeV}$ }\DIFdelend for different values of the couplings
-$\kp$ and $\kpt$\DIFdelbegin \footnote{\DIFdel{Although we use the same number of events in
-  all the cases, the required luminosities are different since the
-  cross section depends on the value of $\kpt$.}}%DIFAUXCMD
-\addtocounter{footnote}{-1}%DIFAUXCMD
-\DIFdel{.  We have used this
-somewhat large number of events
-with the aim of
-determining clearly
-the extent to which the proposed observables are sensitive to the NP
-coupling.However, we will discuss the corresponding experimental
-viability in Sec.~\ref{sec6}. Finally, we }\DIFdelend \DIFaddbegin \DIFadd{.  In all cases we have generated $10^5$ events
+In this section we present three types of observables based on the TPs discussed
+in Sec.~\ref{sec2}, namely, asymmetries, angular
+distributions and mean values. These observables are sensitive not only to the
+magnitude of the pseudoscalar coupling $\kpt$, but also to its
+sign.  In order to test the various observables, we have
+used $\mathtt{MadGraph5\_aMC@NLO}$ \cite{Madgraph} to simulate the process
+$\ppprocess$ at parton level for different values of the couplings
+$\kp$ and $\kpt$.  In all cases we have generated $10^5$ events
 and have assumed a center-of-mass energy of
-$14\,\mathrm{TeV}$.}\footnote{\DIFadd{Note that, since we generate
+$14\,\mathrm{TeV}$.\footnote{Note that, since we generate
   the same number of events in
   each case, the corresponding integrated luminosities are different, since the
-  cross section depends on the value of $\kpt$.}}
-\DIFadd{We }\DIFaddend have also imposed the
+  cross section depends on the value of $\kpt$.}
+We have also imposed the
 following set of cuts: $p_T$ of leptons $> 10\,\mathrm{GeV}$, $|\eta|$
 of leptons $< 2.5$, $|\eta|$ of b jets $< 2.5$ and $\Delta
-R_{\ell\ell}>0.4$.  \DIFdelbegin %DIFDELCMD < \par %%%
-\DIFdel{Under the assumption of no other new physics
-sources but the inclusion of the }\DIFdelend \DIFaddbegin \DIFadd{Note that we have used this
+R_{\ell\ell}>0.4$.  Note that we have used this
 somewhat large number of events ($10^5$) in order to determine clearly
 the extent to which the proposed observables are sensitive to the NP
 coupling.  Section~\ref{sec6} contains an
 analysis of the experimental feasibility of the more promising observables.
-}{\bf \DIFadd{(KK: I may not have worded this quite correctly.)}}
+{\bf (KK: I may not have worded this quite correctly.)}
 
-\DIFadd{Before continuing on to our analysis, let us make a few comments
+Before continuing on to our analysis, let us make a few comments
 regarding the values that we choose for $\kp$ and $\kpt$.
-First of all, we note that if the }\DIFaddend pseudoscalar
-coupling $\kpt$ \DIFdelbegin \DIFdel{,
-indirect contraints based on the Higgs production from gluon fusionfollowed by its }\DIFdelend \DIFaddbegin \DIFadd{is the only source of physics beyond the SM,
+First of all, we note that if the pseudoscalar
+coupling $\kpt$ is the only source of physics beyond the SM,
 then indirect contraints (based on Higgs production via gluon fusion,
-followed by Higgs }\DIFaddend decay to two photons \DIFaddbegin {\bf \DIFadd{(KK: can we just say
+followed by Higgs decay to two photons {\bf (KK: can we just say
   something like $gg\to H \to \gamma\gamma$?  Or is that not
-  correct?)}}\DIFadd{) }\DIFaddend disfavour $\kp < 0$ \DIFdelbegin \DIFdel{without
-resolving the degeneracy }\DIFdelend \DIFaddbegin \DIFadd{but do not
-resolve the degeneracy }{\bf \DIFadd{(KK: did I reword this correctly?)}}
-\DIFaddend in the sign of $\kpt$ \cite{Guadagnoli}. On
-the other hand, \DIFdelbegin \DIFdel{by assuming }\DIFdelend \DIFaddbegin \DIFadd{if one assumes that }\DIFaddend the tensor structure of the
-\DIFdelbegin \DIFdel{Lagrangian to
-be }\DIFdelend \DIFaddbegin \DIFadd{Higgs interactions are }\DIFaddend the
-same as \DIFdelbegin \DIFdel{in }\DIFdelend \DIFaddbegin \DIFadd{those of }\DIFaddend the SM and \DIFdelbegin \DIFdel{considering a parameterization with one }\DIFdelend \DIFaddbegin \DIFadd{if one parameterizes these interactions via
-one }\DIFaddend universal Higgs coupling to vector bosons, $\kappa_V$, and one
-universal Higgs coupling to fermions, $\kappa_f$, \DIFaddbegin \DIFadd{then }\DIFaddend the measured signal
-strengths provided by \DIFaddbegin \DIFadd{the }\DIFaddend ATLAS and CMS collaborations are compatible with
-the values predicted by the SM, (\DIFdelbegin \DIFdel{$\kappa_f=1,\kappa_V=1$).
-Based on
-these facts }\DIFdelend \DIFaddbegin \DIFadd{namely, $\kappa_f=1$ and $\kappa_V=1$).
-With these facts in mind}\DIFaddend , we will\DIFaddbegin \DIFadd{, for the most part,
-}\DIFaddend set the value of the scalar coupling to its SM
-value \DIFdelbegin \DIFdel{, }\DIFdelend \DIFaddbegin \DIFadd{(}\DIFaddend $\kp=1$\DIFdelbegin \DIFdel{, and concentrate in modifications of the value as well
-as the sign of the pseudoscalar coupling }\DIFdelend \DIFaddbegin \DIFadd{) and will allow the pseudoscalar coupling to take on
-various values (including both possible signs)}\DIFaddend . In particular, we
-\DIFdelbegin \DIFdel{have
-analized }\DIFdelend \DIFaddbegin \DIFadd{analyze }\DIFaddend the cases $\kpt=0,\pm 0.25, \pm 0.5, \pm 0.75,\pm 1$.
-\DIFdelbegin \DIFdel{However, we will give some results and comments }\DIFdelend \DIFaddbegin \DIFadd{In addition, we also provide some analysis }\DIFaddend regarding the pure
-$\mathrm{CP}$-odd \DIFdelbegin \DIFdel{hypothesis }\DIFdelend \DIFaddbegin \DIFadd{case }\DIFaddend ($\kp=0,\kpt=1$).
+  correct?)}) disfavour $\kp < 0$ but do not
+resolve the degeneracy {\bf (KK: did I reword this correctly?)}
+in the sign of $\kpt$ \cite{Guadagnoli}. On
+the other hand, if one assumes that the tensor structure of the
+Higgs interactions are the
+same as those of the SM and if one parameterizes these interactions via
+one universal Higgs coupling to vector bosons, $\kappa_V$, and one
+universal Higgs coupling to fermions, $\kappa_f$, then the measured signal
+strengths provided by the ATLAS and CMS collaborations are compatible with
+the values predicted by the SM, (namely, $\kappa_f=1$ and $\kappa_V=1$).
+With these facts in mind, we will, for the most part,
+set the value of the scalar coupling to its SM
+value ($\kp=1$) and will allow the pseudoscalar coupling to take on
+various values (including both possible signs). In particular, we
+analyze the cases $\kpt=0,\pm 0.25, \pm 0.5, \pm 0.75,\pm 1$.
+In addition, we also provide some analysis regarding the pure
+$\mathrm{CP}$-odd case ($\kp=0,\kpt=1$).
 %\newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Asymmetry}
 %\bigskip
 \label{sec3.1}
-The first type of $\mathrm{CP}$-odd observable we will consider is the
-asymmetry. For a certain TP, we define an asymmetry which gives the
-balance between the number of events with $\epsilon > 0$ and those for
-which $\epsilon < 0$:
-%
+\DIFaddbegin 
+
+\DIFaddend The first type of $\mathrm{CP}$-odd observable \DIFaddbegin \DIFadd{that }\DIFaddend we will consider is \DIFdelbegin \DIFdel{the
+asymmetry. For a certain TP, we define an
+asymmetry which gives the balance between the }\DIFdelend \DIFaddbegin \DIFadd{an
+asymmetry that compares the }\DIFaddend number of events
+\DIFdelbegin \DIFdel{with $\epsilon > 0$ and those for which $\epsilon < 0$:
+}\DIFdelend \DIFaddbegin \DIFadd{for which a given TP is positive to that for which it is negative.
+Normalizing to the total number of events, we define
+}\DIFaddend %
 \beq
 \label{eq21}
 \mathcal{A}(\epsilon)=\frac{N(\epsilon > 0)-N(\epsilon < 0)}{N(\epsilon > 0)+N(\epsilon < 0)}.
 \eeq 
 %
-Based on the general expression given in Eq.~(\ref{eq20}), we expect
-the following shape for the asymmetry,
+\DIFaddbegin \DIFadd{By construction, $\mathcal{A}\in [-1,+1]$.
+}\DIFaddend Based on the general expression given in Eq.~(\ref{eq20}), we expect
+the following \DIFdelbegin \DIFdel{shape }\DIFdelend \DIFaddbegin \DIFadd{functional form }\DIFaddend for the asymmetry,
 %
 \beq
 \label{eq22}
@@ -928,25 +882,71 @@ which for $\kp=1$ can be parameterized as
 %
 where the parameter $a\equiv A/B$ determines the sensitivity to the
 pseudoscalar coupling, whereas $b\equiv C/B$ quantifies the deviation
-from the linear behaviour.  The results for $\kp=1$ and $\kpt=0,\pm 1$
-are shown in Table \ref{table1}, where the values in terms of the
-corresponding statistical uncertainty are also included. It can be
-seen that the considered asymmetries are useful to separate the
-$\mathrm{CP}$-mixed cases from the SM case and also to discriminate
-the different sign of $\kpt$, giving deviations of order $10\sigma$ in
-the former case and $20\sigma$ in the latter.\par The sensitivity of
+from \DIFdelbegin \DIFdel{the }\DIFdelend linear behaviour.
+\DIFdelbegin \DIFdel{The results for }\DIFdelend \DIFaddbegin 
+
+\DIFadd{Table~\ref{table1} shows numerical results for the
+asymmetries associated with three different TPs,
+$\epsilon_1$, $\epsilon_2$ and $\epsilon_3$, taking
+}\DIFaddend $\kp=1$ and $\kpt=0,\pm 1$\DIFdelbegin \DIFdel{are shown in Table \ref{table1}, where the values in terms of the
+}\DIFdelend \DIFaddbegin \DIFadd{.  The asymmetry $\mathcal{A}$
+is shown in each case, along with $\mathcal{A}/\sigma_{\mathcal{A}}$, where
+$\sigma_{\mathcal{A}}$ is the }\DIFaddend corresponding
+statistical uncertainty\DIFdelbegin \DIFdel{are also included.  It can be
+seen that the considered asymmetries are useful to separate the }\DIFdelend \DIFaddbegin \DIFadd{.  As is
+evident from the table, the asymmetries in question provide
+a clear separation between the SM and the 
+}\DIFaddend $\mathrm{CP}$-mixed cases\DIFdelbegin \DIFdel{from the SM case and also to discriminate
+the different }\DIFdelend \DIFaddbegin \DIFadd{, with typical deviations being of
+order $10\sigma$.  Furthermore, the asymmetries
+for the SM case are each statistically consistent with zero,
+as one would expect.
+The three asymmetries also allow one to
+determine the }\DIFaddend sign of $\kpt$,
+\DIFdelbegin \DIFdel{giving deviations of order $10\sigma$ in
+the
+  former case and }\DIFdelend \DIFaddbegin \DIFadd{with deviations between the $\kpt = \pm 1$ cases typically
+being of order }\DIFaddend $20\sigma$\DIFdelbegin \DIFdel{in the latter.  }%DIFDELCMD < \par %%%
+\DIFdelend \DIFaddbegin \DIFadd{.
+}{\bf \DIFadd{(KK: I guess what we're calculating here is the
+  difference between $\mathcal{A}/\sigma_{\mathcal{A}}$ for
+  one scenario and the same thing for another scenario.  But that
+  could never actually be measured, right\ldots?  Since the scenario
+  is either one or the other\ldots.)}}
+\DIFaddend The sensitivity of
 the asymmetry is quite similar for the three TPs, as can be seen by
 including other values of $\kpt$ and using the expression in
-Eq.~(\ref{eq23}) as fitting function (see Fig.~\ref{fig3}). In fact,
-we obtain the fit parameters $(a=-0.057\pm 0.006, b=0.5\pm 0.2),
+Eq.~(\ref{eq23}) as \DIFaddbegin \DIFadd{a }\DIFaddend fitting function (see Fig.~\ref{fig3}).
+\DIFdelbegin \DIFdel{In fact}\DIFdelend \DIFaddbegin \DIFadd{Performing such a fit}\DIFaddend , 
+we obtain \DIFdelbegin \DIFdel{the fit parameters }\DIFdelend $(a=-0.057\pm 0.006, b=0.5\pm 0.2),
 (a=-0.056\pm 0.006, b=0.5 \pm 0.2)$ and $(a=0.058\pm 0.006, b=0.6 \pm
 0.2)$ for $\epsilon_1$, $\epsilon_2$ and $\epsilon_3$,
-respectively. In addition, we include in Fig.~\ref{fig4} the asymmetry
-for $\epsilon_1$ isolating the $gg$-initiated, $q\qbar$-initiated and
-$pp$ production. We see that the asymmetry is enhanced for
+respectively.
+\DIFdelbegin \DIFdel{In addition, we include in }\DIFdelend \DIFaddbegin 
+
+\DIFadd{The results shown in Table~\ref{table1}
+and }\DIFaddend Fig.~\DIFdelbegin \DIFdel{\ref{fig4} the asymmetry
+for }\DIFdelend \DIFaddbegin \DIFadd{\ref{fig3} all assume a $pp$ initial state, which is
+actually a combination of events coming from $gg$ and $q\qbar$
+initial states.
+While this combination of initial states is the appropriate scenario
+to consider, it
+is interesting to consider the relative contributions to the asymmetry
+coming from the
+$gg$ and $q\qbar$ initial states.  Figure~\ref{fig4} shows
+three curves for the ``}\DIFaddend $\epsilon_1$\DIFdelbegin \DIFdel{isolating the }\DIFdelend \DIFaddbegin \DIFadd{'' case, one for }\DIFaddend $gg$-initiated
+\DIFdelbegin \DIFdel{, }\DIFdelend \DIFaddbegin \DIFadd{events, one for }\DIFaddend $q\qbar$-initiated \DIFdelbegin \DIFdel{and
+}\DIFdelend \DIFaddbegin \DIFadd{events, and one for the usual
+combination of these events (the``}\DIFaddend $pp$\DIFdelbegin \DIFdel{production.
+We see }\DIFdelend \DIFaddbegin \DIFadd{'' initial state).
+Interestingly, we see from Fig.~\ref{fig4} }\DIFaddend that the asymmetry \DIFaddbegin \DIFadd{for this TP
+}\DIFaddend is enhanced for
 $gg$-initiated production, while it is reduced and of opposite sign
-for the $q\qbar$-initiated case. The asymmetry for the $pp$ case is
-then dominated by the $gg$ contribution, albeit smaller due to the
+for the $q\qbar$-initiated \DIFdelbegin \DIFdel{case}\DIFdelend \DIFaddbegin \DIFadd{events}\DIFaddend . The asymmetry for the $pp$ case is
+\DIFdelbegin \DIFdel{then }\DIFdelend \DIFaddbegin \DIFadd{evidently
+}\DIFaddend dominated by the $gg$ contribution, \DIFdelbegin \DIFdel{albeit smaller
+}\DIFdelend \DIFaddbegin \DIFadd{but is somewhat smaller
+in magnitude }\DIFaddend due to the
 $q\qbar$ contribution.
 \newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
 \renewcommand{\arraystretch}{1.4}
@@ -1012,9 +1012,14 @@ $1$ & $1$ & $-0.0379$~~~ & $-12.0$~~~ & $-0.0411$~~~& $-13.0$~~~ & $\,0.0378$~ &
 \end{figure}
 \end{center}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\vspace*{-6mm} \par On the other hand, we have also tested various
-linear combinations of the TPs $\epsilon_{1,2,3}$, with the result
-that the asymmetry is enhanced in the following case:
+\vspace*{-6mm}
+\DIFdelbegin %DIFDELCMD < \par %%%
+\DIFdel{On the other hand, we }\DIFdelend \DIFaddbegin 
+
+\DIFadd{We }\DIFaddend have also tested various
+linear combinations of the TPs $\epsilon_{1,2,3}$ \DIFdelbegin \DIFdel{, with the result
+}\DIFdelend \DIFaddbegin \DIFadd{and have found
+}\DIFaddend that the asymmetry is enhanced \DIFdelbegin \DIFdel{in the following case}\DIFdelend \DIFaddbegin \DIFadd{for the following combination}\DIFaddend :
 %
 \beq
 \setlength{\abovedisplayskip}{9.5pt}
@@ -1023,13 +1028,16 @@ that the asymmetry is enhanced in the following case:
 \epsilon_4=\epsilon_3-\epsilon_2=\epsilon(Q,t-\tbar,n_t,n_{\tbar}).
 \eeq
 %
-Note that in the $Q$ rest frame $\epsilon_4=Q^0
+Note that in the $Q$ rest frame\DIFaddbegin \DIFadd{, }\DIFaddend $\epsilon_4=Q^0
 (\vec{t}-\vec{\tbar}\,)\cdot(\vec{n}_t\times \vec{n}_{\tbar})$ and the
 sign of this TP is determined by the quantity
-$(\vec{t}-\vec{\tbar}\,)\cdot(\vec{n}_t\times \vec{n}_{\tbar})$. The
-values obtained for the asymmetry of this TP are shown in
-\ref{table2}. We see by comparing the results in Tables \ref{table1}
-and \ref{table2} that the capability of the asymmetry to separate the
+$(\vec{t}-\vec{\tbar}\,)\cdot(\vec{n}_t\times \vec{n}_{\tbar})$.
+\DIFaddbegin {\bf \DIFadd{(KK: Is the result from the previous sentence used somewhere?)}}
+\DIFaddend The
+values obtained for the asymmetry \DIFdelbegin \DIFdel{of }\DIFdelend \DIFaddbegin \DIFadd{associated with }\DIFaddend this TP are shown in
+\DIFdelbegin \DIFdel{\ref{table2}. We see by }\DIFdelend \DIFaddbegin \DIFadd{Table~\ref{table2}. By }\DIFaddend comparing the results in Tables \ref{table1}
+and \ref{table2}\DIFaddbegin \DIFadd{, we see }\DIFaddend that the capability of \DIFdelbegin \DIFdel{the asymmetry to separate }\DIFdelend \DIFaddbegin \DIFadd{this
+asymmetry to distinguish between }\DIFaddend the
 two $\mathrm{CP}$-mixed hypotheses is increased by at least $3\sigma$.
 \vspace{4mm}
 \begin{table}[H]
@@ -1055,12 +1063,16 @@ $1$ & $1$ & $0.0461$~ & $14\,$ \\[0.6mm]
 \end{tabular}
 \end{center} 
 \end{table}
-\par Finally, it is worth noting that the asymmetry is not useful for
+\par Finally, it is worth noting that the \DIFdelbegin \DIFdel{asymmetry is }\DIFdelend \DIFaddbegin \DIFadd{asymmetries
+described in this subsection are }\DIFaddend not useful for
 discriminating between the SM hypothesis ($\kp=1,\kpt=0$) and the pure
-pseudoscalar hypothesis ($\kp=0,\kpt=1$) because, being linear in both
-$\kp$ and $\kpt$, it is expected to vanish in these cases. However, we
-will show in the next section that there exist angular distributions
-derived from the TPs that are actually suitable to distinguish these
+pseudoscalar hypothesis ($\kp=0,\kpt=1$)\DIFdelbegin \DIFdel{because, being }\DIFdelend \DIFaddbegin \DIFadd{.  Since
+the numerators of the }{\bf \DIFadd{(KK: did I reword this correctly?)}}
+\DIFadd{asymmetries are all }\DIFaddend linear in both
+$\kp$ and $\kpt$, \DIFdelbegin \DIFdel{it is }\DIFdelend \DIFaddbegin \DIFadd{they }\DIFaddend expected to vanish in these cases. However, we
+will show in the next section \DIFaddbegin {\bf \DIFadd{(KK: subsection?)}}
+\DIFaddend that there exist angular distributions
+derived from the TPs that are actually suitable \DIFdelbegin \DIFdel{to distinguish }\DIFdelend \DIFaddbegin \DIFadd{for distinguishing between }\DIFaddend these
 two hyphothesis.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Angular Distributions}
