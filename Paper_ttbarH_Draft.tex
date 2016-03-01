@@ -323,9 +323,7 @@ it is useful to consider a few theoretical aspects of
 the process $\ppprocess$.  In this section we derive a ``factorized''
 expression for the gluon fusion contribution to this process.
 We then use this expression to isolate various mathematical quantities
-that will be useful as we construct $\mathrm{CP}$-odd observables.
-
-\subsection{Factorized expression for the scattering cross section}
+that will be useful as we construct $\mathrm{CP}$-odd observables.\par
 
 At the LHC $t\bar{t}H$ production proceeds via $q\bar{q}$
 annihilation and $gg$ fusion processes. The relevant leading-order Feynman
@@ -381,7 +379,9 @@ and $\kpt\neq 0$ parameterize a $\mathrm{CP}$-odd Higgs boson. \par
 \end{figure}
 \end{center}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-In this section we focus on the gluon fusion contributions
+\subsection{Factorized expression for the scattering cross section}
+
+In this subsection we focus on the gluon fusion contributions
 to $t\tbar H$ production, since these dominate over the
 the quark-antiquark annihilation contributions.  Furthermore,
 we consider the case in which the top and antitop both decay
@@ -498,8 +498,6 @@ $\psi_{\tbar}$ as follows\footnote{These spinor techniques can also be used
 where $|i+(-)\rangle \equiv (1/2)(1\pm \gamma^5)\,\psi_i$
 represents a right-handed (left-handed) chiral spinor for final-state
 particle $i$ and $\langle i+(-)|$ represents the corresponding adjoint spinor.
-{\bf (KK: Do we mean the adjoint spinor, related by $C \psi^T$,
-  or whatever?, N: It is $\psi^{\dagger}\gamma^0$. I'm using the name given in Eq(2.28) of Bjorken and Drell's book.)}
 Also, $\mathbb{P}_t(q)=(q^2-m^2_t+im_t\Gamma_t)^{-1}$ and
 $\mathbb{P}_W(q)=(q^2-m^2_W+im_W\Gamma_W)^{-1}$, and
 we have denoted the momenta of the various particles by the symbols
@@ -536,12 +534,9 @@ bosons.\footnote{Since Eq.~(\ref{eq9}) contains the top quark propagator
   $\mathbb{P}_t(t)$, for example, $|\mathcal{M}^{ab,ij}|^2$ contains
   the factor $((t^2-m^2_t)^2+m^2_t\Gamma^2_t)^{-1}$,
   which is replaced by $(\pi/m_t\Gamma_t)\delta(t^2-m^2_t)$
-  in the narrow-width approximation.  Thus we take the four-vector
-  $t$ appearing in the definition of $\phi_t$ to be
-  on shell, satisfying $t^2 = m_t^2$.} {\bf (KK: Do I understand correctly
-  that $t$ is an on-shell four-vector in $t\cdot \ell^+$, but not
-  in $\mathbb{P}_t(t)$?  This is similar to saying $f(x)\delta(x-x_0) =
-  f(x_0)\delta(x-x_0)$\ldots?)}
+  in the narrow-width approximation.  Thus, except for the propagator terms $\mathbb{P}_t(t)$ and $\mathbb{P}_t(\tbar)$,
+   we take the four-vector $t$ appearing in Eqs.~(\ref{eq9})-(\ref{eq11}) to be
+  on shell, satisfying $t^2 = m_t^2$.} 
 Working out the projection operators $\phi_t\,\bar{\phi}_t$
 and $\phi_{\tbar}\,\bar{\phi}_{\tbar}$, we have
 %
@@ -611,25 +606,17 @@ to determine the corresponding scattering cross section.
 After some manipulation of the phase space variables
 to take advantage of the presence of the
 propagator terms, $\mathbb{P}_t(t)$ and $\mathbb{P}_t(\tbar)$,
-we arrive at the expression in Eq.~(\ref{eq2}).  This expression
+we arrive at the expression in Eq.~(\ref{eq2}).\footnote{The reader may note that in the differential widths of $t\to b{\ell}^+\nu_{\ell}$ and $\tbar\to \bar{b}{\ell}^-\bar{\nu}_{\ell}$ appearing in 
+Eq.~(\ref{eq2}), the spin states of the top an antitop have been averaged. Interestingly, under the assumption of massless final-state particles, the amplitudes $\mathcal{M}(t(-n_t)\to b{\ell}^+\nu_{\ell})$ and $\mathcal{M}(\tbar(-n_{\tbar})\to \bar{b}{\ell}^-\bar{\nu}_{\ell})$ vanish. } This expression
 also has the appearance of being factorized, but
 qualifying remarks, similar to those above, apply.
-{\bf (KK: I'm still a bit confused as to why $n_t$ appears
-  in the amplitude expression for the decay, but not
-  in the expression for the cross section.  That is, the top
-  spins are summed over in the width that appears in the
-  factorized expression for the cross section.  That part makes
-  sense to me, but I'm not so clear on how to get there from
-  Eq.~(17).  Probably need to look more closely at the notes!)}
- 
 
 %%%%%%%%%%%%%%%%%%% Quitarlo %%%%%%%%%%%%%%%%%%%%
 \setlength{\abovedisplayskip}{10.2pt}
 \setlength{\belowdisplayskip}{10.2pt}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\subsection{Triple products}
-{\bf (KK: maybe we should change this title for the subsection\ldots.)}
+\subsection{Origin of Triple product terms}
 
 The expression derived above for the scattering cross
 section [see Eq.~(\ref{eq2}), as well as Eq.~(\ref{eq17})]
@@ -795,10 +782,8 @@ Before continuing on to our analysis, let us make a few comments
 regarding the values that we choose for $\kp$ and $\kpt$.
 First of all, we note that if the pseudoscalar
 coupling $\kpt$ is the only source of physics beyond the SM,
-then indirect contraints (based on Higgs production via gluon fusion,
-followed by Higgs decay to two photons {\bf (KK: can we just say
-  something like $gg\to H \to \gamma\gamma$?  Or is that not
-  correct?)}) disfavour $\kp < 0$ but do not
+then indirect contraints (based on the signal strength of $gg\to H \to \gamma\gamma$) 
+disfavour $\kp < 0$ but do not
 resolve the degeneracy in the sign of $\kpt$ \cite{Guadagnoli}. On
 the other hand, if one assumes that the tensor structure of the
 Higgs interactions are the
@@ -867,11 +852,7 @@ The three asymmetries also allow one to
 determine the sign of $\kpt$,
 with deviations between the $\kpt = \pm 1$ cases typically
 being of order $20\sigma$.
-{\bf (KK: I guess what we're calculating here is the
-  difference between $\mathcal{A}/\sigma_{\mathcal{A}}$ for
-  one scenario and the same thing for another scenario.  But that
-  could never actually be measured, right\ldots?  Since the scenario
-  is either one or the other\ldots.)}
+{\bf (We couldn't figure out how to clarify this. If you find a way go ahead\ldots.)}
 The sensitivity of
 the asymmetry is quite similar for the three TPs, as can be seen by
 including other values of $\kpt$ and using the expression in
@@ -1020,7 +1001,7 @@ discriminating between the SM hypothesis ($\kp=1,\kpt=0$) and the pure
 pseudoscalar hypothesis ($\kp=0,\kpt=1$).  Since
 the numerators of the 
 asymmetries are all linear in both
-$\kp$ and $\kpt$, they {\bf are} expected to vanish in these cases. However, we
+$\kp$ and $\kpt$, they expected to vanish in these cases ({\bf ``..they are expected to.."? Maybe it's a typo? we are not sure}). However, we
 will show in the next subsection
 that there exist angular distributions
 derived from the TPs that are actually suitable for distinguishing between these
