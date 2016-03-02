@@ -1,7 +1,7 @@
 \documentclass[aps,preprint,tightenlines,floatfix,superscriptaddress,nofootinbib,showpacs]{revtex4-1}
 %DIF LATEXDIFF DIFFERENCE FILE
-%DIF DEL ../manuscript_older/Paper_ttbarH_Draft_2_27_16.tex   Sat Feb 27 15:49:11 2016
-%DIF ADD Paper_ttbarH_Draft.tex                               Tue Mar  1 22:16:09 2016
+%DIF DEL ../manuscript_older/Paper_ttbarH_Draft_3_1_16.tex   Wed Mar  2 13:20:13 2016
+%DIF ADD Paper_ttbarH_Draft.tex                              Wed Mar  2 14:58:01 2016
 \pdfoutput=1
 \usepackage{graphicx}
 %\usepackage{dcolumn}
@@ -340,19 +340,9 @@ Sec.~\ref{sec7}.
 \section{Theoretical framework for \MakeLowercase{{\boldmath $pp\to t(\to b {\ell}^+ \nu_{\ell})\,\bar{t}(\to\bar{b} {\ell}^-\bar{\nu}_{\ell})$}}$\,H$}
 \label{sec2}
 
-%
-\DIFdelbegin \DIFdel{Before turning to a discussion of $\mathrm{CP}$-odd observables,
-it is useful to consider a few theoretical aspects of
-the process $\ppprocess$.  In this section we derive a ``factorized''
-expression for the gluon fusion contribution to this process.
-We then use this expression to isolate various mathematical quantities
-that will be useful as we construct $\mathrm{CP}$-odd observables.
-}\DIFdelend 
 
-\DIFdelbegin \subsection{\DIFdel{Factorized expression for the scattering cross section}}
-%DIFAUXCMD
-\addtocounter{subsection}{-1}%DIFAUXCMD
-%DIFDELCMD < 
+%DIF < 
+\DIFdelbegin %DIFDELCMD < 
 
 %DIFDELCMD < %%%
 \DIFdelend At the LHC $t\bar{t}H$ production proceeds via $q\bar{q}$
@@ -374,23 +364,19 @@ where $v=246~\mathrm{GeV}$ is the SM Higgs vacuum
 expectation value, and the coefficients $\kp$ and $\kpt$ parameterize 
 the scalar and pseudoscalar interaction, respectively. The
 SM case is obtained for $\kp=1$ and $\kpt=0$, while the values $\kp=0$
-and $\kpt\neq 0$ parameterize a $\mathrm{CP}$-odd Higgs \DIFdelbegin %DIFDELCMD < {\bf %%%
-\DIFdel{KK: ``boson''? I don't think PRD allows us to just say ``Higgs''
-}%DIFDELCMD < }%%%
-\DIFdelend \DIFaddbegin \DIFadd{boson}\DIFaddend .
-\DIFaddbegin 
+and $\kpt\neq 0$ parameterize a $\mathrm{CP}$-odd Higgs boson.
 
-\DIFadd{Before turning to a discussion of $\mathrm{CP}$-odd observables,
+Before turning to a discussion of $\mathrm{CP}$-odd observables,
 it is useful to consider a few theoretical aspects of
-the process $\ppprocess$.
+the process $\ppprocess$\DIFaddbegin \DIFadd{, in which the top and antitop both decay
+semileptonically}\DIFaddend .
 In the following subsections we derive a ``factorized''
 expression for the gluon fusion contribution to this process
 and then use this expression
 to isolate various mathematical quantities
-that will be useful as we construct $\mathrm{CP}$-odd observables.}\DIFaddend \par
-\DIFaddbegin 
+that will be useful as we construct $\mathrm{CP}$-odd observables.\par
 
-\DIFaddend %%%%%%%%%%%%%%%%%%%% Figura 1%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%% Figura 1%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %/home/nico/jaxodraw-2.1-0/
 \begin{center}
 \begin{figure}[H]
@@ -424,17 +410,20 @@ that will be useful as we construct $\mathrm{CP}$-odd observables.}\DIFaddend \p
 \end{figure}
 \end{center}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\DIFdelbegin \DIFdel{In this section }\DIFdelend \DIFaddbegin \subsection{\DIFadd{Factorized expression for the scattering cross section}}
+\subsection{Factorized expression for the scattering cross section}
 \label{subsec:factorize}
 
-\DIFadd{In this subsection }\DIFaddend we focus on the gluon fusion
-\DIFaddbegin {\bf \DIFadd{(KK: seems repetitive to say ``gluon fusion'' right away
-  again\ldots maybe can change this; maybe OK to leave it?)}}
-\DIFaddend contributions
+In this subsection we focus on the \DIFdelbegin \DIFdel{gluon fusion
+}%DIFDELCMD < {\bf %%%
+\DIFdel{(KK: seems repetitive to say ``gluon fusion'' right away
+  again\ldots maybe can change this; maybe OK to leave it?)}%DIFDELCMD < }
+%DIFDELCMD < %%%
+\DIFdelend \DIFaddbegin \DIFadd{$gg$-initiated
+}\DIFaddend contributions
 to $t\tbar H$ production, since these dominate over the
-the quark-antiquark annihilation contributions.  Furthermore,
+the quark-antiquark annihilation contributions. \DIFdelbegin \DIFdel{Furthermore,
 we consider the case in which the top and antitop both decay
-semileptonically.  As we shall show below, assuming the
+semileptonically.  }\DIFdelend As we shall show below, assuming the
 narrow width approximation for the top and antitop quarks, the unpolarized
 differential cross section for $gg\to t(\to
 b{\ell}^+\nu_{\ell})\,\tbar(\to \bbar {\ell}^- \nubar)\,H$ may be
@@ -478,10 +467,8 @@ $e^-e^+$ colliders \cite{Arens} and $pp$ colliders
 
 %%%%%%%%%%%%%%%%% FIGURA 2 %%%%%%%%%%%%%%%%%%%%%%
 \begin{center}
-\DIFdelbegin %DIFDELCMD < \begin{figure}[th]
-%DIFDELCMD < %%%
-\DIFdelendFL \DIFaddbeginFL \begin{figure}[H]
-\DIFaddendFL \centering
+\begin{figure}[H]
+\centering
 \includegraphics[scale=0.6]{esquematico_II.pdf}
 \vspace*{0.02\textwidth}
 \caption{Schematic representation of the process $g_ag_b\to t(\to
@@ -521,9 +508,7 @@ and where the quantity $A^{ab,ij}$ is given by
 %
 The sum over $k$ in the above expression
 corresponds to the eight gluon-initiated
-diagrams indicated in Fig.~\ref{fig1}\DIFdelbegin %DIFDELCMD < {\bf %%%
-\DIFdel{(KK: correct?)}%DIFDELCMD < }%%%
-\DIFdelend ; also,
+diagrams indicated in Fig.~\ref{fig1}; also,
 $\epsilon_{\lambda_a}$ and $\epsilon_{\lambda_b}$ are the
 polarization vectors corresponding to $g_a$ and $g_b$, respectively.
 In the last equality in Eq.~(\ref{eq5})
@@ -544,19 +529,15 @@ $\psi_{\tbar}$ as follows\footnote{These spinor techniques can also be used
 \bar{\psi}_t &=& -g^2\, \mathbb{P}_t(t)\,\mathbb{P}_W(t-b)\,
    \langle b-|\nu_{\ell}+\rangle \langle {\ell}^+\!+|(\tslash+m_t)\\
 \label{eq8}
-\psi_{\tbar} &=& \DIFdelbegin \DIFdel{-g}\DIFdelend \DIFaddbegin \DIFadd{g}\DIFaddend ^2\, \mathbb{P}_t(\tbar)\,\mathbb{P}_W(\tbar-\bbar)\,
+\psi_{\tbar} &=& g^2\, \mathbb{P}_t(\tbar)\,\mathbb{P}_W(\tbar-\bbar)\,
    \langle\nubar+|\bbar-\rangle (\tbslash-m_t)|{\ell}^-+\rangle,
 \eea
 %
 where $|i+(-)\rangle \equiv (1/2)(1\pm \gamma^5)\,\psi_i$
 represents a right-handed (left-handed) chiral spinor for final-state
 particle $i$ and $\langle i+(-)|$ represents the corresponding adjoint spinor.
-\DIFdelbegin %DIFDELCMD < {\bf %%%
-\DIFdel{(KK: Do we mean the adjoint spinor, related by $C \psi^T$,
-  or whatever?)}%DIFDELCMD < }
-%DIFDELCMD < %%%
-\DIFdelend Also, $\mathbb{P}_t(q)=(q^2-m^2_t+im_t\Gamma_t)^{-1}$ and
-\DIFdelbegin \DIFdel{$\mathbb{P}_W(q)=(q^2-M^2_W+im_W\Gamma_W)^{-1}$}\DIFdelend \DIFaddbegin \DIFadd{$\mathbb{P}_W(q)=(q^2-m^2_W+im_W\Gamma_W)^{-1}$}\DIFaddend , and
+Also, $\mathbb{P}_t(q)=(q^2-m^2_t+im_t\Gamma_t)^{-1}$ and
+$\mathbb{P}_W(q)=(q^2-m^2_W+im_W\Gamma_W)^{-1}$, and
 we have denoted the momenta of the various particles by the symbols
 that refer to the names of those particles~\cite{Mangano}.
 
@@ -591,16 +572,10 @@ bosons.\footnote{Since Eq.~(\ref{eq9}) contains the top quark propagator
   $\mathbb{P}_t(t)$, for example, $|\mathcal{M}^{ab,ij}|^2$ contains
   the factor $((t^2-m^2_t)^2+m^2_t\Gamma^2_t)^{-1}$,
   which is replaced by $(\pi/m_t\Gamma_t)\delta(t^2-m^2_t)$
-  in the narrow-width approximation.  Thus\DIFaddbegin \DIFadd{, except for the propagator terms $\mathbb{P}_t(t)$ and $\mathbb{P}_t(\tbar)$,
-   }\DIFaddend we take the four-vector $t$ appearing in \DIFdelbegin \DIFdel{the definition of $\phi_t$ }\DIFdelend \DIFaddbegin \DIFadd{Eqs.~(\ref{eq9})-(\ref{eq11}) }\DIFaddend to be
+  in the narrow-width approximation.  Thus, except for the propagator terms $\mathbb{P}_t(t)$ and $\mathbb{P}_t(\tbar)$,
+   we take the four-vector $t$ appearing in Eqs.~(\ref{eq9})-(\ref{eq11}) to be
   on shell, satisfying $t^2 = m_t^2$.} 
-\DIFdelbegin %DIFDELCMD < {\bf %%%
-\DIFdel{(KK: Do I understand correctly
-  that $t$ is an on-shell four-vector in $t\cdot \ell^+$, but not
-  in $\mathbb{P}_t(t)$?  This is similar to saying $f(x)\delta(x-x_0) =
-  f(x_0)\delta(x-x_0)$\ldots?)}%DIFDELCMD < }
-%DIFDELCMD < %%%
-\DIFdelend Working out the projection operators $\phi_t\,\bar{\phi}_t$
+Working out the projection operators $\phi_t\,\bar{\phi}_t$
 and $\phi_{\tbar}\,\bar{\phi}_{\tbar}$, we have
 %
 \beq
@@ -669,32 +644,18 @@ to determine the corresponding scattering cross section.
 After some manipulation of the phase space variables
 to take advantage of the presence of the
 propagator terms, $\mathbb{P}_t(t)$ and $\mathbb{P}_t(\tbar)$,
-we arrive at the expression in Eq.~(\ref{eq2}).\DIFaddbegin \footnote{\DIFadd{The reader may note that in the differential widths of $t\to b{\ell}^+\nu_{\ell}$ and $\tbar\to \bar{b}{\ell}^-\bar{\nu}_{\ell}$ appearing in 
-Eq.~(\ref{eq2}), the spin states of the top an antitop have been averaged. Interestingly, under the assumption of massless final-state particles, the amplitudes $\mathcal{M}(t(-n_t)\to b{\ell}^+\nu_{\ell})$ and $\mathcal{M}(\tbar(-n_{\tbar})\to \bar{b}{\ell}^-\bar{\nu}_{\ell})$ vanish. }} \DIFaddend This expression
+we arrive at the expression in Eq.~(\ref{eq2}).\footnote{The reader may note that in the differential widths of $t\to b{\ell}^+\nu_{\ell}$ and $\tbar\to \bar{b}{\ell}^-\bar{\nu}_{\ell}$ appearing in 
+Eq.~(\ref{eq2}), the spin states of the top an antitop have been averaged. Interestingly, under the assumption of massless final-state particles, the amplitudes $\mathcal{M}(t(-n_t)\to b{\ell}^+\nu_{\ell})$ and $\mathcal{M}(\tbar(-n_{\tbar})\to \bar{b}{\ell}^-\bar{\nu}_{\ell})$ vanish. } This expression
 also has the appearance of being factorized, but
 qualifying remarks, similar to those above, apply.
-\DIFdelbegin %DIFDELCMD < {\bf %%%
-\DIFdel{(KK: I'm still a bit confused as to why $n_t$ appears
-  in the amplitude expression for the decay, but not
-  in the expression for the cross section.  That is, the top
-  spins are summed over in the width that appears in the
-  factorized expression for the cross section.  That part makes
-  sense to me, but I'm not so clear on how to get there from
-  Eq.~(17).  Probably need to look more closely at the notes!)}%DIFDELCMD < }
-%DIFDELCMD <  %%%
-\DIFdelend 
 
 %%%%%%%%%%%%%%%%%%% Quitarlo %%%%%%%%%%%%%%%%%%%%
 \setlength{\abovedisplayskip}{10.2pt}
 \setlength{\belowdisplayskip}{10.2pt}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\subsection{\DIFdelbegin \DIFdel{Triple products}\DIFdelend \DIFaddbegin \DIFadd{Origin of triple product terms}\DIFaddend }
-\DIFdelbegin %DIFDELCMD < {\bf %%%
-\DIFdel{(KK: maybe we should change this title for the subsection\ldots.)}%DIFDELCMD < }
-%DIFDELCMD < %%%
-\DIFdelend \DIFaddbegin \label{subsec:origin}
-\DIFaddend 
+\subsection{Origin of triple product terms}
+\label{subsec:origin}
 
 The expression derived above for the scattering cross
 section [see Eq.~(\ref{eq2}), as well as Eq.~(\ref{eq17})]
@@ -716,14 +677,9 @@ we have
 \eeq
 %
 where we have separated the colour structure of each diagram by defining
-\DIFdelbegin %DIFDELCMD < {\bf %%%
-\DIFdel{(KK: do these need $k$ subscripts?)}%DIFDELCMD < }
-%DIFDELCMD < %%%
-\DIFdel{$\mathcal{S}^{ab,ij}= C^{ab,ij}_k \mathcal{S}$ and
-$\mathcal{P}^{ab,ij}= C^{ab,ij}_k \mathcal{P}$
-}\DIFdelend \DIFaddbegin \DIFadd{$\mathcal{S}^{\,ab,ij}_k= C^{ab,ij}_k \mathcal{S}_k$ and
+$\mathcal{S}^{\,ab,ij}_k= C^{ab,ij}_k \mathcal{S}_k$ and
 $\mathcal{P}^{\,ab,ij}_k= C^{ab,ij}_k \mathcal{P}_k$
-}\DIFaddend [see Eqs.~(\ref{eq5}) and (\ref{eq16})]. Also, the factors
+[see Eqs.~(\ref{eq5}) and (\ref{eq16})]. Also, the factors
 $g^2_s m_t/v$ and $-ig^2_s m_t/v$ arising from the vertices of the $t$-
 and $s$-channel diagrams respectively have been included in the
 definition of $C^{ab,ij}_k$ for convenience. The terms linear in $\kp$
@@ -737,13 +693,8 @@ and $\kpt$ can be written as
 \eeq
 %
 where the factor $\mathbb{C}_{kr}=\sum_{ab,ij}C^{ab,ij}_k
-C^{ab,ij*}_r$ is real and where \DIFdelbegin \DIFdel{$\tilde{\mathcal{P}}_r = \gamma^0
-\mathcal{P}_r \gamma^0$ }%DIFDELCMD < {\bf %%%
-\DIFdel{(KK: wouldn't this be
-  $\mathcal{P}_r^\dagger$? I didn't look for this in the notes
-  yet, so maybe I'm just missing something)}%DIFDELCMD < }%%%
-\DIFdelend \DIFaddbegin \DIFadd{$\tilde{\mathcal{P}}_r = \gamma^0
-\mathcal{P}^{\dagger}_r \gamma^0$}\DIFaddend .
+C^{ab,ij*}_r$ is real and where $\tilde{\mathcal{P}}_r = \gamma^0
+\mathcal{P}^{\dagger}_r \gamma^0$.
 The only terms that yield non-zero contributions
 in the above sum are those with an
 odd number of $\gamma^5$ matrices; these lead to triple-product
@@ -796,11 +747,7 @@ decision to focus on TPs that contain both $n_t$ and $n_{\tbar}$
 is rooted in the fact that the spins of pair-produced top and antitop quarks
 are highly correlated at hadron colliders 
 (even though the quarks themselves are unpolarized).
-\DIFdelbegin %DIFDELCMD < {\bf %%%
-\DIFdel{(KK: did I reword
-  this correctly?)}%DIFDELCMD < }
-%DIFDELCMD < %%%
-\DIFdelend Observables that combine the decay products of the
+Observables that combine the decay products of the
 $t$ and $\tbar$ will be sensitive to this spin
 correlation~\cite{Bernreuther}.  A similar behaviour is expected in $t\tbar H$
 production, where it can be shown that single-spin asymmetries
@@ -869,27 +816,14 @@ somewhat large number of events ($10^5$) in order to determine clearly
 the extent to which the proposed observables are sensitive to the NP
 coupling.  Section~\ref{sec6} contains an
 analysis of the experimental feasibility of the more promising observables.
-\DIFdelbegin %DIFDELCMD < {\bf %%%
-\DIFdel{(KK: I may not have worded this quite correctly.)}%DIFDELCMD < }
-%DIFDELCMD < %%%
-\DIFdelend 
 
 Before continuing on to our analysis, let us make a few comments
 regarding the values that we choose for $\kp$ and $\kpt$.
 First of all, we note that if the pseudoscalar
 coupling $\kpt$ is the only source of physics beyond the SM,
-then indirect contraints (based on \DIFdelbegin \DIFdel{Higgs production via gluon fusion,
-followed by Higgs decay to two photons }%DIFDELCMD < {\bf %%%
-\DIFdel{(KK: can we just say
-  something like }\DIFdelend \DIFaddbegin \DIFadd{the signal strength of }\DIFaddend $gg\to H \to \gamma\gamma$\DIFdelbegin \DIFdel{?  Or is that not
-  correct?) 
-}%DIFDELCMD < }%%%
-\DIFdelend ) 
+then indirect contraints (based on the signal strength of $gg\to H \to \gamma\gamma$) 
 disfavour $\kp < 0$ but do not
-resolve the degeneracy \DIFdelbegin %DIFDELCMD < {\bf %%%
-\DIFdel{(KK: did I reword this correctly?)}%DIFDELCMD < }
-%DIFDELCMD < %%%
-\DIFdelend in the sign of $\kpt$ \cite{Guadagnoli}. On
+resolve the degeneracy in the sign of $\kpt$ \cite{Guadagnoli}. On
 the other hand, if one assumes that the tensor structure of the
 Higgs interactions are the
 same as those of the SM and if one parameterizes these interactions via
@@ -909,24 +843,20 @@ $\mathrm{CP}$-odd case ($\kp=0,\kpt=1$).
 \subsection{Asymmetry}
 %\bigskip
 \label{sec3.1}
-\DIFaddbegin 
 
-\DIFaddend The first type of $\mathrm{CP}$-odd observable \DIFaddbegin \DIFadd{that }\DIFaddend we will consider is \DIFdelbegin \DIFdel{the
-asymmetry. For a certain TP, we define an
-asymmetry which gives the balance between the }\DIFdelend \DIFaddbegin \DIFadd{an
-asymmetry that compares the }\DIFaddend number of events
-\DIFdelbegin \DIFdel{with $\epsilon > 0$ and those for which $\epsilon < 0$:
-}\DIFdelend \DIFaddbegin \DIFadd{for which a given TP is positive to that for which it is negative.
+The first type of $\mathrm{CP}$-odd observable that we will consider is an
+asymmetry that compares the number of events
+for which a given TP is positive to that for which it is negative.
 Normalizing to the total number of events, we define
-}\DIFaddend %
+%
 \beq
 \label{eq21}
 \mathcal{A}(\epsilon)=\frac{N(\epsilon > 0)-N(\epsilon < 0)}{N(\epsilon > 0)+N(\epsilon < 0)}.
 \eeq 
 %
-\DIFaddbegin \DIFadd{By construction, $\mathcal{A}\in [-1,+1]$.
-}\DIFaddend Based on the general expression given in Eq.~(\ref{eq20}), we expect
-the following \DIFdelbegin \DIFdel{shape }\DIFdelend \DIFaddbegin \DIFadd{functional form }\DIFaddend for the asymmetry,
+By construction, $\mathcal{A}\in [-1,+1]$.
+Based on the general expression given in Eq.~(\ref{eq20}), we expect
+the following functional form for the asymmetry,
 %
 \beq
 \label{eq22}
@@ -942,47 +872,38 @@ which for $\kp=1$ can be parameterized as
 %
 where the parameter $a\equiv A/B$ determines the sensitivity to the
 pseudoscalar coupling, whereas $b\equiv C/B$ quantifies the deviation
-from \DIFdelbegin \DIFdel{the }\DIFdelend linear behaviour.
-\DIFdelbegin \DIFdel{The results for }\DIFdelend \DIFaddbegin 
+from linear behaviour.
 
-\DIFadd{Table~\ref{table1} shows numerical results for the
+Table~\ref{table1} shows numerical results for the
 asymmetries associated with three different TPs,
 $\epsilon_1$, $\epsilon_2$ and $\epsilon_3$, taking
-}\DIFaddend $\kp=1$ and $\kpt=0,\pm 1$\DIFdelbegin \DIFdel{are shown in Table \ref{table1}, where the values in terms of the
-}\DIFdelend \DIFaddbegin \DIFadd{.  The asymmetry $\mathcal{A}$
+$\kp=1$ and $\kpt=0,\pm 1$.  The asymmetry $\mathcal{A}$
 is shown in each case, along with $\mathcal{A}/\sigma_{\mathcal{A}}$, where
-$\sigma_{\mathcal{A}}$ is the }\DIFaddend corresponding
-statistical uncertainty\DIFdelbegin \DIFdel{are also included.  It can be
-seen that the considered asymmetries are useful to separate the }\DIFdelend \DIFaddbegin \DIFadd{.  As is
+$\sigma_{\mathcal{A}}$ is the corresponding
+statistical uncertainty.  As is
 evident from the table, the asymmetries in question provide
 a clear separation between the SM and the 
-}\DIFaddend $\mathrm{CP}$-mixed cases\DIFdelbegin \DIFdel{from the SM case and also to discriminate
-the different }\DIFdelend \DIFaddbegin \DIFadd{, with typical deviations being of
+$\mathrm{CP}$-mixed cases, with typical deviations being of
 order $10\sigma$.  Furthermore, the asymmetries
 for the SM case are each statistically consistent with zero,
 as one would expect.
 The three asymmetries also allow one to
-determine the }\DIFaddend sign of $\kpt$,
-\DIFdelbegin \DIFdel{giving deviations of order $10\sigma$ in
-the former case and }\DIFdelend \DIFaddbegin \DIFadd{with deviations between the $\kpt = \pm 1$ cases typically
-being of order }\DIFaddend $20\sigma$\DIFdelbegin \DIFdel{in the latter.
-}%DIFDELCMD < \par %%%
-\DIFdelend \DIFaddbegin \DIFadd{.
-}{\bf \DIFadd{(We couldn't figure out how to clarify this. If you find a way go ahead\ldots.)}}
-\DIFaddend The sensitivity of
+determine the sign of $\kpt$,
+with deviations between the $\kpt = \pm 1$ cases typically
+being of order $20\sigma$.
+{\bf (We couldn't figure out how to clarify this. If you find a way go ahead\ldots.)}
+The sensitivity of
 the asymmetry is quite similar for the three TPs, as can be seen by
 including other values of $\kpt$ and using the expression in
-Eq.~(\ref{eq23}) as \DIFaddbegin \DIFadd{a }\DIFaddend fitting function (see Fig.~\ref{fig3}).
-\DIFdelbegin \DIFdel{In fact}\DIFdelend \DIFaddbegin \DIFadd{Performing such a fit}\DIFaddend , 
-we obtain \DIFdelbegin \DIFdel{the fit parameters }\DIFdelend $(a=-0.057\pm 0.006, b=0.5\pm 0.2),
+Eq.~(\ref{eq23}) as a fitting function (see Fig.~\ref{fig3}).
+Performing such a fit, 
+we obtain $(a=-0.057\pm 0.006, b=0.5\pm 0.2),
 (a=-0.056\pm 0.006, b=0.5 \pm 0.2)$ and $(a=0.058\pm 0.006, b=0.6 \pm
 0.2)$ for $\epsilon_1$, $\epsilon_2$ and $\epsilon_3$,
 respectively.
-\DIFdelbegin \DIFdel{In addition, we include in }\DIFdelend \DIFaddbegin 
 
-\DIFadd{The results shown in Table~\ref{table1}
-and }\DIFaddend Fig.~\DIFdelbegin \DIFdel{\ref{fig4} the asymmetry
-for }\DIFdelend \DIFaddbegin \DIFadd{\ref{fig3} all assume a $pp$ initial state, which is
+The results shown in Table~\ref{table1}
+and Fig.~\ref{fig3} all assume a $pp$ initial state, which is
 actually a combination of events coming from $gg$ and $q\qbar$
 initial states.
 While this combination of initial states is the appropriate scenario
@@ -990,30 +911,27 @@ to consider, it
 is interesting to consider the relative contributions to the asymmetry
 coming from the
 $gg$ and $q\qbar$ initial states.  Figure~\ref{fig4} shows
-three curves for the ``}\DIFaddend $\epsilon_1$\DIFdelbegin \DIFdel{isolating the }\DIFdelend \DIFaddbegin \DIFadd{'' case, one for }\DIFaddend $gg$-initiated
-\DIFdelbegin \DIFdel{, }\DIFdelend \DIFaddbegin \DIFadd{events, one for }\DIFaddend $q\qbar$-initiated \DIFdelbegin \DIFdel{and
-}\DIFdelend \DIFaddbegin \DIFadd{events, and one for the usual
-combination of these events (the ``}\DIFaddend $pp$\DIFdelbegin \DIFdel{production.
-We see }\DIFdelend \DIFaddbegin \DIFadd{'' initial state).
-Interestingly, we see from Fig.~\ref{fig4} }\DIFaddend that the asymmetry \DIFaddbegin \DIFadd{for this TP
-}\DIFaddend is enhanced for
+three curves for the ``$\epsilon_1$'' case, one for $gg$-initiated
+events, one for $q\qbar$-initiated events, and one for the usual
+combination of these events (the ``$pp$'' initial state).
+Interestingly, we see from Fig.~\ref{fig4} that the asymmetry for this TP
+is enhanced for
 $gg$-initiated production, while it is reduced and of opposite sign
-for the $q\qbar$-initiated \DIFdelbegin \DIFdel{case}\DIFdelend \DIFaddbegin \DIFadd{events}\DIFaddend . The asymmetry for the $pp$ case is
-\DIFdelbegin \DIFdel{then }\DIFdelend \DIFaddbegin \DIFadd{evidently
-}\DIFaddend dominated by the $gg$ contribution, \DIFdelbegin \DIFdel{albeit smaller
-}\DIFdelend \DIFaddbegin \DIFadd{but is somewhat smaller
-in magnitude }\DIFaddend due to the
+for the $q\qbar$-initiated events. The asymmetry for the $pp$ case is
+evidently
+dominated by the $gg$ contribution, but is somewhat smaller
+in magnitude due to the
 $q\qbar$ contribution.
 \newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
 \renewcommand{\arraystretch}{1.4}
 \begin{table}[H]
-  \caption{Asymmetries \DIFaddbeginFL \DIFaddFL{for three different scenarios,
-    }\DIFaddendFL obtained by using $10^5$ simulated events for the
-    TPs $\epsilon_1=\TPa, \epsilon_2=\TPb$ and $\epsilon_3=\TPc$\DIFdelbeginFL \DIFdelFL{in }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{.
+  \caption{Asymmetries for three different scenarios,
+    obtained by using $10^5$ simulated events for the
+    TPs $\epsilon_1=\TPa, \epsilon_2=\TPb$ and $\epsilon_3=\TPc$.
     The three scenarios
-  correspond to }\DIFaddendFL the SM \DIFdelbeginFL \DIFdelFL{case }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{($\kp=1$ }\DIFaddendFL and \DIFdelbeginFL \DIFdelFL{the }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{$\kpt=\pm 0$) and
-  }\DIFaddendFL two $\mathrm{CP}$-mixed cases \DIFaddbeginFL \DIFaddFL{(}\DIFaddendFL defined by
-  \DIFdelbeginFL \DIFdelFL{$\kp=1,\kpt=\pm 1$}\DIFdelendFL \DIFaddbeginFL \DIFaddFL{$\kp=1$ and $\kpt=\pm 1$)}\DIFaddendFL .}
+  correspond to the SM ($\kp=1$ and $\kpt=\pm 0$) and
+  two $\mathrm{CP}$-mixed cases (defined by
+  $\kp=1$ and $\kpt=\pm 1$).}
 \label{table1}
 \begin{center}
 \begin{tabular}{|C{1cm}|C{1cm}||C{2cm}|C{2cm}||C{2cm}|C{2cm}||C{2cm}|C{2cm}|}
@@ -1072,13 +990,10 @@ $1$ & $1$ & $-0.0379$~~~ & $-12.0$~~~ & $-0.0411$~~~& $-13.0$~~~ & $\,0.0378$~ &
 \end{center}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \vspace*{-6mm}
-\DIFdelbegin %DIFDELCMD < \par %%%
-\DIFdel{On the other hand, we }\DIFdelend \DIFaddbegin 
 
-\DIFadd{We }\DIFaddend have also tested various
-linear combinations of the TPs $\epsilon_{1,2,3}$ \DIFdelbegin \DIFdel{, with the result
-}\DIFdelend \DIFaddbegin \DIFadd{and have found
-}\DIFaddend that the asymmetry is enhanced \DIFdelbegin \DIFdel{in the following case}\DIFdelend \DIFaddbegin \DIFadd{for the following combination}\DIFaddend :
+We have also tested various
+linear combinations of the TPs $\epsilon_{1,2,3}$ and have found
+that the asymmetry is enhanced for the following combination:
 %
 \beq
 \setlength{\abovedisplayskip}{9.5pt}
@@ -1087,16 +1002,16 @@ linear combinations of the TPs $\epsilon_{1,2,3}$ \DIFdelbegin \DIFdel{, with th
 \epsilon_4=\epsilon_3-\epsilon_2=\epsilon(Q,t-\tbar,n_t,n_{\tbar}).
 \eeq
 %
-Note that in the $Q$ rest frame\DIFaddbegin \DIFadd{, }\DIFaddend $\epsilon_4=Q^0
+Note that in the $Q$ rest frame, $\epsilon_4=Q^0
 (\vec{t}-\vec{\tbar}\,)\cdot(\vec{n}_t\times \vec{n}_{\tbar})$ and the
 sign of this TP is determined by the quantity
 $(\vec{t}-\vec{\tbar}\,)\cdot(\vec{n}_t\times \vec{n}_{\tbar})$.
-\DIFaddbegin {\bf \DIFadd{(KK: try to connect previous sentences to something later on\ldots.)}}
-\DIFaddend The
-values obtained for the asymmetry \DIFdelbegin \DIFdel{of }\DIFdelend \DIFaddbegin \DIFadd{associated with }\DIFaddend this TP are shown in
-\DIFdelbegin \DIFdel{\ref{table2}. We see by }\DIFdelend \DIFaddbegin \DIFadd{Table~\ref{table2}. By }\DIFaddend comparing the results in Tables \ref{table1}
-and \ref{table2}\DIFaddbegin \DIFadd{, we see }\DIFaddend that the capability of \DIFdelbegin \DIFdel{the asymmetry to separate }\DIFdelend \DIFaddbegin \DIFadd{this
-asymmetry to distinguish between }\DIFaddend the
+{\bf (KK: try to connect previous sentences to something later on\ldots.)}
+The
+values obtained for the asymmetry associated with this TP are shown in
+Table~\ref{table2}. By comparing the results in Tables \ref{table1}
+and \ref{table2}, we see that the capability of this
+asymmetry to distinguish between the
 two $\mathrm{CP}$-mixed hypotheses is increased by at least $3\sigma$.
 \vspace{4mm}
 \begin{table}[H]
@@ -1122,28 +1037,26 @@ $1$ & $1$ & $0.0461$~ & $14\,$ \\[0.6mm]
 \end{tabular}
 \end{center} 
 \end{table}
-\par Finally, it is worth noting that the \DIFdelbegin \DIFdel{asymmetry is }\DIFdelend \DIFaddbegin \DIFadd{asymmetries
-described in this subsection are }\DIFaddend not useful for
+\par Finally, it is worth noting that the asymmetries
+described in this subsection are not useful for
 discriminating between the SM hypothesis ($\kp=1,\kpt=0$) and the pure
-pseudoscalar hypothesis ($\kp=0,\kpt=1$)\DIFdelbegin \DIFdel{because, being }\DIFdelend \DIFaddbegin \DIFadd{.  Since
+pseudoscalar hypothesis ($\kp=0,\kpt=1$).  Since
 the numerators of the 
-asymmetries are all }\DIFaddend linear in both
-$\kp$ and $\kpt$, \DIFdelbegin \DIFdel{it is }\DIFdelend \DIFaddbegin \DIFadd{they are }\DIFaddend expected to vanish in these cases. However, we
-will show in the next \DIFdelbegin \DIFdel{section }\DIFdelend \DIFaddbegin \DIFadd{subsection
-}\DIFaddend that there exist angular distributions
-derived from the TPs that are actually suitable \DIFdelbegin \DIFdel{to distinguish these
-two hyphothesis}\DIFdelend \DIFaddbegin \DIFadd{for distinguishing between these
-two hyphotheses}\DIFaddend .
+asymmetries are all linear in both
+$\kp$ and $\kpt$, they are expected to vanish in these cases. However, we
+will show in the next subsection
+that there exist angular distributions
+derived from the TPs that are actually suitable for distinguishing between these
+two hyphotheses.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Angular Distributions}
 \label{sec3.2}
-\DIFaddbegin 
 
-\DIFaddend Given a certain TP, it is possible to define \DIFdelbegin \DIFdel{asocciated }\DIFdelend \DIFaddbegin \DIFadd{associated }\DIFaddend angular
-distributions that are \DIFdelbegin \DIFdel{also }\DIFdelend sensitive to the pseudoscalar coupling
+Given a certain TP, it is possible to define associated angular
+distributions that are sensitive to the pseudoscalar coupling
 $\kpt$. In order to clarify this, let us first consider the TP
 $\epsilon(t,\tbar,n_t,n_{\tbar})$. This TP can be written as
-$\epsilon(t+\tbar,\tbar,n_t,n_{\tbar})$\DIFaddbegin \DIFadd{, }\DIFaddend so that in the reference frame
+$\epsilon(t+\tbar,\tbar,n_t,n_{\tbar})$, so that in the reference frame
 defined by $\vec{t}+\vec{\tbar} =0$ and $\vec{\tbar}\parallel \hat{z}$
 we have
 %
@@ -1154,16 +1067,14 @@ we have
 %
 where $M_{t\tbar}$ is the invariant mass of the $t\tbar$ pair, the
 angles $\theta_{n_t}$ and $\theta_{n_{\tbar}}$ denote the polar angles
-of $\vec{n}_t$ and $\vec{n}_{\tbar}$\DIFdelbegin \DIFdel{respectively and finally
-}\DIFdelend \DIFaddbegin \DIFadd{, respectively, and 
-}\DIFaddend $\Delta\phi(n_t,n_{\tbar})$ is the angular difference between the
+of $\vec{n}_t$ and $\vec{n}_{\tbar}$, respectively, and 
+$\Delta\phi(n_t,n_{\tbar})$ is the angular difference between the
 projections of $\vec{n}_t$ and $\vec{n}_{\tbar}$ onto the plane
-perpendicular to $\vec{\bar{t}}$. If we define \DIFdelbegin \DIFdel{this angle
-}\DIFdelend \DIFaddbegin \DIFadd{the angle
-$\Delta\phi(n_t,n_{\tbar})$  to be }\DIFaddend within the
+perpendicular to $\vec{\bar{t}}$. If we define the angle
+$\Delta\phi(n_t,n_{\tbar})$  to be within the
 range $[-\pi,\pi]$, we see from Eq.~(\ref{eq25}) that its sign will
-determine the sign of the TP. \DIFdelbegin \DIFdel{In this sense}\DIFdelend \DIFaddbegin \DIFadd{Thus}\DIFaddend , the distribution of the
-number of \DIFdelbegin \DIFdel{the }\DIFdelend events with respect to the angle
+determine the sign of the TP. Thus, the distribution of the
+number of events with respect to the angle
 $\Delta\phi(n_t,n_{\tbar})$ is related to the asymmetry of the TP,
 %
 \beq
@@ -1172,87 +1083,85 @@ $\Delta\phi(n_t,n_{\tbar})$ is related to the asymmetry of the TP,
 \eeq  
 %
 where $N_T$ is the total number of events.
-\DIFdelbegin \DIFdel{Moreover, from }\DIFdelend \DIFaddbegin {\bf \DIFadd{(KK: Have we checked numerically that the above
+{\bf (KK: Have we checked numerically that the above
   expression does indeed hold numerically for the various
-  distributions?  It's an exact relation, correct?)}}
-\DIFadd{Moreover, for }\DIFaddend a certain TP
+  distributions?  It's an exact relation, correct?)}
+Moreover, for a certain TP
 one can derive different angular distributions by considering
-different reference frames, \DIFdelbegin \DIFdel{but }\DIFdelend \DIFaddbegin \DIFadd{although }\DIFaddend all of these will satisfy
-Eq.~(\ref{eq26}) \DIFdelbegin \DIFdel{. In particular, we will analyze the following angular
-distributions based on the TPs defined }\DIFdelend \DIFaddbegin \DIFadd{(note that $\mathcal{A}(\epsilon)$
+different reference frames, although all of these will satisfy
+Eq.~(\ref{eq26}) (note that $\mathcal{A}(\epsilon)$
 is Lorentz invariant). Recalling the various TPs considered
-}\DIFaddend in Sec.~\ref{sec2}\DIFdelbegin \DIFdel{:
-}%DIFDELCMD < \begin{itemize}
-%DIFDELCMD < %%%
-\DIFdelend \DIFaddbegin \DIFadd{, we examine the following angular distributions.
-} \begin{enumerate} 
-\DIFaddend \item \DIFdelbegin \DIFdel{Related to }\DIFdelend \DIFaddbegin {\boldmath \DIFaddend $\epsilon_1 = \TPa$\DIFdelbegin \DIFdel{we consider
-  }\DIFdelend \DIFaddbegin \DIFadd{.}}  \DIFadd{To probe $\epsilon_1$, we construct
+in Sec.~\ref{sec2}, we examine the following angular distributions.
+ \begin{enumerate} 
+\item {\boldmath $\epsilon_1 = \TPa$.}  To probe $\epsilon_1$, we construct
   the distribution
-  }\DIFaddend $d\sigma/d\Delta\phi_1(n_t,n_{\tbar})$ in the rest frame of $t\tbar$\DIFdelbegin \DIFdel{with }\DIFdelend \DIFaddbegin \DIFadd{,
-  taking }\DIFaddend $\vec{\tbar}$ \DIFdelbegin \DIFdel{in }\DIFdelend \DIFaddbegin \DIFadd{to define }\DIFaddend the $z$-axis. The angle
+  $d\sigma/d\Delta\phi_1(n_t,n_{\tbar})$ in the rest frame of $t\tbar$,
+  taking $\vec{\tbar}$ to define the $z$-axis. The angle
   $\Delta\phi_1(n_t,n_{\tbar})$ is the angular difference between the
   projection of the spin vectors in the plane perpendicular to
   $\vec{\tbar}$.
-\item \DIFdelbegin \DIFdel{Related to }\DIFdelend \DIFaddbegin {\boldmath \DIFaddend $\epsilon_2 = \TPb$\DIFdelbegin \DIFdel{we consider
-  }\DIFdelend \DIFaddbegin \DIFadd{.}}  \DIFadd{In this case, we
+\item {\boldmath $\epsilon_2 = \TPb$.}  In this case, we
   define the distribution
-  }\DIFaddend $d\sigma/d\Delta\phi_2(n_t,n_{\tbar})$ in the rest frame of $Q$\DIFdelbegin \DIFdel{with
-  }\DIFdelend \DIFaddbegin \DIFadd{, taking
-  }\DIFaddend $\vec{\tbar}$ \DIFdelbegin \DIFdel{in }\DIFdelend \DIFaddbegin \DIFadd{to define }\DIFaddend the $z$-axis. The angle
+  $d\sigma/d\Delta\phi_2(n_t,n_{\tbar})$ in the rest frame of $Q$, taking
+  $\vec{\tbar}$ to define the $z$-axis. The angle
   $\Delta\phi_2(n_t,n_{\tbar})$ is the angular difference between the
   projection of the spin vectors in the plane perpendicular to
   $\vec{\tbar}$.
-\item \DIFdelbegin \DIFdel{Related to }\DIFdelend \DIFaddbegin {\boldmath \DIFaddend $\epsilon_3 = \TPc$\DIFdelbegin \DIFdel{we consider
-  }\DIFdelend \DIFaddbegin \DIFadd{.}}  \DIFadd{The distribution
-  }\DIFaddend $d\sigma/d\Delta\phi_3(n_t,n_{\tbar})$ \DIFaddbegin \DIFadd{is also defined
-  }\DIFaddend in the rest frame of $Q$\DIFdelbegin \DIFdel{with
-  }\DIFdelend \DIFaddbegin \DIFadd{, but this time taking
-  }\DIFaddend $\vec{t}$ \DIFdelbegin \DIFdel{in }\DIFdelend \DIFaddbegin \DIFadd{to be along }\DIFaddend the $z$-axis. The angle $\Delta\phi_3(n_t,n_{\tbar})$
+\item {\boldmath $\epsilon_3 = \TPc$.}  The distribution
+  $d\sigma/d\Delta\phi_3(n_t,n_{\tbar})$ is also defined
+  in the rest frame of $Q$, but this time taking
+  $\vec{t}$ to be along the $z$-axis. The angle $\Delta\phi_3(n_t,n_{\tbar})$
   is the angular difference between the projection of the spin vectors
   in the plane perpendicular to $\vec{t}$.
-\DIFdelbegin %DIFDELCMD < \end{itemize}
-%DIFDELCMD < %%%
-\DIFdelend \DIFaddbegin  \end{enumerate} 
-\DIFaddend \par
+ \end{enumerate} 
+\par
 %
-\DIFdelbegin \DIFdel{In Fig.~\ref{fig5} we present }\DIFdelend \DIFaddbegin \DIFadd{Figure~\ref{fig5} shows }\DIFaddend the normalized distributions obtained
-for the first case listed above\DIFdelbegin \DIFdel{with $\kp= 1,\kpt=0$
-(}\DIFdelend \DIFaddbegin \DIFadd{.
+Figure~\ref{fig5} shows the normalized distributions obtained
+for the first case listed above.
 Four scenarios are considered, corresponding to the SM
 ($\kp= 1$ and $\kpt=0$), two cases in which the Higgs boson
-has mixed }\DIFaddend $\mathrm{CP}$ \DIFdelbegin \DIFdel{-even Higgs boson), $\kp= 1,\kpt=\pm 1$
-($\mathrm{CP}$-mixed Higgs boson
-) }\DIFdelend \DIFaddbegin \DIFadd{couplings ($\kp= 1$ }\DIFaddend and \DIFdelbegin \DIFdel{$\kp= 0,\kpt=1$
-(}\DIFdelend \DIFaddbegin \DIFadd{$\kpt=\pm 1$)
+has mixed $\mathrm{CP}$ couplings ($\kp= 1$ and $\kpt=\pm 1$)
 and a case in which the Higgs boson is purely 
-}\DIFaddend $\mathrm{CP}$\DIFdelbegin \DIFdel{-odd Higgs boson ). In Fig.~\ref{fig6} we display in turn
-}\DIFdelend \DIFaddbegin \DIFadd{-odd ($\kp= 0,\kpt=1$). Figure~\ref{fig6} shows
-}\DIFaddend the analogous distributions for $\epsilon_2$. The distributions
-\DIFdelbegin \DIFdel{correponding }\DIFdelend \DIFaddbegin \DIFadd{corresponding }\DIFaddend to $\epsilon_3$ are similar to those of $\epsilon_2$\DIFdelbegin \DIFdel{but
-with the opposite shift for
-$\kp=\kpt=1$ and $\kp=-\kpt=1$ and then }\DIFdelend \DIFaddbegin \DIFadd{,
+$\mathrm{CP}$-odd ($\kp= 0,\kpt=1$). Figure~\ref{fig6} shows
+the analogous distributions for $\epsilon_2$. The distributions
+corresponding to $\epsilon_3$ are similar to those of $\epsilon_2$,
 except that the ``shifts'' are in the opposite directions for
 the two mixed-$\mathrm{CP}$ cases.  Given the similarities of the
-plots }\DIFaddend we do not include them here.  \DIFaddbegin {\bf \DIFadd{(KK: did I reword this correctly?)}}
-\DIFaddend %%%%%%%%%%%%%%%%%%%%%%%%% FIGURA 5 %%%%%%%%%%%%%%%%%%%%%%%%%
+plots we do not include them here. 
+\DIFdelbegin %DIFDELCMD < {\bf %%%
+\DIFdel{(KK: did I reword this correctly?)}%DIFDELCMD < }
+%DIFDELCMD < %%%
+\DIFdelend %%%%%%%%%%%%%%%%%%%%%%%%% FIGURA 5 %%%%%%%%%%%%%%%%%%%%%%%%%
 %%%% ruta turin facultad: /home/nico/Documentos/ttbarH/Material_final/ todas las figs para abajo
 \begin{center}
 \vspace*{1.4mm}
 \begin{figure}[H]
 %\centering
-\hspace*{-0.52cm}
-\subfloat{\includegraphics[scale=0.45]{TP1_10_nuevo.pdf}}
-\hspace*{-0.006\textwidth}
-\subfloat{\includegraphics[scale=0.45]{TP1_01_nuevo.pdf}} \\
-\hspace*{-0.45cm}
-%\hspace*{0.03\textwidth}
-\subfloat{\includegraphics[scale=0.45]{TP1_11_nuevo.pdf}}
-\hspace*{-0.006\textwidth}
-\subfloat{\includegraphics[scale=0.45]{TP1_1-1_nuevo.pdf}}
-\caption{Angular distributions associated with the TP
-  \DIFdelbeginFL \DIFdelFL{$\epsilon(t,\tbar,n_t,n_{\tbar})$ }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{$\epsilon_1 = \epsilon(t,\tbar,n_t,n_{\tbar})$ }\DIFaddendFL for various values of
-  \DIFdelbeginFL \DIFdelFL{$(\kp,\kpt)$}\DIFdelendFL \DIFaddbeginFL \DIFaddFL{$\kp$ and $\kpt$}\DIFaddendFL . The error bars correspond to the statistical
+\DIFdelbeginFL \DIFdelFL{\hspace*{-0.52cm}
+}%DIFDELCMD < \subfloat{\includegraphics[scale=0.45]{TP1_10_nuevo.pdf}}
+%DIFDELCMD < %%%
+\DIFdelFL{\hspace*{-0.006\textwidth}
+}%DIFDELCMD < \subfloat{\includegraphics[scale=0.45]{TP1_01_nuevo.pdf}} %%%
+\DIFdelendFL \DIFaddbeginFL \DIFaddFL{\hspace*{-0.55cm}
+%DIF > \subfloat{\includegraphics[scale=0.443]{TP1_10_nuevo.pdf}}
+}\subfloat{\includegraphics[scale=0.45]{NEW_TP1_1_0.pdf}}
+\DIFaddFL{\hspace*{-0.006\textwidth}
+}\subfloat{\includegraphics[scale=0.45]{NEW_TP1_0_1.pdf}} \DIFaddendFL \\
+\DIFdelbeginFL \DIFdelFL{\hspace*{-0.45cm}
+}\DIFdelendFL \DIFaddbeginFL \DIFaddFL{\hspace*{-0.55cm}
+}\DIFaddendFL %\hspace*{0.03\textwidth}
+\DIFdelbeginFL %DIFDELCMD < \subfloat{\includegraphics[scale=0.45]{TP1_11_nuevo.pdf}}
+%DIFDELCMD < %%%
+\DIFdelFL{\hspace*{-0.006\textwidth}
+}%DIFDELCMD < \subfloat{\includegraphics[scale=0.45]{TP1_1-1_nuevo.pdf}}
+%DIFDELCMD < %%%
+\DIFdelendFL \DIFaddbeginFL \subfloat{\includegraphics[scale=0.45]{NEW_TP1_1_1.pdf}}
+\DIFaddFL{\hspace*{-0.006\textwidth}
+}\subfloat{\includegraphics[scale=0.45]{NEW_TP1_1_-1.pdf}}
+\vspace*{1cm}
+\DIFaddendFL \caption{Angular distributions associated with the TP
+  $\epsilon_1 = \epsilon(t,\tbar,n_t,n_{\tbar})$ for various values of
+  $\kp$ and $\kpt$. The error bars correspond to the statistical
   uncertainties.}
 \label{fig5}
 \end{figure}
@@ -1263,89 +1172,117 @@ plots }\DIFaddend we do not include them here.  \DIFaddbegin {\bf \DIFadd{(KK: d
 \begin{figure}[H]
 %\centering
 \hspace*{-0.52cm}
-\subfloat{\includegraphics[scale=0.45]{TP2_10_nuevo.pdf}}
-\hspace*{-0.006\textwidth}
-\subfloat{\includegraphics[scale=0.45]{TP2_01_nuevo.pdf}} \\
-\hspace*{-0.45cm}
-%\hspace*{0.03\textwidth}
-\subfloat{\includegraphics[scale=0.45]{TP2_11_nuevo.pdf}}
-\hspace*{-0.006\textwidth}
-\subfloat{\includegraphics[scale=0.45]{TP2_1-1_nuevo.pdf}}
-\caption{Angular distributions associated with the TP \DIFdelbeginFL \DIFdelFL{$\TPb$ }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{$\epsilon_2 = \TPb$ }\DIFaddendFL for
-  various values of \DIFdelbeginFL \DIFdelFL{$(\kp,\kpt)$}\DIFdelendFL \DIFaddbeginFL \DIFaddFL{$\kp$ and $\kpt$}\DIFaddendFL . The error bars \DIFdelbeginFL \DIFdelFL{correspond to }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{indicate }\DIFaddendFL the statistical
+\DIFdelbeginFL %DIFDELCMD < \subfloat{\includegraphics[scale=0.45]{TP2_10_nuevo.pdf}}
+%DIFDELCMD < %%%
+\DIFdelFL{\hspace*{-0.006\textwidth}
+}%DIFDELCMD < \subfloat{\includegraphics[scale=0.45]{TP2_01_nuevo.pdf}} %%%
+\DIFdelendFL \DIFaddbeginFL \subfloat{\includegraphics[scale=0.45]{NEW_TP2_1_0.pdf}}
+\DIFaddFL{\hspace*{-0.006\textwidth}
+}\subfloat{\includegraphics[scale=0.45]{NEW_TP2_0_1.pdf}} \DIFaddendFL \\
+\DIFdelbeginFL \DIFdelFL{\hspace*{-0.45cm}
+}\DIFdelendFL \DIFaddbeginFL \DIFaddFL{\hspace*{-0.56cm}
+}\DIFaddendFL %\hspace*{0.03\textwidth}
+\DIFdelbeginFL %DIFDELCMD < \subfloat{\includegraphics[scale=0.45]{TP2_11_nuevo.pdf}}
+%DIFDELCMD < %%%
+\DIFdelFL{\hspace*{-0.006\textwidth}
+}%DIFDELCMD < \subfloat{\includegraphics[scale=0.45]{TP2_1-1_nuevo.pdf}}
+%DIFDELCMD < %%%
+\DIFdelendFL \DIFaddbeginFL \subfloat{\includegraphics[scale=0.45]{NEW_TP2_1_1.pdf}}
+\DIFaddFL{\hspace*{0.002\textwidth}
+}\subfloat{\includegraphics[scale=0.45]{NEW_TP2_1_-1.pdf}}
+%DIF > \subfloat{\includegraphics[scale=0.45]{TP2_1-1_nuevo.pdf}}
+\DIFaddendFL \caption{Angular distributions associated with the TP $\epsilon_2 = \TPb$ for
+  various values of $\kp$ and $\kpt$. The error bars indicate the statistical
   uncertainties.}
 \label{fig6}
 \end{figure}
 \end{center}
 \par As can be seen from Figs.~\ref{fig5} and \ref{fig6}, the
-\DIFdelbegin \DIFdel{peak }\DIFdelend \DIFaddbegin \DIFadd{peaks }\DIFaddend of the 
-distributions \DIFdelbegin \DIFdel{is shifted according to the values of the couplings
-$\kp, \kpt$.
-This }\DIFdelend \DIFaddbegin \DIFadd{are shifted to the left or the right of the origin
+peaks of the 
+distributions are shifted to the left or the right of the origin
 in the mixed-$\mathrm{CP}$
 cases ($\kp =1$ and $\kpt=\pm 1$).
-The magnitude of the }\DIFaddend shift appears to be approximately the
-same \DIFaddbegin \DIFadd{in both cases, }\DIFaddend but with
-opposite sign for $\kp=\kpt=1$ and $\kp=-\kpt=1$, \DIFdelbegin \DIFdel{distinguishing then
-}\DIFdelend \DIFaddbegin \DIFadd{thus allowing
+The magnitude of the shift appears to be approximately the
+same in both cases, but is in the
+opposite direction for $\kp=\kpt=1$ \DIFdelbegin \DIFdel{and }\DIFdelend \DIFaddbegin \DIFadd{compared to }\DIFaddend $\kp=-\kpt=1$, thus allowing
 one to distinguish
-}\DIFaddend the sign of the pseudoscalar coupling. The \DIFdelbegin \DIFdel{last is the expected
-behaviour since the asymmetry }\DIFdelend \DIFaddbegin \DIFadd{observed dependence
+the sign of the pseudoscalar coupling. The observed dependence
 on the sign of $\kpt$ in these cases
 is consistent with the fact that the numerator of $\mathcal{A}(\epsilon)$
-}\DIFaddend is linear in $\kpt$ \DIFdelbegin \DIFdel{(see Sec.~\ref{sec3.1})and }\DIFdelend \DIFaddbegin [\DIFadd{see Eq.~(\ref{eq26})}]
-\DIFadd{and that }\DIFaddend the quantity $N(\epsilon < 0)/N_T$ is related
-to the angular distribution according to Eq.~(\ref{eq26}). The \DIFaddbegin \DIFadd{angular
-}\DIFaddend distributions for the SM \DIFdelbegin \DIFdel{and }\DIFdelend \DIFaddbegin \DIFadd{case ($\kp =1$ and $\kpt=0$) and
-}\DIFaddend the pure pseudoscalar \DIFdelbegin \DIFdel{hypotheses are
-clearly different . While in the former case the distributions }\DIFdelend \DIFaddbegin \DIFadd{case ($\kp =0$ and $\kpt= 1$) are
+is linear in $\kpt$ [see Eq.~(\DIFdelbegin \DIFdel{\ref{eq26}}\DIFdelend \DIFaddbegin \DIFadd{\ref{eq23}}\DIFaddend )]
+and that the quantity $N(\epsilon < 0)/N_T$ is related
+to the angular distribution according to Eq.~(\ref{eq26}). The angular
+distributions for the SM case ($\kp =1$ and $\kpt=0$) and
+the pure pseudoscalar case ($\kp =0$ and $\kpt= 1$) are
 visibly different from each other and from the mixed-$\mathrm{CP}$
 scenarios. Comparing the SM and purely pseudoscalar cases,
 we note that while the angular distributions for the former case
-}\DIFaddend exhibit a minimum at $\Delta\phi_{1,2}(n_t,n_{\tbar})=0$, \DIFdelbegin \DIFdel{in the latter the
-similar distributions display a peak , so that the two hypotheses can be discriminated, in contrast to the asymmetry that vanishes for both
-hypotheses}\DIFdelend \DIFaddbegin \DIFadd{those
+exhibit a minimum at $\Delta\phi_{1,2}(n_t,n_{\tbar})=0$, those
 for the latter case exhibit a peak at this location.
 Thus, these two scenarios can be distinguished from each other
 via these angular distributions.  This is to be contrasted
 with the situation for the asymmetries $\mathcal{A}(\epsilon)$, which vanish
-in both cases}\DIFaddend .  In order to quantify the mentioned shifts, we have fitted
-the simulated distributions with the following function proposed in
-\cite{Ellis},
+in both cases.
+\DIFaddbegin 
+
+\DIFaddend In order to quantify the \DIFdelbegin \DIFdel{mentioned shifts }\DIFdelend \DIFaddbegin \DIFadd{shifts discussed above}\DIFaddend , we have fitted
+the simulated distributions with the following function\DIFdelbegin \DIFdel{proposed in
+}\DIFdelend \DIFaddbegin \DIFadd{, which was proposed in
+Ref.~}\DIFaddend \cite{Ellis},
 %
 \beq
 \label{eq27}
 \frac{1}{\sigma}\frac{d\sigma}{d\Delta\phi_i(n_t,n_{\tbar})}=a_0 + a_1\cos(\Delta\phi_i(n_t,n_{\tbar})+\delta),\qquad\, i=1,2,3.
 \eeq
 %
-To the extent that this equation is exact we note that
-Eq.~(\ref{eq29}) gives $\mathcal{A}(\epsilon_i)=4a_1 \sin\delta$. With
-this fitting function, we obtain phase shifts approximately between
+To the extent that \DIFdelbegin \DIFdel{this equation is exact}\DIFdelend \DIFaddbegin \DIFadd{the above expression is exact, }\DIFaddend we note that
+Eq.~(\DIFdelbegin \DIFdel{\ref{eq29}) }\DIFdelend \DIFaddbegin \DIFadd{\ref{eq26}) }{\bf \DIFadd{(KK: corrected the equation number; please check\ldots )}}
+\DIFaddend gives $\mathcal{A}(\epsilon_i)=4a_1 \sin\delta$. With
+this fitting function, we obtain phase shifts \DIFaddbegin \DIFadd{$\delta$ that
+are }\DIFaddend approximately between
 $0.9$ and $1$ ($-1$ and $-0.9$) for $\kp=\kpt=1$ ($\kp=-\kpt=1$) both
 for $\epsilon_1$ and $\epsilon_2$. However, the quality of the fits is
-not good enough, being worse in the case of the $\epsilon_1$
-distributions for which $\chi^2/\mathrm{d.o.f}$ is in the range
-$1.69$-$3.86$, in contrast to the range $0.53$-$1.16$ obtained for
-$\epsilon_2$. The main impact on the deviation from the functional
-form proposed in Eq.~(\ref{eq27}) appears to be caused by the $\Delta
-R_{ll}$ cut we have imposed. In fact, when this cut is turned off the
-above ranges for $\chi^2/\mathrm{d.o.f}$ modify to $0.75$-$1.14$ and
-$0.44$-$1.07$ for the $\epsilon_1$ and $\epsilon_2$ distributions
-respectively. In Tables \ref{table3} and \ref{table4} we list the
+not \DIFdelbegin \DIFdel{good enough, being worse in the case of the }\DIFdelend \DIFaddbegin \DIFadd{very good, particularly for }\DIFaddend $\epsilon_1$\DIFdelbegin \DIFdel{distributions for which }\DIFdelend \DIFaddbegin \DIFadd{.  The
+}\DIFaddend $\chi^2/\mathrm{d.o.f}$ \DIFdelbegin \DIFdel{is in }\DIFdelend \DIFaddbegin \DIFadd{for the fits in this case are in }\DIFaddend the range
+$1.69$-$3.86$, \DIFdelbegin \DIFdel{in contrast to }\DIFdelend \DIFaddbegin \DIFadd{while for $\epsilon_2$ they are in }\DIFaddend the range $0.53$-$1.16$\DIFdelbegin \DIFdel{obtained for $\epsilon_2$.  The main impact on }\DIFdelend \DIFaddbegin \DIFadd{.
+}{\bf \DIFadd{(KK: Did we do 4 fits for each $\epsilon$?  Or only 2?  If only 2, maybe
+  saying ``in the range'' is not quite correct, since the two
+  data points are simply the endpoints of the ``range''.  If
+  the range includes all 4 fits for each, maybe we could state that
+  explicitly, since the preceding sentences are only discussing the two
+  mixed-CP scenarios.)}}
+\DIFadd{The leading source of }\DIFaddend the deviation from the functional
+form proposed in Eq.~(\ref{eq27}) appears to be \DIFdelbegin \DIFdel{caused by }\DIFdelend the $\Delta
+R_{ll}$ cut \DIFaddbegin \DIFadd{that }\DIFaddend we have imposed. In fact, when this cut is turned off\DIFaddbegin \DIFadd{, }\DIFaddend the
+above ranges for $\chi^2/\mathrm{d.o.f}$ \DIFdelbegin \DIFdel{modify to }\DIFdelend \DIFaddbegin \DIFadd{become }\DIFaddend $0.75$-$1.14$ and
+$0.44$-$1.07$ for the $\epsilon_1$ and $\epsilon_2$ distributions\DIFdelbegin \DIFdel{respectively. In }\DIFdelend \DIFaddbegin \DIFadd{,
+respectively. }\DIFaddend Tables \ref{table3} and \ref{table4} \DIFdelbegin \DIFdel{we }\DIFdelend list the
 results of the fits obtained when the $\Delta R_{\ell\ell}$ cut is
-relaxed. The results for the TP $\epsilon_3$ are pretty similar to
-those for $\epsilon_2$ but with opposite sign in the phase shifts of
-the $\mathrm{CP}$-mixed hypotheses and hence we do not include them
+relaxed.  \DIFaddbegin \DIFadd{Also, 
+Fig.~\ref{fig7} shows the angular
+distributions, along with the fit curves, for the $\mathrm{CP}$-mixed
+cases with the $\Delta R_{\ell\ell}$ cut turned off.
+}\DIFaddend The results for the TP $\epsilon_3$ are \DIFdelbegin \DIFdel{pretty }\DIFdelend \DIFaddbegin \DIFadd{relatively }\DIFaddend similar to
+those for $\epsilon_2$\DIFdelbegin \DIFdel{but with opposite sign in }\DIFdelend \DIFaddbegin \DIFadd{, except that }\DIFaddend the phase shifts \DIFdelbegin \DIFdel{of
+the }\DIFdelend \DIFaddbegin \DIFadd{have the opposite
+sign in the }\DIFaddend $\mathrm{CP}$-mixed \DIFdelbegin \DIFdel{hypotheses and hence }\DIFdelend \DIFaddbegin \DIFadd{cases.  Given this similarity
+}\DIFaddend we do not include \DIFdelbegin \DIFdel{them
 here. In addition, we show in Fig.~\ref{fig7} the angular
 distributions along with the fit curves for both $\mathrm{CP}$-mixed
-cases when no cut is imposed in $\Delta R_{\ell\ell}$.
+cases when no cut is imposed in $\Delta R_{\ell\ell}$}\DIFdelend \DIFaddbegin \DIFadd{the results for the $\epsilon_3$ distribution
+here}\DIFaddend . 
 \renewcommand{\arraystretch}{1.2}
 \begin{table}[H]
 \caption{Fit results for the angular distribution $d\sigma/(\sigma
-  d\Delta\phi_1(n_t,n_{\tbar}))$ related to the TP
-  $\epsilon_1=\epsilon(t,\tbar,n_t,n_{\tbar})$ when the $\Delta
-  R_{\ell\ell}$ is turned off. Note that the parameter $a_1$ change
-  its sign for $\kp=0,\kp=1$.}
+  d\Delta\phi_1(n_t,n_{\tbar}))$ \DIFaddbeginFL \DIFaddFL{(}\DIFaddendFL related to the TP
+  $\epsilon_1=\epsilon(t,\tbar,n_t,n_{\tbar})$\DIFdelbeginFL \DIFdelFL{when }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{) with }\DIFaddendFL the $\Delta
+  R_{\ell\ell}$ \DIFdelbeginFL \DIFdelFL{is }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{cut }\DIFaddendFL turned off. Note that the \DIFaddbeginFL \DIFaddFL{sign of the }\DIFaddendFL parameter $a_1$
+  \DIFdelbeginFL \DIFdelFL{change
+  its sign }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{changes }\DIFaddendFL for $\kp=0,\kp=1$\DIFaddbeginFL \DIFaddFL{, compared to the
+  other cases}\DIFaddendFL .  \DIFaddbeginFL {\bf \DIFaddFL{(KK: Do we restrict $\delta$ to be between
+    $\pm \pi/2$?  If not, we could require $a_1$ to always
+    be positive, and absorb the sign change by a shift of $\delta$ by $\pi$
+    or ssomething.  Maybe we should clarify the range allowed for $\delta$.)}} \DIFaddendFL }
 \label{table3}
 \begin{center}
 \begin{tabular}{|C{1cm}|C{1cm}||C{3cm}|C{3cm}|C{3cm}|}
@@ -1370,10 +1307,12 @@ $0$ & $1$ & $0.1591 \pm 0.0006$ & ~~$\,0.0102 \pm 0.0008$ & $0.11 \pm 0.08$ \\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{table}[H]
 \caption{Fit results for the angular distribution $d\sigma/(\sigma
-  d\Delta\phi_2(n_t,n_{\tbar}))$ related to the TP
-  $\epsilon_2=\epsilon(Q,\tbar,n_t,n_{\tbar})$ when the $\Delta
-  R_{\ell\ell}$ is turned off. Note that the parameter $a_1$ change
-  its sign for $\kp=0,\kp=1$.}
+  d\Delta\phi_2(n_t,n_{\tbar}))$ \DIFaddbeginFL \DIFaddFL{(}\DIFaddendFL related to the TP
+  $\epsilon_2=\epsilon(Q,\tbar,n_t,n_{\tbar})$\DIFdelbeginFL \DIFdelFL{when }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{), with }\DIFaddendFL the $\Delta
+  R_{\ell\ell}$ \DIFdelbeginFL \DIFdelFL{is }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{cut }\DIFaddendFL turned off. \DIFdelbeginFL \DIFdelFL{Note that }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{As was }\DIFaddendFL the \DIFaddbeginFL \DIFaddFL{case in Table~\ref{table3},
+  the sign of the }\DIFaddendFL parameter $a_1$ \DIFdelbeginFL \DIFdelFL{change
+  its sign }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{changes }\DIFaddendFL for
+  $\kp=0,\kp=1$.}
 \label{table4}
 \begin{center}
 \begin{tabular}{|C{1cm}|C{1cm}||C{3cm}|C{3cm}|C{3cm}|}
@@ -1421,10 +1360,12 @@ give allways smaller values for $\chi^2/\mathrm{d.o.f}$.
 \caption{Angular distributions $d\sigma/(\sigma
   d\Delta\phi_1(n_t,n_{\tbar}))$ (top) and $d\sigma/(\sigma
   d\Delta\phi_2(n_t,n_{\tbar}))$ (bottom) associated with the TPs
-  $\epsilon_1=\TPa$ and $\epsilon_2=\TPb$ respectively for the
+  $\epsilon_1=\TPa$ and $\epsilon_2=\TPb$\DIFaddbeginFL \DIFaddFL{, }\DIFaddendFL respectively\DIFaddbeginFL \DIFaddFL{, }\DIFaddendFL for the
   $\mathrm{CP}$-mixed cases $\kp=\kpt=1$ (left) and $\kp=-\kpt=1$
-  (right) when the $\Delta R_{\ell\ell}$ cut is turned off. Also, the
-  corresponding fit curves are displayed in red.}
+  (right)\DIFdelbeginFL \DIFdelFL{when the }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{.  The }\DIFaddendFL $\Delta R_{\ell\ell}$ cut \DIFdelbeginFL \DIFdelFL{is }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{was }\DIFaddendFL turned off \DIFaddbeginFL \DIFaddFL{when
+  generating these results}\DIFaddendFL . \DIFdelbeginFL \DIFdelFL{Also, the
+  }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{The
+  }\DIFaddendFL corresponding fit curves \DIFaddbeginFL [\DIFaddFL{see Eq.~(\ref{eq27})}] \DIFaddendFL are displayed in red.}
 \label{fig7}
 \end{figure}
 \end{center}
