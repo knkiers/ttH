@@ -1,7 +1,7 @@
 \documentclass[aps,preprint,tightenlines,floatfix,superscriptaddress,nofootinbib,showpacs]{revtex4-1}
 %DIF LATEXDIFF DIFFERENCE FILE
 %DIF DEL ../manuscript_older/Paper_ttbarH_Draft_3_1_16.tex   Wed Mar  2 13:20:13 2016
-%DIF ADD Paper_ttbarH_Draft.tex                              Wed Mar  2 19:42:16 2016
+%DIF ADD Paper_ttbarH_Draft.tex                              Wed Mar  2 21:08:36 2016
 \pdfoutput=1
 \usepackage{graphicx}
 %\usepackage{dcolumn}
@@ -1570,11 +1570,12 @@ the sensitivity to the NP contribution is smaller for the mean values
 \section{{\boldmath $\mathrm{CP}$}-odd observables not depending on \MakeLowercase{{\boldmath $t$}} and \MakeLowercase{{\boldmath $\tbar$}} spin vectors}
 \label{sec4}
 So far we have considered three TPs involving the momenta $t,\tbar$
-and $Q$ and the spin vectors $n_t$ and $n_{\tbar}$ given in
-Eqs.~(\ref{eq3})-(\ref{eq4}). In fact, we have described the general
+and $Q$ and the spin vectors $n_t$ and $n_{\tbar}$ \DIFdelbegin \DIFdel{given }\DIFdelend \DIFaddbegin [\DIFadd{defined }\DIFaddend in
+Eqs.~(\ref{eq3})-(\ref{eq4}\DIFdelbegin \DIFdel{).  In fact}\DIFdelend \DIFaddbegin ]\DIFadd{.  Furthermore}\DIFaddend , we have described the general
 form of the differential cross-section in terms of these vectors in
-Eq.~(\ref{eq20}). Here, we will take into account another
-possibilities for the choice of the vectors from which the
+Eq.~(\ref{eq20}). \DIFdelbegin \DIFdel{Here, we will take into account another
+}\DIFdelend \DIFaddbegin \DIFadd{In this section we consider other
+}\DIFaddend possibilities for the choice of the vectors from which the
 $\mathrm{CP}$-odd observables can be constructed. From the definitions
 in Eqs.~(\ref{eq3})-(\ref{eq4}), we see that the TPs
 $\epsilon_{1,2,3}$ can be written as follows,
@@ -1587,8 +1588,8 @@ $\epsilon_{1,2,3}$ can be written as follows,
 \vspace*{1mm}
 \beq
 \label{eq30}
-\TPb = \frac{m^2_t}{(t\cdot \ell^+)(\tbar\cdot \ell^-)}\left(\epsilon(t,\tbar,\ell^-\!,\ell^+)+\epsilon(H,\tbar,\ell^-\!,\ell^+)+\frac{(t\cdot\ell^+)}{m^2_t}\epsilon(H,\tbar,t,\ell^-\!)\right)
-\eeq
+\TPb = \frac{m^2_t}{(t\cdot \ell^+)(\tbar\cdot \ell^-)}\left(\epsilon(t,\tbar,\ell^-\!,\ell^+)+\epsilon(H,\tbar,\ell^-\!,\ell^+)+\frac{(t\cdot\ell^+)}{m^2_t}\epsilon(H,\tbar,t,\ell^-\!)\right) \DIFaddbegin \DIFadd{\,,
+}\DIFaddend \eeq
 %
 \vspace*{1mm}
 \beq
@@ -1602,15 +1603,39 @@ linear combination of TPs involving the momenta $t,\tbar,H,\ell^+$ and
 $\ell^-$, with coefficients that are functions of phase space
 variables. These five momenta give rise to five TPs whose sensitivity
 can also be tested by means of the observables introduced in
-Secs.~\ref{sec3.1}-\ref{sec3.3}. In the first place, we have found
-that TPs not including both lepton and anti-lepton momenta present a
-negligible sensitivity, and then we will concentrate here on the
+Secs.~\ref{sec3.1}-\ref{sec3.3}.  \DIFdelbegin \DIFdel{In the first place}\DIFdelend \DIFaddbegin \DIFadd{Now}\DIFaddend , we have found
+that TPs not including both \DIFaddbegin \DIFadd{the }\DIFaddend lepton and anti-lepton momenta \DIFdelbegin \DIFdel{present a
+negligible sensitivity , and then we will }\DIFdelend \DIFaddbegin \DIFadd{yield
+negligible sensitivity to the value of $\kpt$.  For this reason,
+we }\DIFaddend concentrate here on the
 results obtained for the remaining TPs,
-$\epsilon_5\equiv\epsilon(t,\tbar,\ell^-\!,\ell^+),
+\DIFdelbegin \DIFdel{$\epsilon_5\equiv\epsilon(t,\tbar,\ell^-\!,\ell^+),
 \epsilon_6\equiv\epsilon(H,t,\ell^-\!,\ell^+)$ and $\epsilon_7\equiv
-\epsilon(H,\tbar,\ell^-\!,\ell^+)$. The Tables \ref{table6} and
-\ref{table7} summarize the results for these TPs.
-\renewcommand{\arraystretch}{1.6}
+\epsilon(H,\tbar,\ell^-\!,\ell^+)$.
+The Tables \ref{table6} and
+\ref{table7} summarize the results for these TPs.}\DIFdelend %DIF > 
+\DIFaddbegin \beq
+\label{eqa5}
+\DIFadd{\epsilon_5\equiv\epsilon(t,}\tbar\DIFadd{,\ell^-\!,\ell^+) \,,
+}\vspace*{1mm}
+\eeq
+%DIF > 
+\beq
+\label{eqa6}
+\DIFadd{\epsilon_6\equiv\epsilon(H,t,\ell^-\!,\ell^+) \,,
+}\vspace*{1mm}
+\eeq
+%DIF > 
+\beq
+\label{eqa7}
+\DIFadd{\epsilon_7\equiv\epsilon(H,}\tbar\DIFadd{,\ell^-\!,\ell^+) \,.
+}\vspace*{1mm}
+\eeq
+%DIF > 
+    {\bf \DIFadd{(KK: Should we clarify somehow that $\epsilon_{4,5,6,7}$ are not the same as
+      $\epsilon_{4,5,6,7}$ in Eq.~(20)?  That seems like a potential source of confusion.)}}
+
+\DIFaddend \renewcommand{\arraystretch}{1.6}
 \begin{table}[H]
 \caption{Mean values obtained for the TPs $\epsilon_{5,6,7}$ for the
   SM case and two $\mathrm{CP}$-mixed cases with opposite sign in the
@@ -1662,15 +1687,23 @@ $1$ & $1$ & $-0.0379$~~~ & $-12.0$~~~ & $0.0143$~ & $4.5$~ & $-0.0137$~~~ & $\,-
 \end{table}
 \par
 %
-We see that the TP $\epsilon_5$ gives rise to asymmetries and mean
+\DIFaddbegin 
+
+\DIFadd{Tables~\ref{table6} and
+\ref{table7} summarize the results for the TPs $\epsilon_{5,6,7}$.
+    }{\bf \DIFadd{(KK: Should we interchange the two tables?  In the previous section
+      we considered asymmetries first, then mean values.  Seems like it might
+      flow better to follow that same order here.)}}
+\DIFaddend We see that the TP $\epsilon_5$ gives rise to asymmetries and mean
 values that are clearly higher than those obtained from $\epsilon_6$
 and $\epsilon_7$. This is in contrast to the TPs $\epsilon_{1,2,3}$,
-for which the asymmetries and mean values are comparable (see Tables
+for which the asymmetries and mean values are comparable \DIFaddbegin \DIFadd{for the TPs
+}\DIFaddend (see Tables
 \ref{table1} and \ref{table5}). We also note that the asymmetry for
-$\epsilon_5$ is exactly the same as for $\epsilon_1$ as was expected
+$\epsilon_5$ is exactly the same as for $\epsilon_1$\DIFaddbegin \DIFadd{, }\DIFaddend as was expected
 from Eq.~(\ref{eq29}) since the proportionality factor relating them
 is positive definite. Regarding the mean values, we see by comparing
-Tables \ref{table5} and \ref{table6} that the TPs $\epsilon_{1,2,3}$
+Tables\DIFaddbegin \DIFadd{~}\DIFaddend \ref{table5} and \ref{table6} that the TPs $\epsilon_{1,2,3}$
 appear to have a higher sensitivity to the pseudoscalar coupling than
 $\epsilon_{5,6,7}$.  \par It is important to mention that in the
 $t\tbar$ rest frame the sign of the TP $\epsilon_5$ is defined through
