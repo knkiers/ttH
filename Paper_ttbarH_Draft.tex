@@ -1176,7 +1176,7 @@ Ref.~\cite{Ellis},
 \eeq
 %
 To the extent that the above expression is exact, we note that
-Eq.~(\ref{eq26}) {\bf (KK: corrected the equation number; please check\ldots )}
+Eq.~(\ref{eq26}) 
 gives $\mathcal{A}(\epsilon_i)=4a_1 \sin\delta$. With
 this fitting function, we obtain phase shifts $\delta$ that
 are approximately between
@@ -1186,16 +1186,10 @@ for $\epsilon_1$ and $\epsilon_2$.\footnote{The results for the
   those for $\epsilon_2$, except that the phase shifts have the opposite
   sign in the $\mathrm{CP}$-mixed cases.  Given this similarity
   we do not include the corresponding results for the $\epsilon_3$ distribution
-  here. {\bf (KK: OK to move this to a footnote?)}}  However, the quality of the fits is
+  here.}  However, the quality of the fits in the four considered scenarios is
 not very good, particularly for $\epsilon_1$.  The
-$\chi^2/\mathrm{d.o.f}$ for the fits in this case are in the range
+$\chi^2/\mathrm{d.o.f}$ for the fits corresponding to $\epsilon_1$ are in the range
 $1.69$-$3.86$, while for $\epsilon_2$ they are in the range $0.53$-$1.16$.
-{\bf (KK: Did we do 4 fits for each $\epsilon$?  Or only 2?  If only 2, maybe
-  saying ``in the range'' is not quite correct, since the two
-  data points are simply the endpoints of the ``range''.  If
-  the range includes all 4 fits for each, maybe we could state that
-  explicitly, since the preceding sentences are only discussing the two
-  mixed-CP scenarios.)}
 The deviation from the functional
 form proposed in Eq.~(\ref{eq27}) appears to be due primarily to the $\Delta
 R_{ll}$ cut that we have imposed. In fact, when this cut is turned off, the
@@ -1343,10 +1337,9 @@ TP, we define its mean value in the following manner,
 %
 \beq
 \label{eq28}
-\langle \epsilon \rangle = \frac{\int\epsilon\, \{d\sigma (pp\to b\,\ell^+\nu_{\ell}\,\bbar\,\ell^-\bar{\nu}_{\ell}H)/ d\Phi\}\,d\Phi}{\int \{d\sigma (pp\to b\,\ell^+\nu_{\ell}\,\bbar\,\ell^-\bar{\nu}_{\ell}H)/ d\Phi\}\,d\Phi},
+\langle \epsilon \rangle = \frac{\int\epsilon\, [d\sigma (pp\to b\,\ell^+\nu_{\ell}\,\bbar\,\ell^-\bar{\nu}_{\ell}H)/ d\Phi]\,d\Phi}{\int [d\sigma (pp\to b\,\ell^+\nu_{\ell}\,\bbar\,\ell^-\bar{\nu}_{\ell}H)/ d\Phi]\,d\Phi},
 \eeq
 %
-{\bf (KK: PRD might change these to [\ldots].)}
 where $\Phi$ is the Lorentz-invariant phase space corresponding to the
 final state
 $b\,\ell^+\nu_{\ell}\,\bbar\,\ell^-\bar{\nu}_{\ell}H$. From
@@ -1457,7 +1450,7 @@ Secs.~\ref{sec3.1}-\ref{sec3.3}.  Now, we have found
 that TPs not including both the lepton and anti-lepton momenta yield
 negligible sensitivity to the value of $\kpt$.  For this reason,
 we concentrate here on the
-results obtained for the remaining TPs,
+results obtained for the remaining TPs,\footnote{These TPs should not be confused with those introduced in Eq.~(\ref{eq20}).}
 %
 \beq
 \label{eqa5}
@@ -1477,8 +1470,31 @@ results obtained for the remaining TPs,
 \vspace*{1mm}
 \eeq
 %
-    {\bf (KK: Should we clarify somehow that $\epsilon_{4,5,6,7}$ are not the same as
-      $\epsilon_{4,5,6,7}$ in Eq.~(20)?  That seems like a potential source of confusion.)}
+
+\renewcommand{\arraystretch}{1.4}
+\begin{table}[H]
+\caption{Asymmetries for the TPs $\epsilon_{5,6,7}$ for the SM case
+  and the two $\mathrm{CP}$-mixed cases defined by $\kp=1,\kpt=\pm
+  1$. The values correspond to $10^5$ simulated events.}
+\label{table7}
+\begin{center}
+\begin{tabular}{|C{1cm}|C{1cm}||C{2cm}|C{2cm}||C{2cm}|C{2cm}||C{2cm}|C{2cm}|}
+%\begin{tabular}{|c|r||r|c||r|c||r|c|}
+\hhline{|========|}
+%\hhline{|--------|}
+$\kappa_t$&$\tilde{\kappa}_t$~~&$\mathcal{A}(\epsilon_5)$~~&$\mathcal{A}(\epsilon_5)/\sigma_{\mathcal{A}}$& $\mathcal{A}(\epsilon_6)$~~&$\mathcal{A}(\epsilon_6)/\sigma_{\mathcal{A}}$&$\mathcal{A}(\epsilon_7)$~~&$\mathcal{A}(\epsilon_7)/\sigma_{\mathcal{A}}$  \\ 
+\hhline{|========|} 
+%\hhline{|--------|}
+$1$ & $-1$~~~ & $0.0315$~ & $10.0$~ & $-0.0134$~~~ & $-4.2$~~~ & $0.0111$~ & $3.5$~\\[0.6mm]
+\hline
+$1$ & $0$ & $-0.0021$~~~ & $-0.7$~~~ & $-0.0011$~~~ & $-0.3$~~~ & $0.0009$~& $0.3$~\\[0.6mm]
+\hline
+$1$ & $1$ & $-0.0379$~~~ & $-12.0$~~~ & $0.0143$~ & $4.5$~ & $-0.0137$~~~ & $\,-4.3$~~~  \\[0.6mm]
+\hhline{|========|}
+%\hhline{|--------|}
+\end{tabular}
+\end{center} 
+\end{table}
 
 \renewcommand{\arraystretch}{1.6}
 \begin{table}[H]
@@ -1506,38 +1522,11 @@ $1$ & $1$~ & $-6.76$~~~ & $3.46$~ & $-3.29$~~~~\\[0.6mm]
 \end{tabular}
 \end{center} 
 \end{table}
-\renewcommand{\arraystretch}{1.4}
-\begin{table}[H]
-\caption{Asymmetries for the TPs $\epsilon_{5,6,7}$ for the SM case
-  and the two $\mathrm{CP}$-mixed cases defined by $\kp=1,\kpt=\pm
-  1$. The values correspond to $10^5$ simulated events.}
-\label{table7}
-\begin{center}
-\begin{tabular}{|C{1cm}|C{1cm}||C{2cm}|C{2cm}||C{2cm}|C{2cm}||C{2cm}|C{2cm}|}
-%\begin{tabular}{|c|r||r|c||r|c||r|c|}
-\hhline{|========|}
-%\hhline{|--------|}
-$\kappa_t$&$\tilde{\kappa}_t$~~&$\mathcal{A}(\epsilon_5)$~~&$\mathcal{A}(\epsilon_5)/\sigma_{\mathcal{A}}$& $\mathcal{A}(\epsilon_6)$~~&$\mathcal{A}(\epsilon_6)/\sigma_{\mathcal{A}}$&$\mathcal{A}(\epsilon_7)$~~&$\mathcal{A}(\epsilon_7)/\sigma_{\mathcal{A}}$  \\ 
-\hhline{|========|} 
-%\hhline{|--------|}
-$1$ & $-1$~~~ & $0.0315$~ & $10.0$~ & $-0.0134$~~~ & $-4.2$~~~ & $0.0111$~ & $3.5$~\\[0.6mm]
-\hline
-$1$ & $0$ & $-0.0021$~~~ & $-0.7$~~~ & $-0.0011$~~~ & $-0.3$~~~ & $0.0009$~& $0.3$~\\[0.6mm]
-\hline
-$1$ & $1$ & $-0.0379$~~~ & $-12.0$~~~ & $0.0143$~ & $4.5$~ & $-0.0137$~~~ & $\,-4.3$~~~  \\[0.6mm]
-\hhline{|========|}
-%\hhline{|--------|}
-\end{tabular}
-\end{center} 
-\end{table}
 \par
 %
 
-Tables~\ref{table6} and
-\ref{table7} summarize the results for the TPs $\epsilon_{5,6,7}$.
-    {\bf (KK: Should we interchange the two tables?  In the previous section
-      we considered asymmetries first, then mean values.  Seems like it might
-      flow better to follow that same order here.)}
+Tables~\ref{table7} and
+\ref{table6} summarize the results for the TPs $\epsilon_{5,6,7}$.
 We see that the TP $\epsilon_5$ gives rise to asymmetries and mean
 values that are clearly higher than those obtained from $\epsilon_6$
 and $\epsilon_7$. This is in contrast to the TPs $\epsilon_{1,2,3}$,
