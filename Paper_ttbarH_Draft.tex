@@ -1871,74 +1871,139 @@ be slightly less sensitive than the combination $\epsilon_{10}$,
 {\bf (KK: ``$\mathcal{A}(\epsilon_{10})$''?)}
 giving rise to a separation between the $\mathrm{CP}$-mixed scenarios
 that is smaller by about $1.4\sigma$.
+
+%
 \section{Experimental Feasibility}
 \label{sec6}
 %
-By considering the mild selection cuts introduced in Sec.~\ref{sec3},
-the SM cross section for $\ppprocess$, $\ell=e,\mu$ at
-$14\,\mathrm{TeV}$ is $\sim 15.3\,\mathrm{fb}$ and hence the number of
+
+In our numerical analyses so far we have used relatively large
+samples of events ($10^5$ events per sample)
+in order to clearly distinguish
+which observables would be most promising.  
+The number of events expected at the HL-LHC, however, is
+smaller than the number of events that we have used in our
+simulations.  In this section we reexamine
+the more promising observables, using sample sizes that are
+more attainable in the near future.  {\bf (KK: OK?)}
+
+Let us first make some estimates regarding the number of signal events
+expected at the HL-LHC.
+In Sec.~\ref{sec3} we introduced several mild selection cuts.
+Implementing these cuts, and assuming that the final state leptons
+could be either electrons or muons, {\bf (KK: factor of 4\ldots?)}
+the SM cross section for $\ppprocess$ at
+$14\,\mathrm{TeV}$ is $\sim 15.3\,\mathrm{fb}$; thus, the number of
 events expected within the context of the HL-LHC is $\sim
 15.3\,\mathrm{fb} \times 3000\,\mathrm{fb}^{-1} = 4.59\times
-10^4$. This number is expected to be even larger in the case of
-$\kp=1,\kpt\neq 0$ since the corresponding cross section is then
-higher than the SM one. By taking into account NLO corrections to the
-production process and considering a $K$-factor around $1.2$
-\cite{Dawson,Beenakker,Dittmaier}, the number of events can be raised
-up to $\sim 5.49 \times 10^4$. On the other hand, additional cuts as
-well as the efficiency related to the reconstruction of particles
-momenta will contribute to decrease this number. For instance, in
-order to obtain the asymmetry of $\epsilon_4$, the $t$ and $\tbar$
-momenta need to be reconstructed. This is challenging not only due to
-the presence of two neutrinos in the final state which escape the
-detector undetected but also because final state objects need to be
-asocciated with the respective parent quark \cite{atlasconf}. As was
-already mentioned in Sec.~\ref{sec5}, a possibility is to use the
+10^4$. This number is expected to be larger
+if $\kpt\neq 0$ (assuming $\kp=1$),
+since the corresponding cross section is
+larger than the SM cross section in this case.
+Taking into account NLO corrections (to the
+production process) via a $K$ factor of approximately
+$1.2$~\cite{Dawson,Beenakker,Dittmaier}, we find that
+the expected number of
+events increases to $\sim 5.49 \times 10^4$.
+{\bf (KK: should we use 5.5 at this point, since
+  the $K$ factor is only two sig figs?)}
+On the other hand, additional cuts, as
+well as a reduction in efficiency related to momentum reconstruction,
+will lead to a decrease in this number.  In
+order to measure the asymmetry $\mathcal{A}(\epsilon_4)$,
+for example, the $t$ and $\tbar$
+momenta need to be reconstructed. This is challenging, not only due to
+the presence of two neutrinos in the final state (which escape the
+detector undetected), but also because final state objects need to be
+associated with their respective parent quark~\cite{atlasconf}.
+{\bf (KK: maybe we can talk about this for a minute; I don't think I
+  understand it\ldots.  Wait -- do we mean that the quarks and leptons
+  need to be associated with either the top or antitop?  If so, maybe
+  we can reword this a bit.  Suggestion follows\ldots, maybe this
+  is too explicit now, because we also wanted it to refer to the Higgs.)}
+but also because the (visible) quarks and charged leptons in the final
+state need to be correctly associated with the corresponding
+parent particle (i.e., the top or antitop quark)~\cite{atlasconf}.
+As was
+already noted in Sec.~\ref{sec5}, one possibility is to use the
 neutrino weighting technique along with the kinematic equations
 arising from kinematic constraints related to the top and $W$ masses
 as well as from the energy-momentum conservation at each of the decay
-vertices involved in the process. Within the context of $t\tbar$ this
-procedure has been used, for instance, in order to obtain measurements
-of spin correlation \cite{atlasconf} and charge asymmetry
-\cite{atlascharge}. Also, events reconstructed with this technique has
-been used in \cite{dosSantos} for analyzing angular distributions that
+vertices involved in the process. {\bf (KK: Can we either simplify the
+  previous sentence or split it
+  into 2 or 3 sentences?  I'm not 100\% clear on which ideas go
+  together, so I wonder if one of you could give it a try.  My preference
+  would be to simplify it to something like ``\ldots weighting technique,
+  along with associated kinematic constraints'' or something like
+  that, and then give a reference.)}
+Within the context of $t\tbar$ production {\bf (KK: correct?)} this
+procedure has been used, for instance, to obtain 
+spin correlation~\cite{atlasconf} and charge
+asymmetry~\cite{atlascharge} measurements.
+Also, events reconstructed using this technique have
+been used in the analysis of angular distributions that
 are useful for discriminating the signal from the backgrounds in
-$t\tbar H (H\rightarrow b\bbar)$. In all these cases the corresponding
-efficiency in the reconstruction of the momenta is up to $\sim 80
-\%$.\par Based on the discussion given in the previous paragraph, we
-have simulated sets of $5\times 10^4, 1\times 10^4$ and $5\times 10^3$
-events and recalculated the most sensitive observable, namely
+$t\tbar H (H\rightarrow b\bbar)$~\cite{dosSantos}.
+{\bf (KK: do we need an initial state
+  on this process?)} In all these cases the corresponding
+efficiency in the reconstruction of the momenta is up to $\sim 80\%$.
+{\bf (KK: Does this mean that none of them exceeds 80\% or that
+  they all have an efficiency of at least 80\%?)}
+
+
+Given the discussion in the previous paragraph, we
+have generated sets of $5\times 10^4, 1\times 10^4$ and $5\times 10^3$
+events and have recalculated the most sensitive observable, 
 $\mathcal{A}(\epsilon_4)$, for each case. The results are displayed in
-Table \ref{table11}, where it can be seen that for a number of events
-close to that roughly estimated above within the context of the
-HL-LHC, the observable is still sensitive to $\kpt$ allowing to
-separate the $\mathrm{CP}$-mixed cases by $19\sigma$. As expected, the
-sensitivity worsen as the number of events is reduced, but even with
+Table \ref{table11}, where it can be seen that for $5\times 10^4$ events
+(which is close to our rough estimate above for the
+total number of signal events for the
+HL-LHC), {\bf (KK: stated correctly?)}
+the observable is still very sensitive to $\kpt$.
+In this case, the $\mathrm{CP}$-mixed scenarios are
+effectively separated by $19\sigma$. As expected, the
+sensitivity worsens as the number of events is reduced, but even with
 $5\times 10^3$ events the separation between the $\mathrm{CP}$-mixed
-hypotheses under consideration is around $6.5\sigma$. \par Although
-the combination $\epsilon_{10}$ discussed in Sec.~\ref{sec5} avoids
-the problem of reconstructing the top and antitop momenta, we have
-also considered the respective asymmetry obtained for more
-conservative numbers of events. In Table \ref{table12} we show the
-results for $\mathcal{A}(\epsilon_{10})$ when the number of events is
-reduced from $5\times 10^4$ to $1\times 10^4$. We see in this case
-that even with $1\times 10^4$ simulated events the observable is
-capable to discriminate the $\mathrm{CP}$-mixed cases by
-$5.6\sigma$.\par Finally, it is important to mention that a realistic
+scenarios under consideration is $\sim 6.5\sigma$. \par
+
+In Sec.~\ref{sec5} we defined the TP combination $\epsilon_{10}$,
+which does not depend directly on the top or antitop momenta.
+Although the top and antitop momenta would not need to be
+reconstructed to measure $\mathcal{A}(\epsilon_{10})$,
+it is still useful to examine this observable for more
+conservative numbers of events. Table~\ref{table12} shows the
+results obtained for 
+$5\times 10^4$ and $1\times 10^4$ events. We see in this case
+that even with $1\times 10^4$ events the observable is
+able to distinguish the $\mathrm{CP}$-mixed cases by
+$5.6\sigma$.\par
+
+Finally, it is important to mention that a realistic
 analysis of the sensistivity of the observables discussed in this
-paper requires the study of the impact of the backgrounds as well as
+paper requires a study of the impact of the backgrounds, as well as
 the hadronization of the quarks in the final state and the effects of
-the detector. If we consider the dominant decay mode of the higgs,
+the detector. If we consider the dominant decay mode of the Higgs boson,
 $H\rightarrow b\bbar$, in order to maximize the cross section of the
 process, the signature is given by $4$ $b$-jets, two leptons and
-missing energy, while the main background arise from the production of
-$t\tbar$ in asocciation with additional jets, being the dominant
-source the production of $t\tbar + b\bbar$. By applying a small set of
-cuts it is shown in \cite{chinos} that the
-\begin{table}[H]
-\caption{Asymmetry for the TP $\epsilon_4$ obtained by using $5\times
-  10^4, 1 \times 10^4$ and $5\times 10^3$ simulated events for the SM
-  case and the two $\mathrm{CP}$-mixed cases defined by
-  $\kp=1,\kpt=\pm 1$. }
+missing energy.  The main background arises from the production of
+$t\tbar$ in association with additional jets, with the dominant
+source being the production of $t\tbar + b\bbar$.
+In Ref.~\cite{chinos} it is shown that the application of a small
+set of cuts results in a large improvement in the signal to background
+ratio.  {\bf (KK: please check that I didn't say this incorrectly.)}
+On the experimental side, a
+rigorous treatment of the signal and backgrounds
+for the process {\bf (KK: \ldots process\ldots)}
+is performed in Ref.~\cite{atlasger}, using $20.3\,
+\mathrm{fb}^{-1}$ of data at $\sqrt{s}=8\,\mathrm{TeV}$.
+       {\bf (KK: please check that I didn't alter the meaning
+         of this last sentence when I edited it.  Also, do we need
+         to say anything about this study other than that it was done?)}
+
+\begin{table}[th]
+\caption{Asymmetry for the TP $\epsilon_4$ obtained using $5\times
+  10^4, 1 \times 10^4$ and $5\times 10^3$ events for the SM
+  case and the two $\mathrm{CP}$-mixed cases. }
 \label{table11}
 \begin{center}
 \begin{tabular}{|C{1cm}|C{1cm}||C{2cm}|C{2cm}||C{2cm}|C{2cm}||C{2cm}|C{2cm}|}
@@ -1959,11 +2024,11 @@ $1$ & $1$ & $0.0443$~ & $9.9$~ & $0.0434$~ & $4.2$~ & $\,0.0420$~ & $3.0\,\,$ \\
 \end{tabular}
 \end{center} 
 \end{table}
-\begin{table}[H]
+
+\begin{table}[th]
 \caption{Asymmetry for the TP $\epsilon_{10}$ in the SM case and the
-  two $\mathrm{CP}$-mixed cases defined by $\kp=1,\kpt=\pm 1$ when the
-  number of simulated events is reduced from $5\times 10^4$ to $1
-  \times 10^4$.}
+  two $\mathrm{CP}$-mixed cases for
+  $5\times 10^4$ and $1\times 10^4$ events.}
 \label{table12}
 \begin{center}
 \begin{tabular}{|C{1cm}|C{1cm}||C{2cm}|C{2cm}||C{2cm}|C{2cm}|}
@@ -1984,25 +2049,24 @@ $1$ & $1$ & $0.0313$~ & $7.0$~ & $0.0380$~ & $3.8\,$ \\
 \end{tabular}
 \end{center} 
 \end{table}
-\noindent
 %
-signal to background ratio is largely improved. On the other hand, a
-rigorous treatment of the backgrounds and their impact with respect to
-the signal is performed in \cite{atlasger} by using $20.3\,
-\mathrm{fb}^{-1}$ of data at $\sqrt{s}=8\,\mathrm{TeV}$.  \par The
-results shown in tables \ref{table11} and \ref{table12} reveal that
-with $5\times 10^3$ and $1\times 10^4$ events respectively the
+
+
+The
+results shown in Tables \ref{table11} and \ref{table12} reveal that
+with $5\times 10^3$ and $1\times 10^4$ events, respectively, the
 observables $\mathcal{A}(\epsilon_4)$ and $\mathcal{A}(\epsilon_{10})$
-are still useful for testing $\kpt$. Without considering the lack of
-events related to the experimental analysis, these numbers of events
-correspond to a luminosity around $\sim
+are still useful for testing $\kpt$. Without taking into account
+the loss of events that would take place in a realistic 
+experimental analysis, these numbers of events
+correspond to a luminosity of $\sim
 300\,$-$\,600\,\mathrm{fb}^{-1}$ for the SM and even smaller for the
-$\mathrm{CP}$-mixed cases due to the larger cross section. This range
+$\mathrm{CP}$-mixed cases (due to their larger cross section). This range
 of luminosities is in principle achievable in the short term by the
 LHC. We note that in order to be fully conclusive about the required
 luminosity, it is important to include the effects of hadronization,
-detector resolution, reconstruction eficciencies and so
-forth. However, this kind of analysis is out of the scope of this
+detector resolution, reconstruction efficiencies and so
+forth. Such an analysis, however, is beyond the scope of this
 paper.
 %%%%%%%%%%%% with Cuts
 %51.46/17 -0.02 +- 0.08
@@ -2046,7 +2110,9 @@ we have indentified the terms linear in $\kp$ and $\kpt$ as those
 involving TPs. Among these, we have explored the three that do not
 involve the momenta of the incoming quarks/gluons and at the same time
 incorporate both spin vectors: $\epsilon_1\equiv \TPa$,
-$\epsilon_2\equiv \TPb$ and $\epsilon_3\equiv \TPc$.\par We have found
+$\epsilon_2\equiv \TPb$ and $\epsilon_3\equiv \TPc$.\par
+
+We have found
 that $\epsilon_{1,2,3}$ allow to distinguish between the
 $\mathrm{CP}$-mixed hypotheses by more than $\sim 20\sigma$ in the
 case of asymmetries and $\sim 10\sigma$ in the case of mean values
