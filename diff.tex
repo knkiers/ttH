@@ -1,7 +1,7 @@
 \documentclass[aps,preprint,tightenlines,floatfix,superscriptaddress,nofootinbib,showpacs]{revtex4-1}
 %DIF LATEXDIFF DIFFERENCE FILE
-%DIF DEL ../manuscript_older/Paper_ttbarH_Draft_3_4_16.tex   Fri Mar  4 16:00:28 2016
-%DIF ADD Paper_ttbarH_Draft.tex                              Sat Mar  5 00:46:21 2016
+%DIF DEL ../manuscript_older/Paper_ttbarH_Draft_3_9_16.tex   Wed Mar  9 13:36:44 2016
+%DIF ADD Paper_ttbarH_Draft.tex                              Wed Mar  9 15:18:51 2016
 \pdfoutput=1
 \usepackage{graphicx}
 %\usepackage{dcolumn}
@@ -160,27 +160,39 @@ resolve the sign ambiguity
 for the process $\ppprocess$ that are linearly dependent on the scalar
 ($\kp$) and pseudoscalar ($\kpt$) top-Higgs coupling and hence
 sensitive to the corresponding relative sign. The proposed observables
-are based on triple product (TP) structures that we extract
-from the expression of the differential cross section in terms of the
+are based on triple product (TP) correlations that we extract
+from the expression for the differential cross section in terms of the
 spin vectors of the top and antitop quarks. In order to explore other
 possibilities, we progressively modify these TPs, first
 by combining them, and then by replacing the spin vectors by the
 lepton momenta or the $t$ and $\tbar$ momenta by their visible parts.
-Assuming an integrated luminosity that is consistent with that
-  envisioned for the HL-LHC, we find that the most
-promising observable can disentangle the hypotheses $\kp=1,\kpt=\pm 1$
-by more than the $\sim 20\sigma$ statistical level ({\bf N: OK to keep ``disentangle" here or do we need to change to something like ``can disentangle the hypotheses with effective separations of order...?"}).  In
-the case of observables that do not need the reconstruction of the $t$
-and $\tbar$ momenta, the power of discrimination is up to the $\sim
-16\sigma$ statistical level for the same number of events. We also show that the
-capability of the most promising observables for separating the
-$\mathrm{CP}$-mixed hypotheses preveals even when a number of events
-plausible within the short term LHC is considered. 
+\DIFaddbegin \DIFadd{We generate Monte Carlo data sets for several benchmark scenarios,
+including the Standard Model ($\kp=1$, $\kpt=0$) and
+two scenarios with mixed $\mathrm{CP}$ properties ($\kp=1$, $\kpt=\pm 1$).
+}{\bf \DIFadd{(KK: worded correctly?)}}
+\DIFaddend Assuming an integrated luminosity that is consistent with that
+envisioned for the HL-LHC, and taking into account
+only statistical uncertainties,
+{\bf (KK: do we need to define the HL-LHC?)}
+we find that the most
+promising observable can disentangle the
+\DIFdelbegin \DIFdel{scenarios $\kp=1,\kpt=\pm 1$
+}\DIFdelend \DIFaddbegin \DIFadd{``$\mathrm{CP}$-mixed'' scenarios 
+}\DIFaddend with an effective separation of $\sim 20\sigma$.  In
+the case of observables that do not require the reconstruction of the $t$
+and $\tbar$ momenta, the power of discrimination is up to $\sim
+16\sigma$ for the same number of events. We also show that the
+\DIFdelbegin \DIFdel{capability of the }\DIFdelend most promising observables \DIFdelbegin \DIFdel{for separating }\DIFdelend \DIFaddbegin \DIFadd{can still disentangle }\DIFaddend the
+$\mathrm{CP}$-mixed \DIFdelbegin \DIFdel{hypotheses preveals even when a }\DIFdelend \DIFaddbegin \DIFadd{scenarios when the }\DIFaddend number of events
+\DIFdelbegin \DIFdel{plausible within }\DIFdelend \DIFaddbegin \DIFadd{is reduced to be consistent with that expected
+in }\DIFaddend the short term \DIFdelbegin \DIFdel{LHC is considered}\DIFdelend \DIFaddbegin \DIFadd{at the LHC}\DIFaddend .
 
-%We also show that the sensitivity of the most promising observables is not spoiled when a number of events affordable by the short term LHC is considered.
+%DIF < We also show that the sensitivity of the most promising observables is not spoiled when a number of events affordable by the short term LHC is considered.
+\DIFdelbegin %DIFDELCMD < 
 
-%We also show that even when the number of events is reduced by an order of magnitude the most promising observables are still useful for testing the couplings
-\end{abstract}
+%DIFDELCMD < %%%
+%DIF < We also show that even when the number of events is reduced by an order of magnitude the most promising observables are still useful for testing the couplings
+\DIFdelend \end{abstract}
 \maketitle
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Introduction}
@@ -825,7 +837,10 @@ set the value of the scalar coupling to its SM
 value ($\kp=1$) and will allow the pseudoscalar coupling to take on
 various values (including both possible signs). In particular, we
 analyze the cases $\kpt=0,\pm 0.25, \pm 0.5, \pm 0.75,\pm 1$.
-In addition, we also provide some analysis regarding the pure
+\DIFaddbegin \DIFadd{We shall often focus on the scenarios with $\kp=1$ and
+$\kpt=\pm 1$, which we shall refer to as the ``$\mathrm{CP}$-mixed''
+scenarios.
+}\DIFaddend In addition, we also provide some analysis regarding the pure
 $\mathrm{CP}$-odd case ($\kp=0,\kpt=1$).
 %\newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -917,7 +932,7 @@ $q\qbar$ contribution.
     TPs $\epsilon_1=\TPa, \epsilon_2=\TPb$ and $\epsilon_3=\TPc$.
     The three scenarios
   correspond to the SM ($\kp=1$ and $\kpt=\pm 0$) and
-  two $\mathrm{CP}$-mixed cases (defined by
+  two \DIFaddbeginFL \DIFaddFL{``}\DIFaddendFL $\mathrm{CP}$-mixed\DIFaddbeginFL \DIFaddFL{'' }\DIFaddendFL cases (defined by
   $\kp=1$ and $\kpt=\pm 1$).}
 \label{table1}
 \begin{center}
@@ -993,17 +1008,21 @@ Note that in the $Q$ rest frame, $\epsilon_4=Q^0
 (\vec{t}-\vec{\tbar}\,)\cdot(\vec{n}_t\times \vec{n}_{\tbar})$ and the
 sign of this TP is determined by the quantity
 $(\vec{t}-\vec{\tbar}\,)\cdot(\vec{n}_t\times \vec{n}_{\tbar})$.
-{\bf (KK: try to connect previous sentences to something later on\ldots.)}
-The
+\DIFdelbegin %DIFDELCMD < {\bf %%%
+\DIFdel{(KK: try to connect previous sentences to something later on\ldots.)}%DIFDELCMD < }
+%DIFDELCMD < %%%
+\DIFdelend The
 values obtained for the asymmetry associated with this TP are shown in
-Table~\ref{table2}. By comparing the results in Tables \ref{table1}
+Table~\ref{table2}. By comparing the results in Tables\DIFaddbegin \DIFadd{~}\DIFaddend \ref{table1}
 and \ref{table2}, we see that the capability of this
-asymmetry to distinguish ({\bf N: Do we add ``effectively" ?}) between the
-two $\mathrm{CP}$-mixed hypotheses is increased by at least $3\sigma$.
+asymmetry to distinguish \DIFdelbegin \DIFdel{(}%DIFDELCMD < {\bf %%%
+\DIFdel{N: Do we add ``effectively" ?}%DIFDELCMD < }%%%
+\DIFdel{) }\DIFdelend between the
+two $\mathrm{CP}$-mixed \DIFdelbegin \DIFdel{hypotheses }\DIFdelend \DIFaddbegin \DIFadd{scenarios }\DIFaddend is increased by at least $3\sigma$.
 \vspace{4mm}
 \begin{table}[H]
 \caption{Asymmetry for the TP $\epsilon_{4}$ for the SM case and the
-  two $\mathrm{CP}$-mixed cases defined by $\kp=1,\kpt=\pm 1$. The
+  two $\mathrm{CP}$-mixed \DIFdelbeginFL \DIFdelFL{cases defined by $\kp=1,\kpt=\pm 1$}\DIFdelendFL \DIFaddbeginFL \DIFaddFL{scenarios}\DIFaddendFL .  The
   values are obtained by using $10^5$ simulated events.}
 \label{table2}
 \begin{center}
@@ -1029,7 +1048,7 @@ described in this subsection are not useful for
 discriminating between the SM hypothesis ($\kp=1,\kpt=0$) and the pure
 pseudoscalar hypothesis ($\kp=0,\kpt=1$).  Since
 the numerators of the 
-asymmetries are all linear in both
+asymmetries are \DIFdelbegin \DIFdel{all }\DIFdelend linear in both
 $\kp$ and $\kpt$, they are expected to vanish in these cases. However, we
 will show in the next subsection
 that there exist angular distributions
@@ -1110,7 +1129,7 @@ $\mathrm{CP}$-odd ($\kp= 0,\kpt=1$). Figure~\ref{fig6} shows
 the analogous distributions for $\epsilon_2$. The distributions
 corresponding to $\epsilon_3$ are similar to those of $\epsilon_2$,
 except that the ``shifts'' are in the opposite directions for
-the two mixed-$\mathrm{CP}$ cases.  Given the similarities of the
+the two \DIFdelbegin \DIFdel{mixed-}\DIFdelend $\mathrm{CP}$\DIFaddbegin \DIFadd{-mixed }\DIFaddend cases.  Given the similarities of the
 plots we do not include them here. 
 %%%%%%%%%%%%%%%%%%%%%%%%% FIGURA 5 %%%%%%%%%%%%%%%%%%%%%%%%%
 %%%% ruta turin facultad: /home/nico/Documentos/ttbarH/Material_final/ todas las figs para abajo
@@ -1160,8 +1179,8 @@ plots we do not include them here.
 \par As can be seen from Figs.~\ref{fig5} and \ref{fig6}, the
 peaks of the 
 distributions are shifted to the left or the right of the origin
-in the mixed-$\mathrm{CP}$
-cases ($\kp =1$ and $\kpt=\pm 1$).
+in the \DIFdelbegin \DIFdel{mixed-}\DIFdelend $\mathrm{CP}$\DIFaddbegin \DIFadd{-mixed
+}\DIFaddend cases ($\kp =1$ and $\kpt=\pm 1$).
 The magnitude of the shift appears to be approximately the
 same in both cases, but is in the
 opposite direction for $\kp=\kpt=1$ compared to $\kp=-\kpt=1$, thus allowing
@@ -1174,8 +1193,8 @@ and that the quantity $N(\epsilon < 0)/N_T$ is related
 to the angular distribution according to Eq.~(\ref{eq26}). The angular
 distributions for the SM case ($\kp =1$ and $\kpt=0$) and
 the pure pseudoscalar case ($\kp =0$ and $\kpt= 1$) are
-visibly different from each other and from the mixed-$\mathrm{CP}$
-scenarios. Comparing the SM and purely pseudoscalar cases,
+visibly different from each other and from the \DIFdelbegin \DIFdel{mixed-}\DIFdelend $\mathrm{CP}$\DIFaddbegin \DIFadd{-mixed
+}\DIFaddend scenarios. Comparing the SM and purely pseudoscalar cases,
 we note that while the angular distributions for the former case
 exhibit a minimum at $\Delta\phi_{1,2}(n_t,n_{\tbar})=0$, those
 for the latter case exhibit a peak at this location.
@@ -1323,26 +1342,23 @@ an angular distribution related to this TP as well.
 Specifically, we have analyzed the
 $\Delta\phi(n_t,n_{\tbar})$ distribution in the $Q$ rest frame,
 taking
-$H$ to define the $z$-axis.  By studying the distributions
-for various values of $\kp$ and $\kpt$, we have
-found that they are not well described by Eq.~(\ref{eq27})
-and their range of variation is larger than that of the distributions
-displayed in Figs.~\ref{fig5} and \ref{fig6}.
-{\bf (KK: I'm not sure what this means.  Are they less cosine-like?
-  Or are the amplitudes or phase shifts larger than those for the other
-  TPs?)}
-Unlike the distributions
-related to $\epsilon_1$-$\epsilon_3$, those arising from $\epsilon_4$
-exhibit small changes in their shapes {\bf (KK: I don't think I understand
-  this, since we said that the range of variation was larger in the last
-  sentence.  I think I'm missing something :) )} for all the considered
-hypotheses and for this reason we have not included the corresponding
-plots here. However, the larger range of variation of the $\epsilon_4$
-distributions leads to higher values for the asymmetry (as can be seen
-from Tables \ref{table1} and \ref{table2}) even when the changes in
-the respective shapes are smaller {\bf (KK: I don't understand what
-  this means.)} than in the case of the
-distributions described by Eq.~(\ref{eq27}).  \par
+$H$ to define the $z$-axis.  We have studied the distributions
+for various values of $\kp$ and $\kpt$ and have
+found that they are not well described by Eq.~(\ref{eq27}).
+Instead of resembling sinusoids that are shifted to the left or
+right for different values of the parameters, the distributions
+remain peaked near $\Delta\phi(n_t,n_{\tbar})=0$, but become
+slightly distorted in such a way that there is a non-zero
+asymmetry [see Eq.~(\ref{eq26})].  Interestingly, while there
+is not much visible change in the $\epsilon_4$ angular distribution
+for different
+parameter values, the associated asymmetry values are
+larger than the asymmetries for the other TPs [see
+  Tables \ref{table1} and \ref{table2}].  Since this angular
+distribution does not exhibit much visible change for
+different values of $\kp$ and $\kpt$, we do not include the corresponding
+plots here.
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Mean value}
 \label{sec3.3}
@@ -1567,7 +1583,7 @@ angular variable is the same as that proposed in Ref.~\cite{Ellis} as a
 useful $\mathrm{CP}$-odd observable. Moreover, it is shown in
 Ref.~\cite{Ellis} that the corresponding
 angular distribution follows the functional
-form given in Eq.~(\ref{eq27}). The \DIFdelbegin \DIFdel{ascociated }\DIFdelend \DIFaddbegin \DIFadd{associated }\DIFaddend shifts ($\delta$)
+form given in Eq.~(\ref{eq27}). The associated shifts ($\delta$)
 obtained for different values of $\kpt$ are expected to be of the same
 order as those exhibited by the $\Delta\phi_1(n_t,n_{\tbar})$
 distribution since this distribution
@@ -1576,7 +1592,7 @@ is constrained by the asymmetry $\mathcal{A}(\epsilon_5)$
 which in turn is equal to
 $\mathcal{A}(\epsilon_1)$. Also, we note that $\mathcal{A}(\epsilon_5)$ is slightly smaller 
 than $\mathcal{A}(\epsilon_2)$,
-as can be seen from Table\DIFaddbegin \DIFadd{~}\DIFaddend \ref{table1}.
+as can be seen from Table~\ref{table1}.
 \par
 
 In analogy with the
@@ -1629,14 +1645,19 @@ $\epsilon_6$ and $\epsilon_7$ distributions.
 
 The mean values of $\epsilon_8$ for the scenarios under
 consideration are comparable with the values listed in Table
-\ref{table6} for $\epsilon_5$. Concerning the associated angular
-distributions, their range of variation {\bf (KK: I'm not sure what
-  this means)} is larger than in the case of
-the distributions related to $\epsilon_5$-$\epsilon_7$ but exhibit
-smaller changes in their shapes for the different scenarios and for
-this reason we do not include here the corresponding plots.
-{\bf (KK: might need to reword this a bit after clarifying what 
-  range of variation means.)}
+\ref{table6} for $\epsilon_5$.
+We have also studied the associated angular distributions.
+We do not include plots of these distributions, however,
+because they
+do not exhibit much visible variation for the different
+scenarios under consideration.  (The situation is similar
+to that encountered for the angular distribution
+associated with $\epsilon_4$ -- see the discussion
+at the end of Sec.~\ref{sec3.2}.)
+{\bf (KK: have I worded this correctly?
+  Does the distribution look similar even in the
+  purely CP-odd case, for example?)}
+
 \begin{table}[H]
 \caption{Asymmetry for the TP $\epsilon_{8}$ for the SM case and the
   two $\mathrm{CP}$-mixed cases defined by $\kp=1,\kpt=\pm 1$. The
@@ -1907,8 +1928,14 @@ conservative numbers of events. Table~\ref{table12} shows the
 results obtained for 
 $5\times 10^4$ and $1\times 10^4$ events. We see in this case
 that even with $1\times 10^4$ events the observable is
-able to distinguish the $\mathrm{CP}$-mixed cases by
-$5.6\sigma$ ({\bf N: Do we add ``effectively" distinguish?}).\par
+\DIFaddbegin \DIFadd{effectively }\DIFaddend able to distinguish the $\mathrm{CP}$-mixed cases by
+$5.6\sigma$\DIFdelbegin \DIFdel{(}%DIFDELCMD < {\bf %%%
+\DIFdel{N: Do we add ``effectively" distinguish?}%DIFDELCMD < }%%%
+\DIFdel{).
+}%DIFDELCMD < \par
+%DIFDELCMD < %%%
+\DIFdelend \DIFaddbegin \DIFadd{.
+}\DIFaddend 
 
 Finally, it is important to mention that a realistic
 analysis of the sensistivity of the observables discussed in this
@@ -2024,90 +2051,83 @@ paper.
 %
 In this paper we have presented a collection of $\mathrm{CP}$-odd
 observables based on triple product correlations
-\DIFaddbegin \DIFadd{in $\ppprocess$ }\DIFaddend that are useful for
+in $\ppprocess$ that are useful for
 disentangling the relative sign between the scalar ($\kp$) and a
-potential pseudoscalar ($\kpt$) top-Higgs couplings\DIFdelbegin \DIFdel{in the $t\tbar H$
-production with both tops decaying leptonically}\DIFdelend .
+potential pseudoscalar ($\kpt$) top-Higgs couplings.
 We have tested the
-sensitivity of the \DIFdelbegin \DIFdel{proposed observables}\DIFdelend \DIFaddbegin \DIFadd{various triple product correlations
-}{\bf \DIFadd{(KK: OK? ``observables'' was repeated)}}
-\DIFaddend by considering three types of
-observables: asymmetries, \DIFdelbegin \DIFdel{mean values }\DIFdelend \DIFaddbegin \DIFadd{angular distributions, and mean values.
+sensitivity of the various triple product correlations
+by considering three types of
+observables: asymmetries, angular distributions, and mean values.
 Using these observables, we have examined several benchmark
 scenarios, focusing in particular on the SM ($\kp=1$ and $\kpt=0$)
-and on two ``$\mathrm{CP}$-mixed'' scenarios ($\kp=1$ }\DIFaddend and \DIFdelbegin \DIFdel{angular distributions}\DIFdelend \DIFaddbegin \DIFadd{$\kpt=\pm1$)}\DIFaddend .
+and on two ``$\mathrm{CP}$-mixed'' scenarios ($\kp=1$ and $\kpt=\pm1$).
 \par
 
 Through the use of spinor techniques we have written the expression
 for the differential cross section of the full process in such a
 manner that the production and the decay parts are separated, although
-connected by the spin vectors of the top and antitop\DIFaddbegin \DIFadd{, }\DIFaddend which are given
+connected by the spin vectors of the top and antitop, which are given
 in terms of the momenta of the leptons in the final state. Moreover,
-we have \DIFdelbegin \DIFdel{indentified }\DIFdelend \DIFaddbegin \DIFadd{identified }\DIFaddend the terms linear in $\kp$ and $\kpt$ as those
+we have identified the terms linear in $\kp$ and $\kpt$ as those
 involving TPs. Among these, we have explored the three that do not
 involve the momenta of the incoming quarks/gluons and at the same time
 incorporate both spin vectors: $\epsilon_1\equiv \TPa$,
 $\epsilon_2\equiv \TPb$ and $\epsilon_3\equiv \TPc$.\par
 
 We have found
-that $\epsilon_{1,2,3}$ allow \DIFaddbegin \DIFadd{one }\DIFaddend to distinguish between the
-$\mathrm{CP}$-mixed \DIFdelbegin \DIFdel{hypotheses }\DIFdelend \DIFaddbegin \DIFadd{scenarios }\DIFaddend by more than $\sim 20\sigma$ in the
+that $\epsilon_{1,2,3}$ allow one to distinguish between the
+$\mathrm{CP}$-mixed scenarios by more than $\sim 20\sigma$ in the
 case of asymmetries and $\sim 10\sigma$ in the case of mean values
 when $1 \times 10^5$ simulated events are used. Furthermore, we have
 shown that the angular distributions associated with these TPs are
-also sensitive to the value of $\kp$ and $\kpt$\DIFaddbegin \DIFadd{, }\DIFaddend exhibiting a phase
+also sensitive to the value of $\kp$ and $\kpt$, exhibiting a phase
 shift that varies according to the values taken by these couplings.
-\DIFdelbegin \DIFdel{On
-the other hand, by }\DIFdelend \DIFaddbegin \DIFadd{By }\DIFaddend exploring TPs that incorporate the momenta of the
-Higgs and the leptons instead of the spin vectors\DIFdelbegin \DIFdel{we can conclude }\DIFdelend \DIFaddbegin \DIFadd{, we have concluded }\DIFaddend that
+By exploring TPs that incorporate the momenta of the
+Higgs and the leptons instead of the spin vectors, we have concluded that
 the observables studied here appear to be more sensitive when the spin
 vectors are used.\par
 
-\DIFdelbegin \DIFdel{On the other hand, we have }\DIFdelend \DIFaddbegin \DIFadd{We have also }\DIFaddend proposed a combination of the TPs\DIFdelbegin \DIFdel{considered in the first place}\DIFdelend ,
+We have also proposed a combination of the TPs,
 $\epsilon_4\equiv \epsilon_3-\epsilon_2$,
-\DIFdelbegin \DIFdel{that exhibits the highest sensitivity with the }\DIFdelend \DIFaddbegin \DIFadd{which has a greater sensitivity than $\epsilon_1$-$\epsilon_3$.
+which has a greater sensitivity than $\epsilon_1$-$\epsilon_3$.
 With $1\times 10^5$ events, for example, the asymmetry associated
-with this TP gives an effective }\DIFaddend separation 
-between the $\mathrm{CP}$-mixed \DIFdelbegin \DIFdel{hypotheses being increased
-}\DIFdelend \DIFaddbegin \DIFadd{scenarios that
+with this TP gives an effective separation 
+between the $\mathrm{CP}$-mixed scenarios that
 exceeds those coming from $\epsilon_1$-$\epsilon_3$
-}\DIFaddend by at least $3\sigma$\DIFdelbegin \DIFdel{in the asymmetry for $1 \times 10^5$ events with
-respect to $\mathcal{A}(\epsilon_{1,2,3})$.Again, when }\DIFdelend \DIFaddbegin \DIFadd{.  }{\bf \DIFadd{(KK: please check my rewording for accuracy.)}}
-\DIFadd{When }\DIFaddend a similar
-combination is constructed by using the leptons\DIFaddbegin \DIFadd{' }\DIFaddend momenta instead of the
+by at least $3\sigma$.  
+When a similar
+combination is constructed by using the leptons' momenta instead of the
 spin vectors ($\epsilon_8$), the sensitivity in the asymmetry is
-decreased by $\sim 3\sigma$ compared to \DIFdelbegin \DIFdel{$\mathcal{A}(\epsilon_4)$ }\DIFdelend \DIFaddbegin \DIFadd{the asymmetry associated
-with $\epsilon_4$ }\DIFaddend for
+decreased by $\sim 3\sigma$ compared to the asymmetry associated
+with $\epsilon_4$ for
 the same number of events, giving values compatible with those
-obtained for the \DIFdelbegin \DIFdel{asymmetry }\DIFdelend \DIFaddbegin \DIFadd{asymmetries }\DIFaddend of $\epsilon_2$ and $\epsilon_3$. \par
+obtained for the asymmetries of $\epsilon_2$ and $\epsilon_3$. \par
 
 Taking into account the challenge of reconstructing the top and
 antitop momenta due to the presence of two neutrinos in the final
 state, we have proposed and tested two TP correlations that avoid this
 difficulty. The first one is obtained by replacing the $t$ and $\tbar$
-\DIFaddbegin \DIFadd{momenta }\DIFaddend by the $b$ and $\bbar$ momenta ($\epsilon_9$), whereas the second
+momenta by the $b$ and $\bbar$ momenta ($\epsilon_9$), whereas the second
 includes the visible part of the $t$ and $\tbar$ momenta
-($\epsilon_{10}$). We have \DIFdelbegin \DIFdel{encountered }\DIFdelend \DIFaddbegin \DIFadd{found }\DIFaddend that the latter is the \DIFdelbegin \DIFdel{most
-sensitive }\DIFdelend \DIFaddbegin \DIFadd{more
+($\epsilon_{10}$). We have found that the latter is the more
 sensitive of the two,
-}\DIFaddend leading to a discrimination of the $\mathrm{CP}$-mixed cases
-\DIFdelbegin \DIFdel{under analysis }\DIFdelend by up to $\sim 16\sigma$.\par
+leading to a discrimination of the $\mathrm{CP}$-mixed cases
+by up to $\sim 16\sigma$.\par
 
-Finally\DIFaddbegin \DIFadd{, }\DIFaddend we have discussed the \DIFaddbegin \DIFadd{experimental }{\bf \DIFadd{(KK: OK?)}}
-\DIFaddend feasibility of the most sensitive
+Finally, we have discussed the experimental 
+feasibility of the most sensitive
 observables proposed here. We have found that with $5\times 10^3$ and
-$1\times 10^4$ events\DIFdelbegin \DIFdel{respectively the observables
-$\mathcal{A}(\epsilon_4)$ and $\mathcal{A}(\epsilon_{10})$ }\DIFdelend \DIFaddbegin \DIFadd{, respectively, the asymmetries
-associated with $\epsilon_4$ and $\epsilon_{10}$ }\DIFaddend are still
-useful for testing the hypotheses $(\kp=1,\kpt=\pm 1)$\DIFaddbegin \DIFadd{, }\DIFaddend giving rise to
-separations of order $\sim 6\sigma$. These \DIFdelbegin \DIFdel{required number of events
-would be reachable in principle in }\DIFdelend \DIFaddbegin \DIFadd{numbers of events
-are within reach in }\DIFaddend the short term \DIFdelbegin \DIFdel{by the LHCand hence
-the capability of the observables studied here for testing }\DIFdelend \DIFaddbegin \DIFadd{at the LHC,
+$1\times 10^4$ events, respectively, the asymmetries
+associated with $\epsilon_4$ and $\epsilon_{10}$ are still
+useful for testing the hypotheses $(\kp=1,\kpt=\pm 1)$, giving rise to
+separations of order $\sim 6\sigma$. These numbers of events
+are within reach in the short term at the LHC,
 so that these observables could in principle be used
-to test }\DIFaddend the sign of $\kpt/\kp$ \DIFdelbegin \DIFdel{could be probed in }\DIFdelend \DIFaddbegin \DIFadd{within }\DIFaddend that context.
-\DIFaddbegin {\bf \DIFadd{(KK: maybe reword this sentence a bit\ldots?)}}
-\DIFaddend 
+to test the \DIFdelbegin \DIFdel{sign of $\kpt/\kp$ }\DIFdelend \DIFaddbegin \DIFadd{relative sign of $\kp$ and $\kpt$ }\DIFaddend within that context.
+\DIFdelbegin %DIFDELCMD < {\bf %%%
+\DIFdel{(KK: maybe reword this sentence a bit\ldots?)}%DIFDELCMD < }
+%DIFDELCMD < %%%
+\DIFdelend 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \bigskip
@@ -2116,9 +2136,8 @@ to test }\DIFaddend the sign of $\kpt/\kp$ \DIFdelbegin \DIFdel{could be probed 
 \noindent 
 This work has been partially supported by ANPCyT under grants No. PICT
 2013-0433 and No. PICT 2013-2266, and by CONICET (NM, AS). The work of
-\DIFaddbegin \DIFadd{DC, EG and }\DIFaddend KK was supported by the U.S.  National Science Foundation under Grant
-PHY-1215785\DIFdelbegin \DIFdel{. KK also acknowledges sabbatical support from Taylor
-University}\DIFdelend .
+DC, EG and KK was supported by the U.S.  National Science Foundation under Grant
+PHY-1215785.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{\refname}
 \let\bibsection\relax
