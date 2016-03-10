@@ -146,7 +146,6 @@ lepton momenta or the $t$ and $\tbar$ momenta by their visible parts.
 We generate Monte Carlo data sets for several benchmark scenarios,
 including the Standard Model ($\kp=1$, $\kpt=0$) and
 two scenarios with mixed $\mathrm{CP}$ properties ($\kp=1$, $\kpt=\pm 1$).
-{\bf (KK: worded correctly?)}
 Assuming an integrated luminosity that is consistent with that
 envisioned for the High Luminosity Large Hadron Collider,
 and taking into account
@@ -154,7 +153,8 @@ only statistical uncertainties,
 we find that the most
 promising observable can disentangle the
 ``$\mathrm{CP}$-mixed'' scenarios 
-with an effective separation of $\sim 20\sigma$.  In
+with an effective separation of $\sim 20\sigma$ {\bf (N: In previous version it said ``statistical level" because we wanted 
+to stress that we are not considering systematic uncertainties.)}.  In
 the case of observables that do not require the reconstruction of the $t$
 and $\tbar$ momenta, the power of discrimination is up to $\sim
 16\sigma$ for the same number of events. We also show that the
@@ -309,11 +309,12 @@ In Sec.~\ref{sec3} we probe the sensitivity of these TPs to
 the $tH$ coupling by using various $\mathrm{CP}$-odd
 observables. Subsequent sections are dedicated to the analysis of
 other $\mathrm{CP}$-odd observables. In particular,
-observables based on TPs that incorporate the Higgs momentum
+observables based on TPs that {\bf (N: ``do not contain the $t$ and $\tbar$ spin vectors and
+in certain cases incorporate")} the Higgs momentum
 {\bf (KK: not all of them involve the Higgs momentum in this section\ldots
   is this the best way to describe this section?
   I'm fine with it, either way.)} are
-discussed in Sec.~\ref{sec4}, and observables that do not
+discussed in Sec.~\ref{sec4} {\bf (N: ;)} and observables that do not
 involve the $t$ and $\tbar$ momenta are studied in
 Sec.~\ref{sec5}.  In Sec.~\ref{sec6} we discuss
 the experimental feasibility of the most promising observables
@@ -545,12 +546,11 @@ where the spinors $\phi_{t}$ and $\phi_{\tbar}$ are defined as
 \eeq
 %
 Note that in writing down the above expressions we have adopted the narrow-width
-approximation for the top and antitop quarks and for the $W^\pm$ gauge
-bosons{\bf (KK: remove ``\ldots and for the\ldots''?)}.\footnote{Since Eq.~(\ref{eq9}) contains the top quark propagator
+approximation for the top and antitop quarks.\footnote{Since Eq.~(\ref{eq9}) contains the top quark propagator
   term
   $\mathbb{P}_t(t)$, for example, $|\mathcal{M}^{ab,ij}|^2$ contains
   the factor $((t^2-m^2_t)^2+m^2_t\Gamma^2_t)^{-1}$,
-  which is replaced by $(\pi/m_t\Gamma_t)\delta(t^2-m^2_t)$
+  which is replaced by $(\pi/(m_t\Gamma_t))\delta(t^2-m^2_t)$
   in the narrow-width approximation.  Thus, except for the propagator terms $\mathbb{P}_t(t)$ and $\mathbb{P}_t(\tbar)$,
    we take the four-vector $t$ appearing in Eqs.~(\ref{eq9})-(\ref{eq11}) to be
   on shell, satisfying $t^2 = m_t^2$.} 
@@ -971,8 +971,7 @@ $1$ & $1$ & $-0.0379$~~~ & $-12.0$~~~ & $-0.0411$~~~& $-13.0$~~~ & $\,0.0378$~ &
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \vspace*{-6mm}
 
-We have also tested various
-linear combinations of the TPs $\epsilon_{1,2,3}$ and have found
+We have also tested various combinations of the TPs $\epsilon_{1,2,3}$ and have found
 that the asymmetry is enhanced for the following combination:
 %
 \beq
@@ -991,15 +990,13 @@ values obtained for the asymmetry associated with this TP are shown in
 Table~\ref{table2}. By comparing the results in Tables~\ref{table1}
 and \ref{table2}, we see that the capability of this
 asymmetry to distinguish between the
-two $\mathrm{CP}$-mixed scenarios is increased by at least $3\sigma$.
-{\bf (KK: looks like 2.5$\sigma$ is the min difference?  maybe a rounding
-  thing; but see also the comment in the table caption.)}
+two $\mathrm{CP}$-mixed scenarios is increased by at least $2.8\sigma$.
 \vspace{4mm}
 \begin{table}[H]
 \caption{Asymmetry for the TP $\epsilon_{4}$ for the SM case and the
   two $\mathrm{CP}$-mixed scenarios.  The
   values are obtained using sets of $10^5$ simulated events.
-{\bf (KK: In the previous table we used 3 sig figs for the ratios like ``12.0'', etc.  Should we do the same in both tables for consistency?)}}
+}
 \label{table2}
 \begin{center}
 \begin{tabular}{|C{1cm}|C{1cm}||C{2cm}|C{2cm}|}
@@ -1009,11 +1006,11 @@ two $\mathrm{CP}$-mixed scenarios is increased by at least $3\sigma$.
 $\kappa_t$&$\tilde{\kappa}_t$~~&$\mathcal{A}(\epsilon_4)$~~&$\mathcal{A}(\epsilon_4)/\sigma_{\mathcal{A}}$ \\ 
 \hhline{|====|} 
 %\hhline{|--------|}
-$1$ & $-1$~~~ & $-0.0371$~~~ & $-12$~~~ \\[0.6mm]
+$1$ & $-1$~~~ & $-0.0371$~~~ & $-11.7$~~ \\[0.6mm]
 \hline
 $1$ & $0$ & $0.0004$~ & $0.1$ \\[0.6mm]
 \hline
-$1$ & $1$ & $0.0461$~ & $14\,$ \\[0.6mm]
+$1$ & $1$ & $0.0461$~ & $14.6$ \\[0.6mm]
 \hhline{|====|}
 %\hhline{|--------|}
 \end{tabular}
@@ -1190,8 +1187,7 @@ Ref.~\cite{Ellis},
 %
 To the extent that the above expression is exact, we note that
 Eq.~(\ref{eq26}) 
-gives $\mathcal{A}(\epsilon_i)=4a_1 \sin\delta$ {\bf (KK: sign
-  incorrect? numbers don't agree between Tables I and III otherwise)}. With
+gives $\mathcal{A}(\epsilon_i)=-4a_1 \sin\delta$. With
 this fitting function, we obtain phase shifts $\delta$ that
 are approximately between
 $0.9$ and $1$ ($-1$ and $-0.9$) for $\kp=\kpt=1$ ($\kp=-\kpt=1$), both
@@ -1380,7 +1376,8 @@ Sec.~\ref{sec3.1} gives slightly smaller values than those listed in
 Table~\ref{table5} for $\langle \epsilon_2
 \rangle$ and $\langle \epsilon_3 \rangle$,
        {\bf (KK: explicit reference to $\epsilon_2$ and $\epsilon_3$ correct?
-         Seems like $\epsilon_4$ is actually a bit better than $\epsilon_1$)}
+         Seems like $\epsilon_4$ is actually a bit better than $\epsilon_1$) (N: The effective separation
+         for $\epsilon_4$ is $11.55$ while for $\epsilon_1$ is $12.24$)}
 yielding $-4.32$, $1.11$ and $7.23$ for the cases
 $(\kp=1,\kpt=-1,0,1)$, respectively. As with the asymmetry, the
 purely $\mathrm{CP}$-even and purely $\mathrm{CP}$-odd cases cannot be
@@ -1452,7 +1449,7 @@ $\epsilon_{1,2,3}$ can be written as follows,
 \eeq
 %
 The above equations express the TPs studied in the last sections as
-linear combination of TPs involving the momenta $t,\tbar,H,\ell^+$ and
+a combination of TPs involving the momenta $t,\tbar,H,\ell^+$ and
 $\ell^-$, with coefficients that are functions of phase space
 variables. These five momenta give rise to five TPs whose sensitivity
 can also be tested by means of the observables introduced in
@@ -1553,15 +1550,14 @@ $\epsilon_{5,6,7}$.  \par
 
 It is important to mention that in the
 $t\tbar$ rest frame the sign of the TP $\epsilon_5$ is defined through
-the angle $\Delta\phi(\ell^-,\ell^+)$ {\bf (KK: notation change OK? making this
-  similar to the others)} [see the discussion following
+the angle $\Delta\phi(\ell^-,\ell^+)$ [see the discussion following
   Eq.~(\ref{eq25})],
 which is the angular difference between the
 projections of the leptons' momenta onto the plane perpendicular to
 $\vec{\tbar}$.  As in Sec.~\ref{sec3.2}, we can construct an associated angular
 distribution [see Eq.~(\ref{eq26})] that
 will be sensitive to the sign of the pseudoscalar coupling. The
-angular variable $\Delta\phi(\ell^-,\ell^+)$ {\bf (KK: OK?)}
+angular variable $\Delta\phi(\ell^-,\ell^+)$ 
 is the same as that proposed in Ref.~\cite{Ellis} as a
 useful $\mathrm{CP}$-odd observable. Moreover, it is shown in
 Ref.~\cite{Ellis} that the corresponding
@@ -1569,7 +1565,7 @@ angular distribution follows the functional
 form given in Eq.~(\ref{eq27}). The associated shifts ($\delta$)
 obtained for different values of $\kpt$ are expected to be of the same
 order as those exhibited by the $\Delta\phi_1(n_t,n_{\tbar})$
-distribution since the $\Delta\phi(\ell^-,\ell^+)$ distribution {\bf (KK: OK?)}
+distribution since the $\Delta\phi(\ell^-,\ell^+)$ distribution 
 is constrained by the asymmetry $\mathcal{A}(\epsilon_5)$
 [via Eq.~(\ref{eq26})],
 which in turn is equal to
@@ -1578,8 +1574,6 @@ than $\mathcal{A}(\epsilon_2)$,
 as can be seen from Table~\ref{table1}.
 \par
 
-{\bf (KK: moved this paragraph, since we have already
-  discussed the $\epsilon_5$ angular distribution.)}
 In addition to the $\epsilon_5$ angular distribution
 (defined above), one can also define angular distributions
 corresponding to $\epsilon_6$ and $\epsilon_7$.  As was the case
@@ -2077,11 +2071,11 @@ With $1\times 10^5$ events, for example, the asymmetry associated
 with this TP gives an effective separation 
 between the $\mathrm{CP}$-mixed scenarios that
 exceeds those coming from $\epsilon_1$-$\epsilon_3$
-by at least $3\sigma$. {\bf (KK: 2.5$\sigma$ is the min difference?)}   
+by at least $2.8\sigma$.  
 When a similar
 combination is constructed by using the leptons' momenta instead of the
 spin vectors ($\epsilon_8$), the sensitivity in the asymmetry is
-decreased by $\sim 3\sigma$ compared to the asymmetry associated
+decreased by $\sim 3.1\sigma$ compared to the asymmetry associated
 with $\epsilon_4$ for
 the same number of events, giving values comparable with those
 obtained for the asymmetries of $\epsilon_2$ and $\epsilon_3$. \par
@@ -2095,7 +2089,7 @@ includes the visible part of the $t$ and $\tbar$ momenta
 ($\epsilon_{10}$). We have found that the latter is the more
 sensitive of the two,
 leading to a separation between the $\mathrm{CP}$-mixed cases
-of $\sim 16\sigma$. {\bf (KK: wording change OK?)}\par
+of $\sim 16\sigma$.\par
 
 Finally, we have discussed the experimental 
 feasibility of the most sensitive
